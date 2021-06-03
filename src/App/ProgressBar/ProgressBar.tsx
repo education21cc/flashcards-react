@@ -7,9 +7,11 @@ interface Props {
 
 const ProgressBar = (props: Props) => {
   const { progress } = props;
+  const width = 20 + progress * 80; // minimum width is 20%
+
   return (
     <div className="progress-bar">
-      <div className="track" style={{ width: `${progress * 100}%`}}/>
+      <div className="track" style={{ width: `calc(${width}%)`}}/>
       <SchoolIcon className="icon" />
     </div>
   )

@@ -23,10 +23,15 @@ const alreadyRemoved: string[] = []
 const App = () => {
 
   const [data, setData] = useState<GameData<Content>>();
-  const { content } = data ?? {};
+  const [cards, setCards] = useState<Content>();
+
+  // const { content } = data ?? {};
+  const [currentCardIndex, setCurrentCardIndex] = useState<number>(-1)
+  const [swipeAction, setSwipeAction] = useState<{card: Card, dir: Direction }>()
 
   const handleGameDataReceived = useCallback((data: GameData<Content>) => {
     setData(data);
+    setCards(data.content)
 
     if (data.translations){
       const t = data.translations.reduce<{[key: string]: string}>((acc, translation) => {
@@ -46,44 +51,53 @@ const App = () => {
     // See if we are fed gamedata by 21ccplayer app, if not, go fetch it ourselves
     if (!process.env.REACT_APP_PLAYER_MODE) {
       // @ts-ignore
-      if(!content) {
-        console.log("no bridge found, fetching fallback")
-        // @ts-ignore
-        
+      console.log("no bridge found, fetching fallback")
+      // @ts-ignore
+      
 
-        fetch(`${process.env.PUBLIC_URL}/config/flashcards-adr-with-translations-nl.json`)
-        // fetch(`${process.env.PUBLIC_URL}/config/scenarios-2.json`)
-        // fetch(`${process.env.PUBLIC_URL}/config/scenarios-3.json`)
-        .then((response) => {
-          response.json().then((data) => {
+      fetch(`${process.env.PUBLIC_URL}/config/flashcards-adr-with-translations-nl.json`)
+      // fetch(`${process.env.PUBLIC_URL}/config/scenarios-2.json`)
+      // fetch(`${process.env.PUBLIC_URL}/config/scenarios-3.json`)
+      .then((response) => {
+        response.json().then((data) => {
 
-            handleGameDataReceived(data);
-          })
+          handleGameDataReceived(data);
         })
-      }
+      })
     };
-  }, [content, handleGameDataReceived]);
+  }, [handleGameDataReceived]);
 
-console.log(content)
 
-  const [characters, setCharacters] = useState(content)
+  // const [characters, setCharacters] = useState(content)
   const [lastDirection, setLastDirection] = useState<string>()
 
-  const childRefs = useMemo(() => Array(content?.length).fill(0).map(i => React.createRef<API>()), [content])
+  // const childRefs = useMemo(() => Array(content?.length).fill(0).map(i => React.createRef<API>()), [content])
 
   const handleSwiped = (card: Card, dir: Direction) => {
     console.log('removing: ' + card.image, dir)
     // setLastDirection(direction)
     // alreadyRemoved.push(nameToDelete)
+    // setCurrentCardIndex(currentCardIndex-1);
+    
+    // setCards(cards?.filter(c => c !== card))
+    setSwipeAction(undefined);
   }
-
-  const outOfFrame = (name: string) => {
-    console.log(name + ' left the screen!')
+console.log(cards)
+  const handleCardLeftScreen = (card: Card) => {
+    setCards(cards?.filter(c => c !== card))
+    // console.log(card, ' left the screen!')
     // charactersState = charactersState.filter(character => character.name !== name)
     // setCharacters(charactersState)
   }
-
-  const swipe = (card: Card, dir: Direction) => {
+// console.log(content)
+  const swipe = (dir: Direction) => {
+    // console.log(dir, cards?.[currentCardIndex])
+    // if (!content?.[currentCardIndex]) return
+    if (!cards) return
+    const card = cards[cards.length - 1];
+    
+    setSwipeAction({ card, dir})
+    // handleSwiped(card, dir);
     // const cardsLeft = characters.filter(person => !alreadyRemoved.includes(person.name))
     // if (cardsLeft.length) {
     //   const toBeRemoved = cardsLeft[cardsLeft.length - 1].name // Find the card object to be removed
@@ -92,20 +106,34 @@ console.log(content)
     //   childRefs[index].current?.swipe(dir) // Swipe the card!
     // }
   }
+
+  const progress = useMemo(() => {
+    if (!data || !cards) return 0
+    return 1 - cards.length/ data.content.length
+  }, [cards, data])
   
+  console.log(progress)
+
   return (
     <div className="app">
-      <ProgressBar progress={.5} />
+      <ProgressBar progress={progress} />
       <div className='card-container'>
-        {content?.map((card, index) => (
-          <FlashCard key={card.image} card={card} onSwiped={handleSwiped} />
-        ))}
+        {cards?.map((card, index) => {
+          return (
+          <FlashCard 
+            key={card.image} 
+            card={card}
+            swipeAction={card === swipeAction?.card ? swipeAction.dir : undefined}
+            onSwiped={handleSwiped}
+            onCardLeftScreen={handleCardLeftScreen}
+          />
+        )
+      })}
       </div>
-      <ButtonBar />
-      <div className='buttons'>
-        {/* <button onClick={() => swipe('left')}>Swipe left!</button> */}
-        {/* <button onClick={() => swipe('right')}>Swipe right!</button> */}
-      </div>
+      <ButtonBar 
+        onLeftClick={() => swipe('left')}
+        onRightClick={() => swipe('right')}
+      />
     </div>  
   );
 }

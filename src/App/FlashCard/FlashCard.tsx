@@ -1,12 +1,14 @@
 import { Card } from "data/Card"
 import { Direction } from "data/Direction"
-import React, { createRef } from "react"
+import React, { createRef, useEffect } from "react"
 import TinderCard from "react-tinder-card"
 import './styles/flashCard.scss'
 
 type Props = {
   card: Card
+  swipeAction?: Direction
   onSwiped: (card: Card, dir: Direction) => void
+  onCardLeftScreen: (card: Card) => void
 } 
 declare interface API {
   /**
@@ -19,14 +21,22 @@ declare interface API {
 
 
 const FlashCard = (props: Props) => {
-  const { onSwiped, card } = props;
-  const ref = createRef<API>()
+  const { onSwiped, card, swipeAction, onCardLeftScreen } = props;
+  const ref = createRef<API>();
+
+  useEffect(() => {
+    if (swipeAction && ref.current) {
+      console.log("I will swipe ", card)
+      ref.current.swipe(swipeAction)
+    }
+  }, [card, ref, swipeAction]);
+
   return (
     <TinderCard 
       ref={ref} 
       className='flash-card' preventSwipe={["up", "down"]} 
       onSwipe={(dir) => onSwiped(card, dir)}
-      // onCardLeftScreen={() => outOfFrame(character.image)}
+      onCardLeftScreen={() => onCardLeftScreen(card)}
     >
       <div 
         style={{ backgroundImage: 'url(' + card.image + ')' }}
