@@ -12,6 +12,11 @@
   box-sizing: border-box;
 
   .image {
-
+    width: 80%;
+    height: 80%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 10%;
   }
 }

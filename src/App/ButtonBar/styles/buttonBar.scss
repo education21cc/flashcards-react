@@ -2,7 +2,10 @@
 
 .button-bar {
   margin-top: 5vw;
-
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
 }
 
 .button-circle {
@@ -12,9 +15,21 @@
   border: 3px solid #CDCDCD;
   border-radius: 50%;
   box-shadow: 0px 0.5rem 0.5rem #00000029;
+  display: block;
 
   &:hover {
     transform: scale(1.05);
+  }
+
+  &.button-small {
+    width: 3rem;
+    height: 3rem;
+
+    @media (min-width: #{$screen-sm-min}) {
+      width: 4.5rem;
+      height: 4.5rem;
+      padding: 0.75rem;
+    }
   }
 
   @media (min-width: #{$screen-sm-min}) {
