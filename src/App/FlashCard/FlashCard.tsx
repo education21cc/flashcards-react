@@ -2,6 +2,7 @@ import { Card } from "data/Card"
 import { Direction } from "data/Direction"
 import React, { createRef } from "react"
 import TinderCard from "react-tinder-card"
+import './styles/flashCard.scss'
 
 type Props = {
   card: Card
@@ -23,15 +24,15 @@ const FlashCard = (props: Props) => {
   return (
     <TinderCard 
       ref={ref} 
-      className='swipe' preventSwipe={["up", "down"]} 
+      className='flash-card' preventSwipe={["up", "down"]} 
       onSwipe={(dir) => onSwiped(card, dir)}
       // onCardLeftScreen={() => outOfFrame(character.image)}
     >
       <div 
         style={{ backgroundImage: 'url(' + card.image + ')' }}
-        className='card'
+        className='image'
       >
-        <h3>{card.image}</h3>
+        {/* <h3>{card.image}</h3> */}
       </div>
     </TinderCard>
   )

@@ -1,11 +1,12 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
-import './App.css';
 import { GameData } from 'playerBridge/GameData';
 import { Content } from 'data/Content';
 import { Direction } from 'data/Direction';
-import FlashCard from 'FlashCard';
+import FlashCard from 'App/FlashCard';
 import { Card } from 'data/Card';
-import ProgressBar from 'ProgressBar';
+import ProgressBar from 'App/ProgressBar';
+import './styles/app.scss';
+import ButtonBar from './ButtonBar';
 
 
 declare interface API {
@@ -95,16 +96,16 @@ console.log(content)
   return (
     <div className="app">
       <ProgressBar progress={.5} />
-      <div className='cardContainer'>
+      <div className='card-container'>
         {content?.map((card, index) => (
           <FlashCard key={card.image} card={card} onSwiped={handleSwiped} />
         ))}
       </div>
+      <ButtonBar />
       <div className='buttons'>
         {/* <button onClick={() => swipe('left')}>Swipe left!</button> */}
         {/* <button onClick={() => swipe('right')}>Swipe right!</button> */}
       </div>
-      {lastDirection ? <h2 key={lastDirection} className='infoText'>You swiped {lastDirection}</h2> : <h2 className='infoText'>Swipe a card or press a button to get started!</h2>}
     </div>  
   );
 }
