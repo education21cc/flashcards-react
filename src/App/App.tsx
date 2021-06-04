@@ -1,4 +1,5 @@
-import React, { useCallback, useEffect, useMemo, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import useForceUpdate from 'use-force-update';
 import { GameData } from 'playerBridge/GameData';
 import { Content } from 'data/Content';
 import { Direction } from 'data/Direction';
@@ -7,6 +8,7 @@ import { Card } from 'data/Card';
 import ProgressBar from 'App/ProgressBar';
 import './styles/app.scss';
 import ButtonBar from './ButtonBar';
+import { FlashCardRef } from './FlashCard/FlashCard';
 
 
 declare interface API {
@@ -24,10 +26,11 @@ const App = () => {
 
   const [data, setData] = useState<GameData<Content>>();
   const [cards, setCards] = useState<Content>();
-
+  const [progress, setProgress] = useState(0);
+  const [animating, setAnimating] = useState(false);
+  const forceUpdate = useForceUpdate();
   // const { content } = data ?? {};
-  const [currentCardIndex, setCurrentCardIndex] = useState<number>(-1)
-  const [swipeAction, setSwipeAction] = useState<{card: Card, dir: Direction }>()
+  const latestCard = useRef<FlashCardRef>(null)
 
   const handleGameDataReceived = useCallback((data: GameData<Content>) => {
     setData(data);
@@ -75,17 +78,30 @@ const App = () => {
 
   const handleSwiped = (card: Card, dir: Direction) => {
     console.log('removing: ' + card.image, dir)
-    // setLastDirection(direction)
-    // alreadyRemoved.push(nameToDelete)
-    // setCurrentCardIndex(currentCardIndex-1);
-    
-    // setCards(cards?.filter(c => c !== card))
-    setSwipeAction(undefined);
+    // const progress = useMemo(() => {
+      //   return 1 - cards.length/ data.content.length
+      // }, [cards, data]);
+      // setLastDirection(direction)
+      // alreadyRemoved.push(nameToDelete)
+      // setCurrentCardIndex(currentCardIndex-1);
+      
+      // setCards(cards?.filter(c => c !== card))
+      // setSwipeAction(undefined);
+      setAnimating(true);
+      if (!data || !cards) return
+      setProgress(1 - (cards.length -1) / data.content.length)
   }
-console.log(cards)
+// console.log(cards)
+console.log(latestCard?.current?.flipped)
+
+const handleFlipped = (card: Card, flipped: boolean) => {
+  console.log("i have flipped", card, flipped)
+  setTimeout(forceUpdate, 20); // not happy about this
+}
   const handleCardLeftScreen = (card: Card) => {
     setCards(cards?.filter(c => c !== card))
-    // console.log(card, ' left the screen!')
+    console.log(card, ' left the screen!')
+    setAnimating(false);
     // charactersState = charactersState.filter(character => character.name !== name)
     // setCharacters(charactersState)
   }
@@ -94,9 +110,13 @@ console.log(cards)
     // console.log(dir, cards?.[currentCardIndex])
     // if (!content?.[currentCardIndex]) return
     if (!cards) return
+    // if (animating) return;
+    
     const card = cards[cards.length - 1];
     
-    setSwipeAction({ card, dir})
+    latestCard.current?.swipe(dir);
+
+    // setSwipeAction({ card, dir})
     // handleSwiped(card, dir);
     // const cardsLeft = characters.filter(person => !alreadyRemoved.includes(person.name))
     // if (cardsLeft.length) {
@@ -107,31 +127,40 @@ console.log(cards)
     // }
   }
 
-  const progress = useMemo(() => {
-    if (!data || !cards) return 0
-    return 1 - cards.length/ data.content.length
-  }, [cards, data])
+  const handleFlip = () => {
+    // console.log(latestCard.current)
+    if (animating) return;
+
+    latestCard.current?.flip();
+  }
   
-  console.log(progress)
 
   return (
     <div className="app">
       <ProgressBar progress={progress} />
       <div className='card-container'>
         {cards?.map((card, index) => {
+          let ref = null;
+          // If the current top card is animating, dont make that that latest card
+          if (!animating || index < cards.length -1) {
+            ref = latestCard
+          }
           return (
           <FlashCard 
             key={card.image} 
             card={card}
-            swipeAction={card === swipeAction?.card ? swipeAction.dir : undefined}
             onSwiped={handleSwiped}
             onCardLeftScreen={handleCardLeftScreen}
+            onFlipped={handleFlipped}
+            ref={ref}
           />
         )
       })}
       </div>
-      <ButtonBar 
+      <ButtonBar
+        enableLeftAndRight={latestCard?.current?.flipped}
         onLeftClick={() => swipe('left')}
+        onFlip={handleFlip}
         onRightClick={() => swipe('right')}
       />
     </div>  
@@ -139,3 +168,4 @@ console.log(cards)
 }
 
 export default App;
+

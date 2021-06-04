@@ -2,10 +2,15 @@
 
 .button-bar {
   margin-top: 5vw;
+  height: 4rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
+  
+  @media (min-width: #{$screen-sm-min}) {
+    height: 5rem;
+  }
 }
 
 .button-circle {
