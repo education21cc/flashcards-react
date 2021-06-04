@@ -19,9 +19,5 @@ export const getLimitOffset = (limit: number, direction: string) => (
 );
 
 export const getOpacity = (offset: number, limit: number, min: number) => (
-  1 - (
-    Math.abs(offset) < min
-      ? 0
-      : (Math.abs(offset) - min) / Math.abs(limit - min)
-  )
+  Math.abs(offset) < min ? 0 : (Math.abs(offset) - min) / Math.abs(limit - min)
 );

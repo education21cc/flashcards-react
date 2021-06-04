@@ -5,6 +5,8 @@ import ReactCardFlip from 'react-card-flip';
 import './styles/flashCard.scss'
 import CardButtons from "./CardButtons";
 import { Swipeable, direction } from "./Swipeable";
+import { ReactComponent as ThumbsDownIcon } from 'images/icons/thumb-down-24px.svg';
+import { ReactComponent as ThumbsUpIcon } from 'images/icons/thumb-up-24px.svg';
 
 type Props = {
   card: Card
@@ -101,6 +103,9 @@ const FlashCard = forwardRef<FlashCardRef, Props>((props, ref) => {
         // onBeforeSwipe={handleBeforeSwipe} 
         onAfterSwipe={handleAfterSwipe} 
         renderButtons={renderButtons}
+        leftIcon={<ThumbsDownIcon />}
+        rightIcon={<ThumbsUpIcon />}
+        // disabled={true}
       >
         <ReactCardFlip isFlipped={flipped} flipDirection="horizontal">
           <div className="card">

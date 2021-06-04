@@ -1,7 +1,7 @@
+import { ReactComponent as FlipIcon } from './../../images/flip-24px.svg';
+import { ReactComponent as ThumbsDownIcon } from './../../images/icons/thumb-down-24px.svg';
+import { ReactComponent as ThumbsUpIcon } from './../../images/icons/thumb-up-24px.svg';
 import './styles/buttonBar.scss';
-import { ReactComponent as FlipIcon } from './images/flip-24px.svg';
-import { ReactComponent as ThumbsDownIcon } from './images/thumb-down-24px.svg';
-import { ReactComponent as ThumbsUpIcon } from './images/thumb-up-24px.svg';
 
 interface Props {
   enableLeftAndRight?: boolean

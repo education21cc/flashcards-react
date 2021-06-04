@@ -95,7 +95,7 @@ const App = () => {
 console.log(latestCard?.current?.flipped)
 
 const handleFlipped = (card: Card, flipped: boolean) => {
-  // console.log("i have flipped", card, flipped)
+  console.log("i have flipped", card, flipped)
   setTimeout(forceUpdate, 20); // not happy about this
 }
   const handleCardLeftScreen = (card: Card) => {

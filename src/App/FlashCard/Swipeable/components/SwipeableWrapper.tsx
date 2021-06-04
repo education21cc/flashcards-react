@@ -47,6 +47,8 @@ export interface SwipeableWrapperProps {
   swipeThreshold?: number,
   fadeThreshold?: number,
   disabled?: boolean,
+  leftIcon: ReactNode,
+  rightIcon: ReactNode,
 }
 
 export interface SwipeableState {

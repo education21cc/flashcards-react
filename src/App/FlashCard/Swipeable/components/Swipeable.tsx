@@ -25,6 +25,8 @@ const Swipeable = ({
   disabled,
   children,
   state,
+  leftIcon,
+  rightIcon
 }: SwipeableProps) => {
 
   const springProps = useSpring({
@@ -39,20 +41,16 @@ const Swipeable = ({
       mass: 0.1,
     },
     from: {
-      opacity: 1,
       offset: 0,
     },
     to: {
-      opacity: getOpacity(state.offset, swipeThreshold, fadeThreshold),
       offset: state.offset,
     },
   });
 
-  // HACK: react-spring doesn't support Typescript in @8.0.0,
-  // so we can't access properties from useSpring.
 
   // eslint-disable-next-line
-  const opacity = disabled ? 1 : getOpacity(state.offset, swipeThreshold, fadeThreshold);
+  // const opacity = disabled ? 1 : getOpacity(state.offset, swipeThreshold, fadeThreshold);
 
   // eslint-disable-next-line
   const offset = disabled ? 0 : state.offset;
@@ -62,17 +60,20 @@ const Swipeable = ({
     transform: `translateX(${offset}px) rotate(${offset / 10}deg)`,
     height: wrapperHeight,
     width: wrapperWidth,
-    opacity: opacity as any, //https://github.com/pmndrs/react-spring/issues/1102 
   };
 
-  React.useEffect(() => {
-    if (onOpacityChange) {
-      onOpacityChange(opacity);
-    }
-  }, [
-    onOpacityChange,
-    opacity,
-  ]);
+  const { opacity } = useSpring({ 
+    from: { opacity: 0 },
+    to: { opacity: disabled ? 0 : getOpacity(state.offset, swipeThreshold, fadeThreshold) }, 
+  })
+
+  // const overlayStyle = {
+  //   // opacity: opacity as any, 
+  //   ...overlaySpring
+  // };
+  // React.useEffect(() => {
+  //   onOpacityChange?.(opacity);
+  // }, [onOpacityChange, opacity]);
 
   return (
     <>
@@ -82,6 +83,12 @@ const Swipeable = ({
         style={animatedStyle}
       >
         {children}
+        <animated.div 
+          style={{ opacity: opacity as any}} //https://github.com/pmndrs/react-spring/issues/1102 
+          className="overlay"
+        >
+          {offset < 0 ? leftIcon : rightIcon }
+        </animated.div>
       </animated.div>
 
       {
