@@ -1,9 +1,10 @@
 import { Card } from "data/Card"
 import { Direction } from "data/Direction"
-import React, { createRef, forwardRef, useEffect, useImperativeHandle, useState } from "react"
-import TinderCard from "react-tinder-card"
+import React, { createRef, forwardRef, useImperativeHandle, useRef, useState } from "react"
 import ReactCardFlip from 'react-card-flip';
 import './styles/flashCard.scss'
+import CardButtons from "./CardButtons";
+import { Swipeable, direction } from "./Swipeable";
 
 type Props = {
   card: Card
@@ -37,11 +38,15 @@ const FlashCard = forwardRef<FlashCardRef, Props>((props, ref) => {
   
   const handleFlip = () => {
     // Calculate the distance the card is dragged. If dragged too far, dont flip
-    const transformString = ((wrapperRef.current?.firstChild as HTMLElement).style?.transform)
-    const [offsetX, offsetY] = transformString.match(/translate\(([^\)]*)/)?.[1].replaceAll('px', '').split(',').map(p => parseInt(p, 10)) ?? [0, 0]
-    const distance = Math.sqrt(Math.pow(offsetX, 2) + Math.pow(offsetY, 2));
+    // const transformString = ((wrapperRef.current as HTMLElement).style?.transform)
+    // console.log(wrapperRef.current)
+    // const [offsetX, offsetY] = transformString.match(/translate\(([^\)]*)/)?.[1].replaceAll('px', '').split(',').map(p => parseInt(p, 10)) ?? [0, 0]
+    // const distance = Math.sqrt(Math.pow(offsetX, 2) + Math.pow(offsetY, 2));
+    // console.log(distance)
     
-    if (distance < 2){
+    // if (distance < 2){
+    // console.log('should i flip', dragging.current)
+    if (!dragging.current) {
       setFlipped(!flipped)
       onFlipped(card, flipped)
     }
@@ -52,13 +57,50 @@ const FlashCard = forwardRef<FlashCardRef, Props>((props, ref) => {
     flip: handleFlip,
     swipe: (dir) => cardRef.current?.swipe(dir)
   }));
+
+  const handleBeforeSwipe =  (forceSwipe: (direction: direction) => void, cancelSwipe: () => void, direction: direction)  => {
+    // console.log('before swipe dir', direction)
+    // forceSwipe(direction);
+  }
+
+  const handleAfterSwipe = () => {
+    // console.log('after swipe')
+  }
+
+  interface RenderButtonsPayload {
+    right: () => void;
+    left: () => void;
+  }
+  const renderButtons = ({
+    right,
+    left,
+  }: RenderButtonsPayload) => (
+    <CardButtons
+      right={right}
+      left={left}
+    />
+  );
+
+  const dragging = useRef(false)
+  const handleDragging = (offset: number) => {
+    dragging.current = true;
+  }
+
+  const handleDragEnd = () => {
+    // set dragging to false AFTER handleFlip fires
+    setTimeout(() => { dragging.current = false; }, 200);
+  }
+  
   return (
-    <div ref={wrapperRef}>
-      <TinderCard 
-        ref={cardRef} 
-        className='flash-card-wrapper' preventSwipe={["up", "down"]} 
-        onSwipe={(dir) => onSwiped(card, dir)}
-        onCardLeftScreen={() => onCardLeftScreen(card)}
+    <div ref={wrapperRef} className='flash-card-wrapper'>
+      <Swipeable 
+        onSwipe={(dir) => onSwiped(card, dir)} 
+        fadeThreshold={60}
+        onDragging={handleDragging}
+        onDragEnd={handleDragEnd}
+        // onBeforeSwipe={handleBeforeSwipe} 
+        onAfterSwipe={handleAfterSwipe} 
+        renderButtons={renderButtons}
       >
         <ReactCardFlip isFlipped={flipped} flipDirection="horizontal">
           <div className="card">
@@ -72,8 +114,8 @@ const FlashCard = forwardRef<FlashCardRef, Props>((props, ref) => {
             This is the back of the card.
             <button onClick={handleFlip}>Click to flip</button>
           </div>
-          </ReactCardFlip>
-      </TinderCard>
+          </ReactCardFlip>    
+        </Swipeable>
     </div>
   )
 })

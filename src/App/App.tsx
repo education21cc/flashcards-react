@@ -77,7 +77,7 @@ const App = () => {
   // const childRefs = useMemo(() => Array(content?.length).fill(0).map(i => React.createRef<API>()), [content])
 
   const handleSwiped = (card: Card, dir: Direction) => {
-    console.log('removing: ' + card.image, dir)
+    // console.log('removing: ' + card.image, dir)
     // const progress = useMemo(() => {
       //   return 1 - cards.length/ data.content.length
       // }, [cards, data]);
@@ -85,9 +85,9 @@ const App = () => {
       // alreadyRemoved.push(nameToDelete)
       // setCurrentCardIndex(currentCardIndex-1);
       
-      // setCards(cards?.filter(c => c !== card))
+      setCards(cards?.filter(c => c !== card))
       // setSwipeAction(undefined);
-      setAnimating(true);
+      // setAnimating(true);
       if (!data || !cards) return
       setProgress(1 - (cards.length -1) / data.content.length)
   }
@@ -95,7 +95,7 @@ const App = () => {
 console.log(latestCard?.current?.flipped)
 
 const handleFlipped = (card: Card, flipped: boolean) => {
-  console.log("i have flipped", card, flipped)
+  // console.log("i have flipped", card, flipped)
   setTimeout(forceUpdate, 20); // not happy about this
 }
   const handleCardLeftScreen = (card: Card) => {
@@ -129,7 +129,8 @@ const handleFlipped = (card: Card, flipped: boolean) => {
 
   const handleFlip = () => {
     // console.log(latestCard.current)
-    if (animating) return;
+    console.log(animating)
+    // if (animating) return;
 
     latestCard.current?.flip();
   }
