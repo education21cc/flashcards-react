@@ -2,7 +2,6 @@ import { Card } from "data/Card"
 import { Direction } from "data/Direction"
 import React, { createRef, forwardRef, useImperativeHandle, useRef, useState } from "react"
 import ReactCardFlip from 'react-card-flip';
-import CardButtons from "./CardButtons";
 import { Swipeable, direction } from "./Swipeable";
 import { ReactComponent as ThumbsDownIcon } from 'images/icons/thumb-down-24px.svg';
 import { ReactComponent as ThumbsUpIcon } from 'images/icons/thumb-up-24px.svg';
@@ -18,14 +17,12 @@ type Props = {
 export type FlashCardRef = {
   flipped: boolean;
   flip: () => void
-  swipe: (dir: Direction) => void
+  swipe: (dir: direction) => void
 }
 
 const FlashCard = forwardRef<FlashCardRef, Props>((props, ref) => {
   const { onSwiped, card, onCardLeftScreen, onFlipped } = props;
-  const cardRef = createRef<{
-    swipe (dir?: Direction): Promise<void>
-  }>();
+
   const wrapperRef = createRef<HTMLDivElement>();
   
   
@@ -37,9 +34,9 @@ const FlashCard = forwardRef<FlashCardRef, Props>((props, ref) => {
   // }, [card, cardRef, swipeAction]);
   
   const [flipped, setFlipped] = useState(false)
-  
+  const [flyout, setFlyout] = useState<direction>()
+
   const handleFlip = () => {
-    console.log("flip", dragging.current)
     if (!dragging.current) {
       setFlipped(!flipped)
       onFlipped(card, flipped)
@@ -49,27 +46,14 @@ const FlashCard = forwardRef<FlashCardRef, Props>((props, ref) => {
   useImperativeHandle(ref, () => ({
     flipped,
     flip: handleFlip,
-    swipe: (dir) => cardRef.current?.swipe(dir)
+    swipe: (dir: direction) => {
+      setFlyout(dir);
+    }
   }));
 
   const handleAfterSwipe = () => {
-    console.log('after swipe')
     onCardLeftScreen?.(card);
   }
-
-  // interface RenderButtonsPayload {
-  //   right: () => void;
-  //   left: () => void;
-  // }
-  // const renderButtons = ({
-  //   right,
-  //   left,
-  // }: RenderButtonsPayload) => (
-  //   <CardButtons
-  //     right={right}
-  //     left={left}
-  //   />
-  // );
 
   const dragging = useRef(false)
   const handleDragging = (offset: number) => {
@@ -80,8 +64,6 @@ const FlashCard = forwardRef<FlashCardRef, Props>((props, ref) => {
     // set dragging to false AFTER handleFlip fires
     setTimeout(() => { dragging.current = false; }, 200);
   }
-
-  console.log('flipped?', flipped)
   
   return (
     <div ref={wrapperRef} className='flash-card-wrapper'>
@@ -91,6 +73,7 @@ const FlashCard = forwardRef<FlashCardRef, Props>((props, ref) => {
         onDragging={handleDragging}
         onDragEnd={handleDragEnd}
         onAfterSwipe={handleAfterSwipe} 
+        forceFlyout={flyout}
         leftIcon={<ThumbsDownIcon />}
         rightIcon={<ThumbsUpIcon />}
         disabled={!flipped}

@@ -9,6 +9,7 @@ import ProgressBar from 'App/ProgressBar';
 import './styles/app.scss';
 import ButtonBar from './ButtonBar';
 import { FlashCardRef } from './FlashCard/FlashCard';
+import { direction } from './FlashCard/Swipeable';
 
 
 declare interface API {
@@ -105,7 +106,7 @@ const handleFlipped = (card: Card, flipped: boolean) => {
     // setCharacters(charactersState)
   }
 // console.log(content)
-  const swipe = (dir: Direction) => {
+  const swipe = (dir: direction) => {
     // console.log(dir, cards?.[currentCardIndex])
     // if (!content?.[currentCardIndex]) return
     if (!cards) return
@@ -159,9 +160,9 @@ const handleFlipped = (card: Card, flipped: boolean) => {
       </div>
       <ButtonBar
         enableLeftAndRight={latestCard?.current?.flipped}
-        onLeftClick={() => swipe('left')}
+        onLeftClick={() => swipe(direction.LEFT)}
         onFlip={handleFlip}
-        onRightClick={() => swipe('right')}
+        onRightClick={() => swipe(direction.RIGHT)}
       />
     </div>  
   );

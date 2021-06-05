@@ -21,14 +21,8 @@ const INITIAL_STATE = {
   pristine: true,
 };
 
-export interface RenderButtonsPayload {
-  right: () => void,
-  left: () => void,
-}
-
 export interface SwipeableWrapperProps {
   children: ReactChild,
-  renderButtons?: (payload: RenderButtonsPayload) => ReactNode,
   onBeforeSwipe?: (
     forceSwipe: (direction: directionEnum) => void,
     cancelSwipe: () => void,
@@ -41,6 +35,7 @@ export interface SwipeableWrapperProps {
   ) => void,
   onOpacityChange?: (opacity: number) => void,
   onAfterSwipe?: () => void,
+  forceFlyout?: directionEnum,
   wrapperHeight?: string,
   wrapperWidth?: string,
   swipeThreshold?: number,
@@ -72,6 +67,7 @@ const SwipeableWrapper = (props: SwipeableWrapperProps) => {
     onBeforeSwipe,
     onAfterSwipe,
     onSwipe,
+    forceFlyout,
     disabled
   } = props;
 
@@ -157,20 +153,6 @@ const SwipeableWrapper = (props: SwipeableWrapperProps) => {
     });
   }), [disabled]);
 
-  const handleForceSwipe = useCallback((direction: directionEnum) => {
-    if (stateRef.current.swiped) {
-      return;
-    }
-
-    setState({
-      ...stateRef.current,
-      pristine: false,
-      forced: true,
-    });
-
-    handleOnBeforeSwipe(direction);
-  }, [handleOnBeforeSwipe]);
-
   useEffect(() => {
     window.addEventListener('touchmove', handleOnDragMove);
     window.addEventListener('mousemove', handleOnDragMove);
@@ -206,10 +188,20 @@ const SwipeableWrapper = (props: SwipeableWrapperProps) => {
     return () => clearInterval(interval);
   }, [handleOnAfterSwipe, state.flyout])
 
+  useEffect(() => {
+
+    if (forceFlyout) {
+      setState({
+        ...stateRef.current,
+        forced: true,
+        flyout: forceFlyout,
+      });
+    }
+  }, [forceFlyout]);
+
   return (
     <Swipeable
       handleOnDragStart={handleOnDragStart}
-      handleForceSwipe={handleForceSwipe}
       state={stateRef.current}
       {...props}
     />

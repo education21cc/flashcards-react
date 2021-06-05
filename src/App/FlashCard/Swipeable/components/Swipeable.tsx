@@ -1,14 +1,10 @@
 import * as React from 'react';
 import { useSpring, animated } from 'react-spring';
-
-// eslint-disable-next-line no-unused-vars
 import { SwipeableWrapperProps, SwipeableState } from './SwipeableWrapper';
-
 import directionEnum from '../constants/direction';
 import { getOpacity } from '../utils/helpers';
 
 export interface SwipeableProps extends SwipeableWrapperProps {
-  handleForceSwipe: (direction: directionEnum) => void,
   handleOnDragStart: (e: any) => any,
   state: SwipeableState,
 }
@@ -19,10 +15,7 @@ const Swipeable = ({
   swipeThreshold = 120,
   fadeThreshold = 40,
   handleOnDragStart,
-  handleForceSwipe,
   onOpacityChange,
-  renderButtons,
-  disabled,
   children,
   state,
   leftIcon,
@@ -49,11 +42,6 @@ const Swipeable = ({
     },
   });
 
-
-  // eslint-disable-next-line
-  // const opacity = disabled ? 1 : getOpacity(state.offset, swipeThreshold, fadeThreshold);
-
-  // const offset = disabled ? 0 : state.offset;
   const offset = state.offset;
 
   const animatedStyle = {
@@ -65,7 +53,7 @@ const Swipeable = ({
 
   const { opacity } = useSpring({ 
     from: { opacity: 0 },
-    to: { opacity: disabled ? 0 : getOpacity(state.offset, swipeThreshold, fadeThreshold) }, 
+    to: { opacity: getOpacity(state.offset, swipeThreshold, fadeThreshold) }, 
   })
 
   // const overlayStyle = {
@@ -91,15 +79,6 @@ const Swipeable = ({
           {offset < 0 ? leftIcon : rightIcon }
         </animated.div>
       </animated.div>
-
-      {
-        renderButtons && (
-          renderButtons({
-            right: () => handleForceSwipe(directionEnum.RIGHT),
-            left: () => handleForceSwipe(directionEnum.LEFT),
-          })
-        )
-      }
     </>
   );
 };
