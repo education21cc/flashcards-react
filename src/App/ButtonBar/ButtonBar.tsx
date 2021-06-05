@@ -1,4 +1,4 @@
-import { ReactComponent as FlipIcon } from './../../images/flip-24px.svg';
+import { ReactComponent as FlipIcon } from './../../images/icons/flip-24px.svg';
 import { ReactComponent as ThumbsDownIcon } from './../../images/icons/thumb-down-24px.svg';
 import { ReactComponent as ThumbsUpIcon } from './../../images/icons/thumb-up-24px.svg';
 import './styles/buttonBar.scss';

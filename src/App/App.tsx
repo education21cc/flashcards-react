@@ -72,7 +72,6 @@ const App = () => {
 
 
   // const [characters, setCharacters] = useState(content)
-  const [lastDirection, setLastDirection] = useState<string>()
 
   // const childRefs = useMemo(() => Array(content?.length).fill(0).map(i => React.createRef<API>()), [content])
 
@@ -85,14 +84,14 @@ const App = () => {
       // alreadyRemoved.push(nameToDelete)
       // setCurrentCardIndex(currentCardIndex-1);
       
-      setCards(cards?.filter(c => c !== card))
+      // setCards(cards?.filter(c => c !== card))
       // setSwipeAction(undefined);
       // setAnimating(true);
       if (!data || !cards) return
       setProgress(1 - (cards.length -1) / data.content.length)
   }
 // console.log(cards)
-console.log(latestCard?.current?.flipped)
+// console.log(latestCard?.current?.flipped)
 
 const handleFlipped = (card: Card, flipped: boolean) => {
   console.log("i have flipped", card, flipped)

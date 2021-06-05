@@ -1,8 +1,7 @@
 import * as React from 'react';
-import { ReactNode } from 'react';
-
-// eslint-disable-next-line no-unused-vars
+import { ReactChild, ReactNode, useCallback, useEffect } from 'react';
 import directionEnum from '../constants/direction';
+
 
 import {
   getDirection,
@@ -28,7 +27,7 @@ export interface RenderButtonsPayload {
 }
 
 export interface SwipeableWrapperProps {
-  children: React.ReactChild,
+  children: ReactChild,
   renderButtons?: (payload: RenderButtonsPayload) => ReactNode,
   onBeforeSwipe?: (
     forceSwipe: (direction: directionEnum) => void,
@@ -58,13 +57,12 @@ export interface SwipeableState {
   swiped: boolean,
   offset: number,
   start: number,
+  flyout?: directionEnum,
 }
 
 const SwipeableWrapper = (props: SwipeableWrapperProps) => {
   const [state, setState] = React.useState<SwipeableState>(INITIAL_STATE);
-
   const stateRef = React.useRef(state);
-
   stateRef.current = state;
 
   const {
@@ -87,32 +85,23 @@ const SwipeableWrapper = (props: SwipeableWrapperProps) => {
   }, []);
 
   const handleOnAfterSwipe = React.useCallback(() => {
-    if (onAfterSwipe) {
-      onAfterSwipe();
-    }
+    onAfterSwipe?.();
 
     handleResetState();
-  }, [
-    handleResetState,
-    onAfterSwipe,
-  ]);
+  }, [handleResetState, onAfterSwipe]);
 
   const handleOnSwipe = React.useCallback((direction: directionEnum) => {
     onSwipe?.(direction);
 
     setState({
       ...stateRef.current,
-      offset: getLimitOffset(swipeThreshold, direction),
+      offset: getLimitOffset(swipeThreshold, direction) * 2,
       moving: false,
       swiped: true,
+      flyout: direction
     });
-
-    handleOnAfterSwipe();
-  }, [
-    handleOnAfterSwipe,
-    swipeThreshold,
-    onSwipe,
-  ]);
+    
+  }, [onSwipe, swipeThreshold]);
 
   const handleOnBeforeSwipe = React.useCallback((direction: directionEnum) => {
     if (!onBeforeSwipe) {
@@ -125,13 +114,9 @@ const SwipeableWrapper = (props: SwipeableWrapperProps) => {
       handleResetState,
       direction,
     );
-  }, [
-    handleResetState,
-    onBeforeSwipe,
-    handleOnSwipe,
-  ]);
+  }, [handleOnSwipe, handleResetState, onBeforeSwipe]);
 
-  const handleOnDragStart = React.useCallback(withX((start: number) => {
+  const handleOnDragStart = useCallback(withX((start: number) => {
     if (props.disabled || stateRef.current.swiped) {
       return;
     }
@@ -184,11 +169,9 @@ const SwipeableWrapper = (props: SwipeableWrapperProps) => {
     });
 
     handleOnBeforeSwipe(direction);
-  }, [
-    handleOnBeforeSwipe,
-  ]);
+  }, [handleOnBeforeSwipe]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     window.addEventListener('touchmove', handleOnDragMove);
     window.addEventListener('mousemove', handleOnDragMove);
     window.addEventListener('touchend', handleOnDragEnd);
@@ -200,10 +183,29 @@ const SwipeableWrapper = (props: SwipeableWrapperProps) => {
       window.removeEventListener('touchend', handleOnDragEnd);
       window.removeEventListener('mouseup', handleOnDragEnd);
     };
-  }, [
-    handleOnDragMove,
-    handleOnDragEnd,
-  ]);
+  }, [handleOnDragEnd, handleOnDragMove]);
+
+  useEffect(() => {
+    // Effect fires when swiping treshold has been reached and the
+    // Swipeable flies off screen
+    if (!state.flyout) {
+      return
+    }
+    const amount = state.flyout === directionEnum.LEFT ? -20 : 20;
+    const increment = () => {
+      if (Math.abs(stateRef.current.offset) > 1000) {
+        clearInterval(interval);
+        console.log('handle swiping done!')
+        handleOnAfterSwipe();
+      }
+      setState({
+        ...stateRef.current,
+        offset: stateRef.current.offset + amount,
+      });
+    }
+    const interval = setInterval(increment, 5);
+    return () => clearInterval(interval);
+  }, [handleOnAfterSwipe, state.flyout])
 
   return (
     <Swipeable

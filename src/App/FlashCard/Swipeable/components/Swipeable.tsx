@@ -45,6 +45,8 @@ const Swipeable = ({
     },
     to: {
       offset: state.offset,
+      transform: `translateX(${-500}px) rotate(${45 / 10}deg)`,
+
     },
   });
 
