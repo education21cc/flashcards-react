@@ -46,7 +46,6 @@ const Swipeable = ({
     to: {
       offset: state.offset,
       transform: `translateX(${-500}px) rotate(${45 / 10}deg)`,
-
     },
   });
 
@@ -54,8 +53,8 @@ const Swipeable = ({
   // eslint-disable-next-line
   // const opacity = disabled ? 1 : getOpacity(state.offset, swipeThreshold, fadeThreshold);
 
-  // eslint-disable-next-line
-  const offset = disabled ? 0 : state.offset;
+  // const offset = disabled ? 0 : state.offset;
+  const offset = state.offset;
 
   const animatedStyle = {
     ...springProps,

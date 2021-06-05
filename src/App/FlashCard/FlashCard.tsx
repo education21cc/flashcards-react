@@ -80,6 +80,8 @@ const FlashCard = forwardRef<FlashCardRef, Props>((props, ref) => {
     // set dragging to false AFTER handleFlip fires
     setTimeout(() => { dragging.current = false; }, 200);
   }
+
+  console.log('flipped?', flipped)
   
   return (
     <div ref={wrapperRef} className='flash-card-wrapper'>
@@ -88,12 +90,10 @@ const FlashCard = forwardRef<FlashCardRef, Props>((props, ref) => {
         fadeThreshold={60}
         onDragging={handleDragging}
         onDragEnd={handleDragEnd}
-        // onBeforeSwipe={handleBeforeSwipe} 
         onAfterSwipe={handleAfterSwipe} 
-        // renderButtons={renderButtons}
         leftIcon={<ThumbsDownIcon />}
         rightIcon={<ThumbsUpIcon />}
-        // disabled={!flipped}
+        disabled={!flipped}
       >
         <ReactCardFlip isFlipped={flipped} flipDirection="horizontal">
           <div className="card" onClick={handleFlip}>
