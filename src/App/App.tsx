@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import useForceUpdate from 'use-force-update';
 import { GameData } from 'playerBridge/GameData';
 import { Content } from 'data/Content';
@@ -12,17 +12,6 @@ import { FlashCardRef } from './FlashCard/FlashCard';
 import { direction } from './FlashCard/Swipeable';
 
 
-declare interface API {
-  /**
-   * Programmatically trigger a swipe of the card in one of the valid directions `'left'`, `'right'`, `'up'` and `'down'`. This function, `swipe`, can be called on a reference of the TinderCard instance. Check the [example](https://github.com/3DJakob/react-tinder-card-demo/blob/master/src/examples/Advanced.js) code for more details on how to use this.
-   *
-   * @param dir The direction in which the card should be swiped. One of: `'left'`, `'right'`, `'up'` and `'down'`.
-   */
-  swipe (dir?: Direction): Promise<void>
-}
-
-
-const alreadyRemoved: string[] = []
 const App = () => {
 
   const [data, setData] = useState<GameData<Content>>();
@@ -88,19 +77,22 @@ const App = () => {
       // setCards(cards?.filter(c => c !== card))
       // setSwipeAction(undefined);
       // setAnimating(true);
+      setAnimating(true);
+
       if (!data || !cards) return
       setProgress(1 - (cards.length -1) / data.content.length)
   }
 // console.log(cards)
 // console.log(latestCard?.current?.flipped)
 
-const handleFlipped = (card: Card, flipped: boolean) => {
-  console.log("i have flipped", card, flipped)
-  setTimeout(forceUpdate, 20); // not happy about this
-}
+  const handleFlipped = (card: Card, flipped: boolean) => {
+    // console.log("i have flipped", card, flipped)
+    setTimeout(forceUpdate, 20); // not happy about this, but we have to repaint 
+                                 // to show/hide the buttons
+  }
+
   const handleCardLeftScreen = (card: Card) => {
     setCards(cards?.filter(c => c !== card))
-    console.log(card, ' left the screen!')
     setAnimating(false);
     // charactersState = charactersState.filter(character => character.name !== name)
     // setCharacters(charactersState)
@@ -112,8 +104,7 @@ const handleFlipped = (card: Card, flipped: boolean) => {
     if (!cards) return
     // if (animating) return;
     
-    const card = cards[cards.length - 1];
-    
+    setAnimating(true);
     latestCard.current?.swipe(dir);
 
     // setSwipeAction({ card, dir})
@@ -129,7 +120,6 @@ const handleFlipped = (card: Card, flipped: boolean) => {
 
   const handleFlip = () => {
     // console.log(latestCard.current)
-    console.log(animating)
     // if (animating) return;
 
     latestCard.current?.flip();
