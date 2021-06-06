@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ReactChild, ReactNode, useCallback, useEffect, useRef, useState } from 'react';
+import { MouseEvent, ReactChild, ReactNode, TouchEvent,UIEvent, useCallback, useEffect, useRef, useState } from 'react';
 import directionEnum from '../constants/direction';
 
 
@@ -8,6 +8,7 @@ import {
   getOffset,
   withX,
   getLimitOffset,
+  getEvent,
 } from '../utils/helpers';
 
 import Swipeable from './Swipeable';
@@ -113,10 +114,13 @@ const SwipeableWrapper = (props: SwipeableWrapperProps) => {
     );
   }, [handleOnSwipe, handleResetState, onBeforeSwipe]);
 
-  const handleOnDragStart = useCallback(withX((start: number) => {
+  // MouseEvent<HTMLDivElement> | TouchEvent<HTMLDivElement>
+  const handleOnDragStart = useCallback((e: MouseEvent<HTMLDivElement> | TouchEvent<HTMLDivElement>) => {
+    const start = getEvent(e).pageX;
     if (disabled || stateRef.current.swiped) {
       return;
     }
+    e.stopPropagation();
 
     setState({
       ...stateRef.current,
@@ -124,7 +128,7 @@ const SwipeableWrapper = (props: SwipeableWrapperProps) => {
       moving: true,
       start,
     });
-  }), [disabled]);
+  }, [disabled]);
 
   const handleOnDragEnd = useCallback(() => {
     if (stateRef.current.swiped || !stateRef.current.moving) {
@@ -140,7 +144,10 @@ const SwipeableWrapper = (props: SwipeableWrapperProps) => {
     handleResetState();
   }, [handleOnBeforeSwipe, handleResetState, onDragEnd, swipeThreshold]);
 
-  const handleOnDragMove = useCallback(withX((end: number) => {
+  const handleOnDragMove = useCallback((e: any  ) => {
+    const end = getEvent(e).pageX;
+    e.stopPropagation();
+    
     if (disabled || stateRef.current.swiped || !stateRef.current.moving) {
       return;
     }
@@ -151,7 +158,7 @@ const SwipeableWrapper = (props: SwipeableWrapperProps) => {
       ...stateRef.current,
       offset,
     });
-  }), [disabled]);
+  }, [disabled]);
 
   useEffect(() => {
     window.addEventListener('touchmove', handleOnDragMove);

@@ -80,8 +80,10 @@ const App = () => {
       setAnimating(true);
 
       if (!data || !cards) return
-      setProgress(1 - (cards.length -1) / data.content.length)
-  }
+      if (dir === direction.RIGHT){
+        setProgress(1 - (cards.length -1) / data.content.length)
+      }
+    }
 // console.log(cards)
 // console.log(latestCard?.current?.flipped)
 
@@ -101,11 +103,14 @@ const App = () => {
   const swipe = (dir: direction) => {
     // console.log(dir, cards?.[currentCardIndex])
     // if (!content?.[currentCardIndex]) return
-    if (!cards) return
+    if (!cards || !data) return
     // if (animating) return;
     
     setAnimating(true);
     latestCard.current?.swipe(dir);
+    if (dir === direction.RIGHT){
+      setProgress(1 - (cards.length -1) / data.content.length)
+    }
 
     // setSwipeAction({ card, dir})
     // handleSwiped(card, dir);

@@ -5,6 +5,7 @@ import ReactCardFlip from 'react-card-flip';
 import { Swipeable, direction } from "./Swipeable";
 import { ReactComponent as ThumbsDownIcon } from 'images/icons/thumb-down-24px.svg';
 import { ReactComponent as ThumbsUpIcon } from 'images/icons/thumb-up-24px.svg';
+import {Howl, Howler} from 'howler';
 import './styles/flashCard.scss'
 
 type Props = {
@@ -19,6 +20,11 @@ export type FlashCardRef = {
   flip: () => void
   swipe: (dir: direction) => void
 }
+
+var flipSound = new Howl({
+  src: ['sound/card-flip.wav']
+});
+ 
 
 const FlashCard = forwardRef<FlashCardRef, Props>((props, ref) => {
   const { onSwiped, card, onCardLeftScreen, onFlipped } = props;
@@ -38,6 +44,8 @@ const FlashCard = forwardRef<FlashCardRef, Props>((props, ref) => {
 
   const handleFlip = () => {
     if (!dragging.current) {
+      flipSound.play();
+
       setFlipped(!flipped)
       onFlipped(card, flipped)
     }
