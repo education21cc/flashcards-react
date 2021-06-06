@@ -1,0 +1,179 @@
+{
+    "userId":2,
+    "settings":{
+      "muted": false    
+    },
+    "content":[
+      { "text": "1-explosives-text", "subtext1": "1-explosives-subtext1", "subtext2": "1-explosives-subtext2", "image": "https://21cceducation.nl/content/bitesizer/flashcards/hazardsigns/image.php?image=ADR_1.png" },
+      { "text": "2-1-flammable-gases-text", "subtext1": "2-1-flammable-gases-subtext1", "subtext2": "2-1-flammable-gases-subtext2", "image": "https://21cceducation.nl/content/bitesizer/flashcards/hazardsigns/image.php?image=ADR_2_1.png" },
+      { "text": "2-3-toxic-gases-text", "subtext1": "2-3-toxic-gases-subtext1", "subtext2": "2-3-toxic-gases-subtext2", "image": "https://21cceducation.nl/content/bitesizer/flashcards/hazardsigns/image.php?image=ADR_2_3.png" },
+      { "text": "2-2-non-flammable-non-toxic-gases-text", "subtext1": "2-2-non-flammable-non-toxic-gases-subtext1", "subtext2": "2-2-non-flammable-non-toxic-gases-subtext2", "image": "https://21cceducation.nl/content/bitesizer/flashcards/hazardsigns/image.php?image=ADR_2_2.png" },
+      { "text": "4-1-flammable-solids-text", "subtext1": "4-1-flammable-solids-subtext1", "subtext2": "4-1-flammable-solids-subtext2", "image": "https://21cceducation.nl/content/bitesizer/flashcards/hazardsigns/image.php?image=ADR_4_1.png" },
+      { "text": "4-2-spontaneously-combustible-solids-text", "subtext1": "4-2-spontaneously-combustible-solids-subtext1", "subtext2": "4-2-spontaneously-combustible-solids-subtext2", "image": "https://21cceducation.nl/content/bitesizer/flashcards/hazardsigns/image.php?image=ADR_4_2.png" },
+      { "text": "4-3-dangerous-when-wet-text", "subtext1": "4-3-dangerous-when-wet-subtext1", "subtext2": "4-3-dangerous-when-wet-subtext2", "image": "https://21cceducation.nl/content/bitesizer/flashcards/hazardsigns/image.php?image=ADR_4_3.png" },
+      { "text": "5-1-oxidising-substances-text", "subtext1": "5-1-oxidising-substances-subtext1", "subtext2": "5-1-oxidising-substances-subtext2", "image": "https://21cceducation.nl/content/bitesizer/flashcards/hazardsigns/image.php?image=ADR_5_1.png" },
+      { "text": "5-2-organic-peroxides-text", "subtext1": "5-2-organic-peroxides-subtext1", "subtext2": "5-2-organic-peroxides-subtext2", "image": "https://21cceducation.nl/content/bitesizer/flashcards/hazardsigns/image.php?image=ADR_5_2.png" },
+      { "text": "6-1-poison-text", "subtext1": "6-1-poison-subtext1", "subtext2": "6-1-poison-subtext2", "image": "https://21cceducation.nl/content/bitesizer/flashcards/hazardsigns/image.php?image=ADR_6_1.png" },
+      { "text": "6-2-biohazard-text", "subtext1": "6-2-biohazard-subtext1", "subtext2": "6-2-biohazard-subtext2", "image": "https://21cceducation.nl/content/bitesizer/flashcards/hazardsigns/image.php?image=ADR_6_2.png" },
+      { "text": "9-miscellaneous-text", "subtext1": "9-miscellaneous-subtext1", "subtext2": "9-miscellaneous-subtext2", "image": "https://21cceducation.nl/content/bitesizer/flashcards/hazardsigns/image.php?image=ADR_9.png" },
+      { "text": "7-radioactive-text", "subtext1": "7-radioactive-subtext1", "subtext2": "7-radioactive-subtext2", "image": "https://21cceducation.nl/content/bitesizer/flashcards/hazardsigns/image.php?image=ADR_7.png" },
+      { "text": "8-corrosive-text", "subtext1": "8-corrosive-subtext1", "subtext2": "8-corrosive-subtext2", "image": "https://21cceducation.nl/content/bitesizer/flashcards/hazardsigns/image.php?image=ADR_8.png" },
+      { "text": "3-flammable-liquids-text", "subtext1": "3-flammable-liquids-subtext1", "subtext2": "3-flammable-liquids-subtext2", "image": "https://21cceducation.nl/content/bitesizer/flashcards/hazardsigns/image.php?image=ADR_3.png" }
+     ], 
+    "levelsCompleted":[],
+    "translations":[{
+        "key": "intro-header",
+        "value": "Intro"
+    }, {
+        "key": "intro-description",
+        "value": "Ken jij de borden??"
+    }, {
+      "key": "intro-description-correct",
+      "value": "Wist je dit?\nSwipe rechts!"
+    }, {
+      "key": "intro-description-wrong",
+      "value": "Wist 't niet?\n Swipe links!"
+    }, {
+      "key": "outro-header",
+      "value": "Klaar!"
+    }, {
+      "key": "outro-description",
+      "value": "Je wist {0} borden niet"
+    }, {
+      "key": "1-explosives-text",
+      "value": "1. Explosives"
+    }, {
+      "key": "1-explosives-subtext1",
+      "value": "oranje = explosief\nbom = explosief\nklasse 1 = explosief"
+    }, {
+      "key": "1-explosives-subtext2",
+      "value": "Bijv: vuurwerk, oude types airbags"
+    }, {
+      "key": "2-1-flammable-gases-text",
+      "value": "2.1 Flammable Gases"
+    }, {
+      "key": "2-1-flammable-gases-subtext1",
+      "value": "rood = brandbaar\nvlam = brandbaar\nklasse 2 = gassen"
+    }, {
+      "key": "2-1-flammable-gases-subtext2",
+      "value": "Bijv: methaan, ethaan, propaan"
+    }, {
+      "key": "2-3-toxic-gases-text",
+      "value": "2.3 Toxic Gases"
+    }, {
+      "key": "2-3-toxic-gases-subtext1",
+      "value": "wit = geen betekenis\nschedel = giftig\nklasse 2 = gassen"
+    }, {
+      "key": "2-3-toxic-gases-subtext2",
+      "value": "Bijv: chloor"
+    }, {
+      "key": "2-2-non-flammable-non-toxic-gases-text",
+      "value": "2.2 Non flammable, non-toxic gases\n(but under pressure\nand/or suffocating)"
+    }, {
+      "key": "2-2-non-flammable-non-toxic-gases-subtext1",
+      "value": "groen = niet-brandbare gassen\ncylinder = onder druk\nklasse 2 = gassen"
+    }, {
+      "key": "2-2-non-flammable-non-toxic-gases-subtext2",
+      "value": "Bijv: kooldioxide (CO2)\n(staat onder druk èn is verstikkend)"
+    }, {
+      "key": "4-1-flammable-solids-text",
+      "value": "4.1 Flammable solids"
+    }, {
+      "key": "4-1-flammable-solids-subtext1",
+      "value": "rood = brandbaar\nvlam = brandbaar\nklasse 4 = brandbare vaste stoffen"
+    }, {
+      "key": "4-1-flammable-solids-subtext2",
+      "value": "Bijv: magnesium"
+    }, {
+      "key": "4-2-spontaneously-combustible-solids-text",
+      "value": "4.2 Spontaneously combustible Solids\n"
+    }, {
+      "key": "4-2-spontaneously-combustible-solids-subtext1",
+      "value": "rood = brandbaar\nvlam = brandbaar\nklasse 4 = brandbare vaste stoffen"
+    }, {
+      "key": "4-2-spontaneously-combustible-solids-subtext2",
+      "value": "Bijv: witte fosfor \n(reageert spontaan met zuurstof en wordt dus onder olie bewaard)"
+    }, {
+      "key": "4-3-dangerous-when-wet-text",
+      "value": "4.3 Dangerous When Wet"
+    }, {
+      "key": "4-3-dangerous-when-wet-subtext1",
+      "value": "blauw = brandbaar indien in contact met water\nvlam = brandbaar\nklasse 4 = brandbare vaste stoffen"
+    }, {
+      "key": "4-3-dangerous-when-wet-subtext2",
+      "value": "Bijv: kalium\nProduceert brandbare gassen indien nat \n(dus niet met water blussen!)"
+    }, {
+      "key": "5-1-oxidising-substances-text",
+      "value": "5.1 Oxidising substances"
+    }, {
+      "key": "5-1-oxidising-substances-subtext1",
+      "value": "geel = let op!\nvlam met O = produceert O2\nklasse 5 = oxiderend"
+    }, {
+      "key": "5-1-oxidising-substances-subtext2",
+      "value": "Bijv: bleekmiddel"
+    }, {
+      "key": "5-2-organic-peroxides-text",
+      "value": "5.2 Organic Peroxides "
+    }, {
+      "key": "5-2-organic-peroxides-subtext1",
+      "value": "rood = brandbaar, geel = let op!\nvlam = brandbaar\nklasse 5 = oxiderend"
+    }, {
+      "key": "5-2-organic-peroxides-subtext2",
+      "value": "Bijv: droog vissenvoer"
+    }, {
+      "key": "6-1-poison-text",
+      "value": "6.1 Poison"
+    }, {
+      "key": "6-1-poison-subtext1",
+      "value": "wit = geen betekenis\nschedel = giftig\nklasse 6 = giftig of besmettelijk"
+    }, {
+      "key": "6-1-poison-subtext2",
+      "value": "Bijv: pesticiden"
+    }, {
+      "key": "6-2-biohazard-text",
+      "value": "6.2 Biohazard"
+    }, {
+      "key": "6-2-biohazard-subtext1",
+      "value": "wit = geen betekenis\nbiological hazard = besmettelijk\nklasse 6 = giftig of besmettelijk"
+    }, {
+      "key": "6-2-biohazard-subtext2",
+      "value": "Bijv: virussen of bacteriën"
+    }, {
+      "key": "9-miscellaneous-text",
+      "value": "9. Miscellaneous"
+    }, {
+      "key": "9-miscellaneous-subtext1",
+      "value": "wit = geen betekenis\n(geen symbool afgebeeld)\nklasse 9 = algemeen"
+    }, {
+      "key": "9-miscellaneous-subtext2",
+      "value": "Bijv: droogijs (disco)"
+    }, {
+      "key": "7-radioactive-text",
+      "value": "7. Radioactive"
+    }, {
+      "key": "7-radioactive-subtext1",
+      "value": "wit = geen betekenis, geel = let op!\nfan (of klaver) = stralingsgevaar\nklasse 7 = radioactief"
+    }, {
+      "key": "7-radioactive-subtext2",
+      "value": "Bijv: ziekenhuisafval radiologie\n(handschoenen, onderdelen)"
+    }, {
+      "key": "8-corrosive-text",
+      "value": "8. Corrosive"
+    }, {
+      "key": "8-corrosive-subtext1",
+      "value": "wit = geen betekenis\nhand + vloeistof = bijtend\nklasse 8 = bijtend"
+    }, {
+      "key": "8-corrosive-subtext2",
+      "value": "Bijv: salpeterzuur\n(wordt gebruikt in mijnbouw)"
+    }, {
+      "key": "3-flammable-liquids-text",
+      "value": "3. Flammable liquids"
+    }, {
+      "key": "3-flammable-liquids-subtext1",
+      "value": "rood = brandbaar\nvlam = brandbaar\nklasse 3 = brandbare vloeistoffen"
+    }, {
+      "key": "3-flammable-liquids-subtext2",
+      "value": "Bijv: benzine"
+    }
+  ]
+}

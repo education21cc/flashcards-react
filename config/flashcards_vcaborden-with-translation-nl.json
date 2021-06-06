@@ -1,0 +1,457 @@
+{
+  "userId": 2,
+  "settings": {
+    "muted": false
+  },
+  "content": [{
+    "text": "algemeen-verbod-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/verbodsborden-algemeen-verbod.png"
+  }, {
+    "text": "verboden-te-roken-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/verbodsborden-verboden-te-roken.png"
+  }, {
+    "text": "vuur-open-vlam-en-roken-verboden-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/verbodsborden-vuur-open-vlam-en-roken-verboden.png"
+  }],
+  "rest": [{
+    "text": "verboden-voor-voetgangers-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/verbodsborden-verboden-voor-voetgangers.png"
+  }, {
+    "text": "verboden-met-water-te-blussen-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/verbodsborden-verboden-met-water-te-blussen.png"
+  }, {
+    "text": "geen-drinkwater-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/verbodsborden-geen-drinkwater.png"
+  }, {
+    "text": "verboden-voor-onbevoegden-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/verbodsborden-verboden-voor-onbevoegde.png"
+  }, {
+    "text": "verboden-voor-transportvoertuigen-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/verbodsborden-verboden-voor-transportvoertuigen.png"
+  }, {
+    "text": "aanraken-verboden-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/verbodsborden-aanraken-verboden.png"
+  }, {
+    "text": "verbod-op-het-dragen-van-handschoenen-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/verbodsborden-verbod-op-het-dragen-van-handschoenen.png"
+  }, {
+    "text": "verbod-op-bediening-met-das-loshangende-kleding-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/verbodsborden-verbod-op-bediening-met-das-loshangende-kleding.png"
+  }, {
+    "text": "verbod-op-bediening-met-halsketting-sieraden-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/verbodsborden-verbod-op-bediening-met-halsketting-sieraden.png"
+  }, {
+    "text": "verbod-op-bediening-met-lang-haar-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/verbodsborden-verbod-op-bediening-met-lang-haar.png"
+  }, {
+    "text": "algemeen-gebod-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/gebodsborden-algemeen-gebod.png"
+  }, {
+    "text": "oogbescherming-verplicht-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/gebodsborden-oogbescherming-verplicht.png"
+  }, {
+    "text": "verplicht-dragen-van-gelaatsbescherming-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/gebodsborden-verplicht-dragen-van-gelaatsbescherming.png"
+  }, {
+    "text": "veiligheidshelm-verplicht-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/gebodsborden-veiligheidshelm-verplicht.png"
+  }, {
+    "text": "veiligheidshandschoenen-verplicht-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/gebodsborden-veiligheidshandschoenen-verplicht.png"
+  }, {
+    "text": "verplicht-dragen-van-veiligheidsschoeisel-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/gebodsborden-verplicht-dragen-van-veiligheidsschoeisel.png"
+  }, {
+    "text": "gehoorbescherming-verplicht-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/gebodsborden-gehoorbescherming-verplicht.png"
+  }, {
+    "text": "veiligheidspak-verplicht-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/gebodsborden-veiligheidspak-verplicht.png"
+  }, {
+    "text": "adembescherming-verplicht-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/gebodsborden-adembescherming-verplicht.png"
+  }, {
+    "text": "individueel-veiligheidsharnas-verplicht-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/gebodsborden-individueel-veiligheidsharnas-verplicht.png"
+  }, {
+    "text": "verplichte-oversteekplaats-voor-voetgangers-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/gebodsborden-verplichte-oversteekplaats-voor-voetgangers.png"
+  }, {
+    "text": "haarnet-verplicht-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/gebodsborden-haarnet-verplicht.png"
+  }, {
+    "text": "algemeen-gevaar-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/waarschuwingsborden-algemeen-gevaar.png"
+  }, {
+    "text": "transportvoertuigen-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/waarschuwingsborden-transportvoertuigen.png"
+  }, {
+    "text": "gasflessen-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/waarschuwingsborden-gasflessen.png"
+  }, {
+    "text": "laserstraat-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/waarschuwingsborden-laserstraat.png"
+  }, {
+    "text": "vallen-door-hoogteverschil-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/waarschuwingsborden-vallen-door-hoogteverschil.png"
+  }, {
+    "text": "lage-temperaturen-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/waarschuwingsborden-lage-temperaturen.png"
+  }, {
+    "text": "struikelgevaar-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/waarschuwingsborden-struikelgevaar.png"
+  }, {
+    "text": "hete-oppervlakken-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/waarschuwingsborden-hete-oppervlakken.png"
+  }, {
+    "text": "niet-ioniserende-straling-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/waarschuwingsborden-niet-ioniserende-straling.png"
+  }, {
+    "text": "hangende-lasten-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/waarschuwingsborden-hangende-lasten.png"
+  }, {
+    "text": "explosie-gevaarlijke-zone-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/waarschuwingsborden-explosie-gevaarlijke-zone.png"
+  }, {
+    "text": "gevaarlijke-elektrische-spanning-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/waarschuwingsborden-gevaarlijke-elektrische-spanning.png"
+  }, {
+    "text": "radioactieve-stoffen-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/waarschuwingsborden-radioactieve-stoffen.png"
+  }, {
+    "text": "biologisch-besmettingsgevaar-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/waarschuwingsborden-biologisch-besmettingsgevaar.png"
+  }, {
+    "text": "ontvlambare-stoffen-of-hoge-tempratuur-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/waarschuwingsborden-ontvlambare-stoffen-of-hoge-tempratuur.png"
+  }, {
+    "text": "schadelijke-of-irriterende-stoffen-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/waarschuwingsborden-schadelijke-of-irriterende-stoffen.png"
+  }, {
+    "text": "giftige-stoffen-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/waarschuwingsborden-giftige-stoffen.png"
+  }, {
+    "text": "bijtende-stoffen-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/waarschuwingsborden-bijtende-stoffen.png"
+  }, {
+    "text": "oxiderende-stoffen-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/waarschuwingsborden-oxiderende-stoffen.png"
+  }, {
+    "text": "explosieve-stoffen-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/waarschuwingsborden-explosieve-stoffen.png"
+  }, {
+    "text": "uitgang-die-tevens-dient-als-nooduitgang-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/veiligheidsvoorzieningen-uitgang-die-tevens-dient-als-nooduitgang.png"
+  }, {
+    "text": "vluchtroute-aanduiding-rechtdoor-of-naar-boven-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/veiligheidsvoorzieningen-vluchtroute-aanduiding-rechtdoor-of-naar-boven.png"
+  }, {
+    "text": "vluchtroute-aanduiding-naar-beneden-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/veiligheidsvoorzieningen-vluchtroute-aanduiding-naar-beneden.png"
+  }, {
+    "text": "te-volgen-richting-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/veiligheidsvoorzieningen-te-volgen-richting.png"
+  }, {
+    "text": "eerste-hulp-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/veiligheidsvoorzieningen-eerste-hulp.png"
+  }, {
+    "text": "telefoon-voor-redding-en-eerste-hulp-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/veiligheidsvoorzieningen-telefoon-voor-redding-en-eerste-hulp.png"
+  }, {
+    "text": "veiligheidsdouche-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/veiligheidsvoorzieningen-veiligheidsdouche.png"
+  }, {
+    "text": "oogdouche-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/veiligheidsvoorzieningen-oogdouche.png"
+  }, {
+    "text": "evacuatiestoel-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/veiligheidsvoorzieningen-evacuatiestoel.png"
+  }, {
+    "text": "ladder-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/brandbestrijding-ladder.png"
+  }, {
+    "text": "blusapparaat-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/brandbestrijding-blusapparaat.png"
+  }, {
+    "text": "blusslang-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/brandbestrijding-blusslang.png"
+  }, {
+    "text": "handbrandmelder-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/brandbestrijding-handbrandmelder.png"
+  }, {
+    "text": "telefoon-voor-brandalarm-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/brandbestrijding-telefoon-voor-brandalarm.png"
+  }, {
+    "text": "weg-naar-brandbestrijdingsmateriaal-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/brandbestrijding-weg-naar-brandbestrijdingsmateriaal.png"
+  }, {
+    "text": "explosiegevaar-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/gevaarlijke-symbolen-explosiegevaar.png"
+  }, {
+    "text": "oxiderend-brand-bevorderend-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/gevaarlijke-symbolen-oxiderend-brand-bevorderend.png"
+  }, {
+    "text": "bijtend-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/gevaarlijke-symbolen-bijtend.png"
+  }, {
+    "text": "schadelijk-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/gevaarlijke-symbolen-schadelijk.png"
+  }, {
+    "text": "irriterend-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/gevaarlijke-symbolen-irriterend.png"
+  }, {
+    "text": "oxiderend-brand-bevorderend-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/gevaarlijke-stoffen-oxiderend-brand-bevorderend.png"
+  }, {
+    "text": "brandgevaarlijk-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/gevaarlijke-stoffen-brandgevaarlijk.png"
+  }, {
+    "text": "giftig-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/gevaarlijke-stoffen-giftig.png"
+  }, {
+    "text": "schadelijk-irriterend-en-sensibiliserend-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/gevaarlijke-stoffen-schadelijk-irriterend-en-sensibiliserend.png"
+  }, {
+    "text": "milieu-gevaarlijk-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/gevaarlijke-stoffen-milieu-gevaarlijk.png"
+  }, {
+    "text": "houder-onder-druk-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/gevaarlijke-stoffen-houder-onder-druk.png"
+  }, {
+    "text": "lange-termijn-gezondheidsschadelijk-text",
+    "image": "https://21cceducation.nl/content/games/images/image.php/?image=flashcards/vca/gevaarlijke-stoffen-lange-termijn-gezondheidsschadelijk.png"
+  }],
+  "levelsCompleted": [],
+  "translations": [{
+    "key": "intro-header",
+    "value": "Intro"
+  }, {
+    "key": "intro-description",
+    "value": "Ken jij de borden??"
+  }, {
+    "key": "intro-description-correct",
+    "value": "Wist je dit?\nSwipe rechts!"
+  }, {
+    "key": "intro-description-wrong",
+    "value": "Wist 't niet?\n Swipe links!"
+  }, {
+    "key": "outro-header",
+    "value": "Klaar!"
+  }, {
+    "key": "outro-description",
+    "value": "Je wist {0} borden niet"
+  }, {
+    "key": "algemeen-verbod-text",
+    "value": "Algemeen verbod"
+  }, {
+    "key": "verboden-te-roken-text",
+    "value": "Verboden te roken"
+  }, {
+    "key": "vuur-open-vlam-en-roken-verboden-text",
+    "value": "Vuur, open vlam en roken verboden "
+  }, {
+    "key": "verboden-voor-voetgangers-text",
+    "value": "Verboden voor voetgangers"
+  }, {
+    "key": "verboden-met-water-te-blussen-text",
+    "value": "Verboden met water te blussen"
+  }, {
+    "key": "geen-drinkwater-text",
+    "value": "Geen drinkwater"
+  }, {
+    "key": "verboden-voor-onbevoegden-text",
+    "value": "Verboden voor onbevoegde"
+  }, {
+    "key": "verboden-voor-transportvoertuigen-text",
+    "value": "Verboden voor transportvoertuigen"
+  }, {
+    "key": "aanraken-verboden-text",
+    "value": "Aanraken verboden"
+  }, {
+    "key": "verbod-op-het-dragen-van-handschoenen-text",
+    "value": "Verbod op het dragen van handschoenen"
+  }, {
+    "key": "verbod-op-bediening-met-das-loshangende-kleding-text",
+    "value": "Verbod op bediening met das (loshangende kleding)"
+  }, {
+    "key": "verbod-op-bediening-met-halsketting-sieraden-text",
+    "value": "Verbod op bediening met halsketting (sieraden)"
+  }, {
+    "key": "verbod-op-bediening-met-lang-haar-text",
+    "value": "Verbod op bediening met lang haar"
+  }, {
+    "key": "algemeen-gebod-text",
+    "value": "Algemeen gebod"
+  }, {
+    "key": "oogbescherming-verplicht-text",
+    "value": "Oogbescherming verplicht"
+  }, {
+    "key": "verplicht-dragen-van-gelaatsbescherming-text",
+    "value": "Verplicht dragen van gelaatsbescherming"
+  }, {
+    "key": "veiligheidshelm-verplicht-text",
+    "value": "Veiligheidshelm verplicht"
+  }, {
+    "key": "veiligheidshandschoenen-verplicht-text",
+    "value": "Veiligheidshandschoenen verplicht"
+  }, {
+    "key": "verplicht-dragen-van-veiligheidsschoeisel-text",
+    "value": "Verplicht dragen van veiligheidsschoeisel"
+  }, {
+    "key": "gehoorbescherming-verplicht-text",
+    "value": "Gehoorbescherming verplicht"
+  }, {
+    "key": "veiligheidspak-verplicht-text",
+    "value": "Veiligheidspak verplicht"
+  }, {
+    "key": "adembescherming-verplicht-text",
+    "value": "Adembescherming verplicht"
+  }, {
+    "key": "individueel-veiligheidsharnas-verplicht-text",
+    "value": "Individueel veiligheidsharnas verplicht"
+  }, {
+    "key": "verplichte-oversteekplaats-voor-voetgangers-text",
+    "value": "Verplichte oversteekplaats voor voetgangers"
+  }, {
+    "key": "haarnet-verplicht-text",
+    "value": "Haarnet verplicht"
+  }, {
+    "key": "algemeen-gevaar-text",
+    "value": "Algemeen gevaar"
+  }, {
+    "key": "transportvoertuigen-text",
+    "value": "Transportvoertuigen"
+  }, {
+    "key": "gasflessen-text",
+    "value": "Gasflessen"
+  }, {
+    "key": "laserstraat-text",
+    "value": "Laserstraat"
+  }, {
+    "key": "vallen-door-hoogteverschil-text",
+    "value": "Vallen door hoogteverschil"
+  }, {
+    "key": "lage-temperaturen-text",
+    "value": "Lage temperaturen"
+  }, {
+    "key": "struikelgevaar-text",
+    "value": "Struikelgevaar"
+  }, {
+    "key": "hete-oppervlakken-text",
+    "value": "Hete oppervlakken"
+  }, {
+    "key": "niet-ioniserende-straling-text",
+    "value": "Niet-ioniserende straling"
+  }, {
+    "key": "hangende-lasten-text",
+    "value": "Hangende lasten"
+  }, {
+    "key": "explosie-gevaarlijke-zone-text",
+    "value": "Explosie gevaarlijke zone"
+  }, {
+    "key": "gevaarlijke-elektrische-spanning-text",
+    "value": "Gevaarlijke elektrische spanning"
+  }, {
+    "key": "radioactieve-stoffen-text",
+    "value": "Radioactieve stoffen"
+  }, {
+    "key": "biologisch-besmettingsgevaar-text",
+    "value": "Biologisch besmettingsgevaar"
+  }, {
+    "key": "ontvlambare-stoffen-of-hoge-tempratuur-text",
+    "value": "Ontvlambare stoffen of hoge tempratuur"
+  }, {
+    "key": "schadelijke-of-irriterende-stoffen-text",
+    "value": "Schadelijke of irriterende stoffen"
+  }, {
+    "key": "giftige-stoffen-text",
+    "value": "Giftige stoffen"
+  }, {
+    "key": "bijtende-stoffen-text",
+    "value": "Bijtende stoffen"
+  }, {
+    "key": "oxiderende-stoffen-text",
+    "value": "Oxiderende stoffen"
+  }, {
+    "key": "explosieve-stoffen-text",
+    "value": "Explosieve stoffen"
+  }, {
+    "key": "uitgang-die-tevens-dient-als-nooduitgang-text",
+    "value": "Uitgang die tevens dient als nooduitgang"
+  }, {
+    "key": "vluchtroute-aanduiding-rechtdoor-of-naar-boven-text",
+    "value": "Vluchtroute aanduiding; Rechtdoor of naar boven"
+  }, {
+    "key": "vluchtroute-aanduiding-naar-beneden-text",
+    "value": "Vluchtroute aanduiding; Naar beneden"
+  }, {
+    "key": "te-volgen-richting-text",
+    "value": "Te volgen richting"
+  }, {
+    "key": "eerste-hulp-text",
+    "value": "Eerste hulp"
+  }, {
+    "key": "telefoon-voor-redding-en-eerste-hulp-text",
+    "value": "Telefoon voor redding en eerste hulp"
+  }, {
+    "key": "veiligheidsdouche-text",
+    "value": "Veiligheidsdouche"
+  }, {
+    "key": "oogdouche-text",
+    "value": "Oogdouche"
+  }, {
+    "key": "evacuatiestoel-text",
+    "value": "Evacuatiestoel"
+  }, {
+    "key": "ladder-text",
+    "value": "Ladder"
+  }, {
+    "key": "blusapparaat-text",
+    "value": "Blusapparaat"
+  }, {
+    "key": "blusslang-text",
+    "value": "Blusslang"
+  }, {
+    "key": "handbrandmelder-text",
+    "value": "Handbrandmelder"
+  }, {
+    "key": "telefoon-voor-brandalarm-text",
+    "value": "Telefoon voor brandalarm"
+  }, {
+    "key": "weg-naar-brandbestrijdingsmateriaal-text",
+    "value": "Weg naar brandbestrijdingsmateriaal"
+  }, {
+    "key": "explosiegevaar-text",
+    "value": "Explosiegevaar"
+  }, {
+    "key": "schadelijk-text",
+    "value": "Schadelijk"
+  }, {
+    "key": "irriterend-text",
+    "value": "Irriterend"
+  }, {
+    "key": "milieu-gevaarlijk-text",
+    "value": "Milieu gevaarlijk"
+  }, {
+    "key": "oxiderend-brand-bevorderend-text",
+    "value": "Oxiderend (brand bevorderend)"
+  }, {
+    "key": "brandgevaarlijk-text",
+    "value": "Brandgevaarlijk"
+  }, {
+    "key": "giftig-text",
+    "value": "Giftig"
+  }, {
+    "key": "bijtend-text",
+    "value": "Bijtend"
+  }, {
+    "key": "schadelijk-irriterend-en-sensibiliserend-text",
+    "value": "Schadelijk, Irriterend en Sensibiliserend"
+  }, {
+    "key": "houder-onder-druk-text",
+    "value": "Houder onder druk"
+  }, {
+    "key": "lange-termijn-gezondheidsschadelijk-text",
+    "value": "Lange termijn gezondheidsschadelijk"
+  }]
+}
