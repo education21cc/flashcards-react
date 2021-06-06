@@ -40,7 +40,6 @@ const App = () => {
         acc[translation.key] = translation.value;
         return acc;
       }, {});
-      console.log(t)
       useTranslationStore.setState({ texts: t });
     }
 
@@ -65,7 +64,7 @@ const App = () => {
 
 
   const handleSwiped = (card: Card, dir: direction) => {
-      setAnimating(true);
+    setAnimating(true);
 
     if (!data || !cards) return
     if (dir === direction.RIGHT){
@@ -74,7 +73,6 @@ const App = () => {
   }
 
   const handleIntroSwiped = () => {
-    console.log('swiped intro')
   }
 
   const handleIntroCardLeftScreen = () => {
@@ -115,6 +113,8 @@ const App = () => {
     if (animating) return;
     latestCard.current?.flip();
   }  
+  console.log(animating)
+  console.log(cards)
 
   return (
     <div className="app">

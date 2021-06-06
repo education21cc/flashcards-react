@@ -63,7 +63,8 @@ const CardNormal = forwardRef<NormalCardRef, Props>((props, ref) => {
   }
 
   const handleAfterSwipe = (dir: direction) => {
-
+    setFlyout(undefined);
+    setFlipped(false);
     onCardLeftScreen?.(card, dir);
   }
 

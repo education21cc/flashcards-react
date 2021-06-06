@@ -189,7 +189,7 @@ const SwipeableWrapper = (props: SwipeableWrapperProps) => {
         offset: stateRef.current.offset + amount,
       });
     }
-    const interval = setInterval(increment, 450);
+    const interval = setInterval(increment, 50);
     return () => clearInterval(interval);
   }, [handleOnAfterSwipe, state.flyout])
 
