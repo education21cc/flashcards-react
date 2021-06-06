@@ -42,24 +42,18 @@ const App = () => {
       }, {});
       console.log(t)
       useTranslationStore.setState({ texts: t });
-      // setTranslations(t);
     }
 
-    // console.log(data.translations.map(t => `${t.key}`).join('\n'))
-    // console.log(data.translations.map(t => t.value).join('\n'))
   }, []);
 
   useEffect(() => {
-    // @ts-ignore
-
     // See if we are fed gamedata by 21ccplayer app, if not, go fetch it ourselves
     if (!process.env.REACT_APP_PLAYER_MODE) {
       // @ts-ignore
       console.log("no bridge found, fetching fallback")      
 
-      fetch(`${process.env.PUBLIC_URL}/config/flashcards-adr-with-translations-nl.json`)
-      // fetch(`${process.env.PUBLIC_URL}/config/scenarios-2.json`)
-      // fetch(`${process.env.PUBLIC_URL}/config/scenarios-3.json`)
+      // fetch(`${process.env.PUBLIC_URL}/config/flashcards-adr-with-translations-nl.json`)
+      fetch(`${process.env.PUBLIC_URL}/config/flashcards_vcaborden-with-translation-nl.json`)
       .then((response) => {
         response.json().then((data) => {
 

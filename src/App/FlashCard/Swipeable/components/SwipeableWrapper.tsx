@@ -180,7 +180,7 @@ const SwipeableWrapper = (props: SwipeableWrapperProps) => {
     if (!state.flyout) {
       return
     }
-    const amount = state.flyout === directionEnum.LEFT ? -20 : 20;
+    const amount = state.flyout === directionEnum.LEFT ? -40 : 40;
     const increment = () => {
       if (Math.abs(stateRef.current.offset) > 1000) {
         clearInterval(interval);
@@ -191,7 +191,7 @@ const SwipeableWrapper = (props: SwipeableWrapperProps) => {
         offset: stateRef.current.offset + amount,
       });
     }
-    const interval = setInterval(increment, 5);
+    const interval = setInterval(increment, 25);
     return () => clearInterval(interval);
   }, [handleOnAfterSwipe, state.flyout])
 

@@ -6,6 +6,7 @@ import { ReactComponent as ThumbsDownIcon } from 'images/icons/thumb-down-24px.s
 import { ReactComponent as ThumbsUpIcon } from 'images/icons/thumb-up-24px.svg';
 import {Howl} from 'howler';
 import './../styles/flashCard.scss'
+import { useTranslationStore } from "stores/translations";
 
 type Props = {
   card: Card
@@ -36,6 +37,7 @@ const CardNormal = forwardRef<NormalCardRef, Props>((props, ref) => {
   const wrapperRef = createRef<HTMLDivElement>();  
   const [flipped, setFlipped] = useState(false)
   const [flyout, setFlyout] = useState<direction>()
+  const translations = useTranslationStore();
 
   const handleFlip = () => {
     if (!dragging.current) {
@@ -50,16 +52,17 @@ const CardNormal = forwardRef<NormalCardRef, Props>((props, ref) => {
     flipped,
     flip: handleFlip,
     swipe: (dir: direction) => {
+      whooshSound.play();
       setFlyout(dir);
     }
   }));
 
   const handleSwipe = (dir: direction) => {
+    whooshSound.play();
     onSwiped?.(card, dir);
   }
 
   const handleAfterSwipe = () => {
-    whooshSound.play();
     onCardLeftScreen?.(card);
   }
 
@@ -70,7 +73,7 @@ const CardNormal = forwardRef<NormalCardRef, Props>((props, ref) => {
 
   const handleDragEnd = () => {
     // set dragging to false AFTER handleFlip fires
-    setTimeout(() => { dragging.current = false; }, 200);
+    setTimeout(() => { dragging.current = false; }, 20);
   }
   
   return (
@@ -87,15 +90,22 @@ const CardNormal = forwardRef<NormalCardRef, Props>((props, ref) => {
         disabled={!flipped}
       >
         <ReactCardFlip isFlipped={flipped} flipDirection="horizontal">
-          <div className="card" onClick={handleFlip}>
+          <div className="card front" onClick={handleFlip}>
             <div 
               style={{ backgroundImage: 'url(' + card.image + ')' }}
               className='image'
             />
           </div>
-          <div className="card">
-            This is the back of the card.
-            <button onClick={handleFlip}>Click to flip</button>
+          <div className="card back" onClick={handleFlip}>
+            <div className="text">
+             {translations.getText(card.text)}
+            </div>
+            {card.subtext1 && (<div className="subtext">
+             {translations.getText(card.subtext1)}
+            </div>)}
+            {card.subtext2 && (<div className="subtext">
+             {translations.getText(card.subtext2)}
+            </div>)}
           </div>
           </ReactCardFlip>    
         </Swipeable>

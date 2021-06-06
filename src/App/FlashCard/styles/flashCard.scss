@@ -32,16 +32,29 @@
     &.card-intro {
       color: #6A6A6A;
     }
+    
+    &.front {
+      .image {
+        width: 80%;
+        height: 80%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 10%;
+      }
+    }
+
+    &.back {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      .subtext {
+        font-size: smaller;
+      }
+    }
   }
 
-  .image {
-    width: 80%;
-    height: 80%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 10%;
-  }
 
   .react-card-flip {
     width: 100%;
