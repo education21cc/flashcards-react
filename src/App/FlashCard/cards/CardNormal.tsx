@@ -1,5 +1,4 @@
 import { Card } from "data/Card"
-import { Direction } from "data/Direction"
 import React, { createRef, forwardRef, useImperativeHandle, useRef, useState } from "react"
 import ReactCardFlip from 'react-card-flip';
 import { Swipeable, direction } from "../Swipeable";
@@ -11,7 +10,7 @@ import './../styles/flashCard.scss'
 type Props = {
   card: Card
   onFlipped: (card: Card, flipped: boolean) => void,
-  onSwiped: (card: Card, dir: Direction) => void
+  onSwiped: (card: Card, dir: direction) => void
   onCardLeftScreen: (card: Card) => void
 } 
 
@@ -22,7 +21,12 @@ export type NormalCardRef = {
 }
 
 const flipSound = new Howl({
-  src: ['sound/card-flip.wav']
+  src: ['sound/card-flip.ogg']
+});
+ 
+
+const whooshSound = new Howl({
+  src: ['sound/whoosh.ogg']
 });
  
 
@@ -50,6 +54,11 @@ const CardNormal = forwardRef<NormalCardRef, Props>((props, ref) => {
     }
   }));
 
+  const handleSwipe = (dir: direction) => {
+    whooshSound.play();
+    onSwiped?.(card, dir);
+  }
+
   const handleAfterSwipe = () => {
     onCardLeftScreen?.(card);
   }
@@ -67,7 +76,7 @@ const CardNormal = forwardRef<NormalCardRef, Props>((props, ref) => {
   return (
     <div ref={wrapperRef} className='flash-card-wrapper'>
       <Swipeable 
-        onSwipe={(dir) => onSwiped(card, dir)} 
+        onSwipe={handleSwipe} 
         fadeThreshold={60}
         onDragging={handleDragging}
         onDragEnd={handleDragEnd}

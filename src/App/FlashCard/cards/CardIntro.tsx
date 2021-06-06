@@ -10,17 +10,20 @@ type Props = {
   onCardLeftScreen: () => void
 } 
 
-export type NormalCardRef = {
+
+const whooshSound = new Howl({
+  src: ['sound/whoosh.ogg']
+});
+
+export type IntroCardRef = {
   swipe: (dir: direction) => void
 }
 
-const CardIntro = forwardRef<NormalCardRef, Props>((props, ref) => {
+const CardIntro = forwardRef<IntroCardRef, Props>((props, ref) => {
   const { onSwiped, onCardLeftScreen } = props;
 
   const wrapperRef = createRef<HTMLDivElement>();  
   const [flyout, setFlyout] = useState<direction>()
-
-
 
   useImperativeHandle(ref, () => ({
     swipe: (dir: direction) => {
@@ -32,31 +35,32 @@ const CardIntro = forwardRef<NormalCardRef, Props>((props, ref) => {
     onCardLeftScreen?.();
   }
 
-  const dragging = useRef(false)
-  const handleDragging = (offset: number) => {
-    dragging.current = true;
-  }
-
-  const handleDragEnd = () => {
-    // set dragging to false AFTER handleFlip fires
-    setTimeout(() => { dragging.current = false; }, 200);
+  const handleSwipe = () => {
+    onSwiped?.();
+    whooshSound.play();
   }
   
   return (
     <div ref={wrapperRef} className='flash-card-wrapper'>
       <Swipeable 
-        onSwipe={(dir) => onSwiped()} 
+        onSwipe={handleSwipe} 
         fadeThreshold={60}
-        onDragging={handleDragging}
-        onDragEnd={handleDragEnd}
         onAfterSwipe={handleAfterSwipe} 
         forceFlyout={flyout}
       >
           <div className="card card-intro">
             <h2>Intro</h2>
-            <div 
-              className='image'
-            />
+            <div className="intro-description"></div>
+            <div className="intro-help-correct">
+              <div className="text">
+                Wist je het niet?
+              </div>
+            </div>
+            <div className="intro-help-wrong">
+              <div className="text">
+                Wist je het niet?
+              </div>
+            </div>
           </div>
         </Swipeable>
     </div>

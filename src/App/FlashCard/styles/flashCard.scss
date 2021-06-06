@@ -1,3 +1,5 @@
+@import '../../../styles/mixins';
+
 .flash-card-wrapper {
   position: absolute;
   width: 100%;
@@ -24,6 +26,8 @@
     border: 3px solid #CDCDCD;
     background-color: #fff; 
     height: 100%; 
+    padding: 1rem;
+    box-sizing: border-box;
 
     &.card-intro {
       color: #6A6A6A;
@@ -46,5 +50,48 @@
 
   .react-card-front, .react-card-back {
     will-change: transform;
+  }
+
+  .card-intro { 
+    display: flex;
+    flex-direction: column;
+
+    .intro-description {
+      flex: 1;
+    }
+
+    .intro-help-correct, .intro-help-wrong {
+      background-size: contain;
+      position: relative;
+
+      &:before {
+        content: "";
+        display: block;
+        padding-bottom: 30%;
+      }
+
+      .text { 
+        position: absolute;
+        top: 20%;
+        @include responsive-font(5vw, 8px, 20px, 50px);
+      }
+    }
+
+    .intro-help-correct {
+      background-image: url("./../images/intro-help-correct.png");
+
+      .text { 
+        left: 20%;
+      }
+    }
+
+    .intro-help-wrong {
+      background-image: url("./../images/intro-help-wrong.png");
+
+      .text { 
+        text-align: right;
+        right: 20%;
+      }
+    }
   }
 }

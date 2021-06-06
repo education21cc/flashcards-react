@@ -2,8 +2,6 @@
   text-align: center;
   display: flex;
   justify-content: center;
-  // width: 100vw;
-  // min-height: 100vh;
   overflow: hidden;
   background: linear-gradient(#fff, #999);
   min-width: 100vw;
@@ -21,10 +19,6 @@
 }
 
 
-.swipe {
-  position: absolute;
-}
-
 .card-container {
   width: 100%;
   // max-width: 260px;
@@ -32,10 +26,6 @@
   position: relative;
   height: 96vw;
   max-height: 490px;
-}
-
-.swipe:last-of-type {
-
 }
 
 .card h3 {

@@ -10,7 +10,7 @@ interface Props {
   onRightClick: () => void 
 }
 
-const ButtonBar = (props: Props) => {
+const ButtonBarNormal = (props: Props) => {
   const {
     enableLeftAndRight = false,
     onLeftClick,
@@ -37,4 +37,4 @@ const ButtonBar = (props: Props) => {
   )
 }
 
-export default ButtonBar;
+export default ButtonBarNormal;
