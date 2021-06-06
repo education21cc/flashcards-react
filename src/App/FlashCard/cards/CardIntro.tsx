@@ -4,6 +4,7 @@ import { ReactComponent as ThumbsDownIcon } from 'images/icons/thumb-down-24px.s
 import { ReactComponent as ThumbsUpIcon } from 'images/icons/thumb-up-24px.svg';
 import {Howl} from 'howler';
 import './../styles/flashCard.scss'
+import { useTranslationStore } from "stores/translations";
 
 type Props = {
   onSwiped: () => void
@@ -24,6 +25,7 @@ const CardIntro = forwardRef<IntroCardRef, Props>((props, ref) => {
 
   const wrapperRef = createRef<HTMLDivElement>();  
   const [flyout, setFlyout] = useState<direction>()
+  const translations = useTranslationStore();
 
   useImperativeHandle(ref, () => ({
     swipe: (dir: direction) => {
@@ -32,12 +34,12 @@ const CardIntro = forwardRef<IntroCardRef, Props>((props, ref) => {
   }));
 
   const handleAfterSwipe = () => {
+    whooshSound.play();
     onCardLeftScreen?.();
   }
 
   const handleSwipe = () => {
     onSwiped?.();
-    whooshSound.play();
   }
   
   return (
@@ -50,15 +52,17 @@ const CardIntro = forwardRef<IntroCardRef, Props>((props, ref) => {
       >
           <div className="card card-intro">
             <h2>Intro</h2>
-            <div className="intro-description"></div>
+            <div className="intro-description">
+              {translations.getText("intro-description")}
+            </div>
             <div className="intro-help-correct">
               <div className="text">
-                Wist je het niet?
+                {translations.getText("intro-description-correct")}
               </div>
             </div>
             <div className="intro-help-wrong">
               <div className="text">
-                Wist je het niet?
+                {translations.getText("intro-description-wrong")}
               </div>
             </div>
           </div>

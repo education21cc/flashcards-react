@@ -72,8 +72,9 @@
 
       .text { 
         position: absolute;
-        top: 20%;
-        @include responsive-font(5vw, 8px, 20px, 50px);
+        top: 50%;
+        transform: translateY(-50%);
+        @include responsive-font(4vw, 6px, 20px, 50px);
       }
     }
 

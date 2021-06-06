@@ -55,11 +55,11 @@ const CardNormal = forwardRef<NormalCardRef, Props>((props, ref) => {
   }));
 
   const handleSwipe = (dir: direction) => {
-    whooshSound.play();
     onSwiped?.(card, dir);
   }
 
   const handleAfterSwipe = () => {
+    whooshSound.play();
     onCardLeftScreen?.(card);
   }
 

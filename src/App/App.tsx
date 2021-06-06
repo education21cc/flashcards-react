@@ -10,6 +10,7 @@ import { direction } from './FlashCard/Swipeable';
 import { NormalCardRef } from './FlashCard/cards/CardNormal';
 import { IntroCardRef } from './FlashCard/cards/CardIntro';
 import './styles/app.scss';
+import { useTranslationStore } from 'stores/translations';
 
 enum GameState {
   loading = 0,
@@ -27,6 +28,7 @@ const App = () => {
   const forceUpdate = useForceUpdate();
   const latestCard = useRef<NormalCardRef>(null);
   const introCard = useRef<IntroCardRef>(null);
+  const translations = useTranslationStore();
 
   const handleGameDataReceived = useCallback((data: GameData<Content>) => {
     setData(data);
@@ -39,6 +41,7 @@ const App = () => {
         return acc;
       }, {});
       console.log(t)
+      useTranslationStore.setState({ texts: t });
       // setTranslations(t);
     }
 
