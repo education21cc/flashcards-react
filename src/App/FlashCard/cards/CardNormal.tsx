@@ -2,11 +2,11 @@ import { Card } from "data/Card"
 import { Direction } from "data/Direction"
 import React, { createRef, forwardRef, useImperativeHandle, useRef, useState } from "react"
 import ReactCardFlip from 'react-card-flip';
-import { Swipeable, direction } from "./Swipeable";
+import { Swipeable, direction } from "../Swipeable";
 import { ReactComponent as ThumbsDownIcon } from 'images/icons/thumb-down-24px.svg';
 import { ReactComponent as ThumbsUpIcon } from 'images/icons/thumb-up-24px.svg';
-import {Howl, Howler} from 'howler';
-import './styles/flashCard.scss'
+import {Howl} from 'howler';
+import './../styles/flashCard.scss'
 
 type Props = {
   card: Card
@@ -15,30 +15,21 @@ type Props = {
   onCardLeftScreen: (card: Card) => void
 } 
 
-export type FlashCardRef = {
+export type NormalCardRef = {
   flipped: boolean;
   flip: () => void
   swipe: (dir: direction) => void
 }
 
-var flipSound = new Howl({
+const flipSound = new Howl({
   src: ['sound/card-flip.wav']
 });
  
 
-const FlashCard = forwardRef<FlashCardRef, Props>((props, ref) => {
+const CardNormal = forwardRef<NormalCardRef, Props>((props, ref) => {
   const { onSwiped, card, onCardLeftScreen, onFlipped } = props;
 
-  const wrapperRef = createRef<HTMLDivElement>();
-  
-  
-  // useEffect(() => {
-  //   if (swipeAction && cardRef.current) {
-  //     console.log("I will swipe ", card)
-  //     cardRef.current.swipe(swipeAction)
-  //   }
-  // }, [card, cardRef, swipeAction]);
-  
+  const wrapperRef = createRef<HTMLDivElement>();  
   const [flipped, setFlipped] = useState(false)
   const [flyout, setFlyout] = useState<direction>()
 
@@ -103,4 +94,4 @@ const FlashCard = forwardRef<FlashCardRef, Props>((props, ref) => {
   )
 })
 
-export default FlashCard
+export default CardNormal

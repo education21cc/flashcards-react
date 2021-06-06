@@ -42,8 +42,8 @@ export interface SwipeableWrapperProps {
   swipeThreshold?: number,
   fadeThreshold?: number,
   disabled?: boolean,
-  leftIcon: ReactNode,
-  rightIcon: ReactNode,
+  leftIcon?: ReactNode,
+  rightIcon?: ReactNode,
 }
 
 export interface SwipeableState {
@@ -147,7 +147,7 @@ const SwipeableWrapper = (props: SwipeableWrapperProps) => {
   const handleOnDragMove = useCallback((e: any  ) => {
     const end = getEvent(e).pageX;
     e.stopPropagation();
-    
+
     if (disabled || stateRef.current.swiped || !stateRef.current.moving) {
       return;
     }

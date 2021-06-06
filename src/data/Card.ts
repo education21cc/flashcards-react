@@ -1,5 +1,11 @@
+export enum CardType {
+  Intro,
+  Normal,
+  Outro
+}
+
 export interface Card {
-  // public CardType type = CardType.Normal;
+  type: CardType;
   image: string;
   frontText: string;
   text: string;

@@ -3,13 +3,13 @@ import useForceUpdate from 'use-force-update';
 import { GameData } from 'playerBridge/GameData';
 import { Content } from 'data/Content';
 import { Direction } from 'data/Direction';
-import FlashCard from 'App/FlashCard';
+import { CardNormal, CardIntro } from 'App/FlashCard';
 import { Card } from 'data/Card';
 import ProgressBar from 'App/ProgressBar';
-import './styles/app.scss';
 import ButtonBar from './ButtonBar';
-import { FlashCardRef } from './FlashCard/FlashCard';
 import { direction } from './FlashCard/Swipeable';
+import { NormalCardRef } from './FlashCard/cards/CardNormal';
+import './styles/app.scss';
 
 
 const App = () => {
@@ -20,7 +20,7 @@ const App = () => {
   const [animating, setAnimating] = useState(false);
   const forceUpdate = useForceUpdate();
   // const { content } = data ?? {};
-  const latestCard = useRef<FlashCardRef>(null)
+  const latestCard = useRef<NormalCardRef>(null)
 
   const handleGameDataReceived = useCallback((data: GameData<Content>) => {
     setData(data);
@@ -79,11 +79,19 @@ const App = () => {
       // setAnimating(true);
       setAnimating(true);
 
-      if (!data || !cards) return
-      if (dir === direction.RIGHT){
-        setProgress(1 - (cards.length -1) / data.content.length)
-      }
+    if (!data || !cards) return
+    if (dir === direction.RIGHT){
+      setProgress(1 - (cards.length -1) / data.content.length)
     }
+  }
+
+  const handleIntroSwiped = () => {
+    console.log('swiped intro')
+  }
+
+  const handleIntroCardLeftScreen = () => {
+    console.log('swiped intro end')
+  }
 // console.log(cards)
 // console.log(latestCard?.current?.flipped)
 
@@ -142,7 +150,7 @@ const App = () => {
             ref = latestCard
           }
           return (
-          <FlashCard 
+          <CardNormal 
             key={card.image} 
             card={card}
             onSwiped={handleSwiped}
@@ -152,6 +160,10 @@ const App = () => {
           />
         )
       })}
+          <CardIntro 
+            onSwiped={handleIntroSwiped}
+            onCardLeftScreen={handleIntroCardLeftScreen}
+          />
       </div>
       <ButtonBar
         enableLeftAndRight={latestCard?.current?.flipped}
