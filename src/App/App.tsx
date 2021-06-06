@@ -86,13 +86,20 @@ const App = () => {
                                  // to show/hide the buttons
   }
 
-  const handleCardLeftScreen = (card: Card) => {
-    setCards(cards?.filter(c => c !== card))
+  const handleCardLeftScreen = (card: Card, dir: direction) => {
     setAnimating(false);
+    if (!cards) return;
+
+    if (dir === direction.RIGHT){
+      setCards(cards?.filter(c => c !== card))
+    } else {
+      const [first, ...rest] = cards;
+      setCards([...rest,first])
+    }
   }
 
   const swipe = (dir: direction) => {
-    if (!cards || !data) return    
+    if (!cards || !data || animating) return    
     setAnimating(true);
     latestCard.current?.swipe(dir);
     if (dir === direction.RIGHT){
@@ -105,6 +112,7 @@ const App = () => {
   }
 
   const handleFlip = () => {
+    if (animating) return;
     latestCard.current?.flip();
   }  
 

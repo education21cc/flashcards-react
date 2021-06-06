@@ -12,7 +12,7 @@ type Props = {
   card: Card
   onFlipped: (card: Card, flipped: boolean) => void,
   onSwiped: (card: Card, dir: direction) => void
-  onCardLeftScreen: (card: Card) => void
+  onCardLeftScreen: (card: Card, dir: direction) => void
 } 
 
 export type NormalCardRef = {
@@ -62,8 +62,9 @@ const CardNormal = forwardRef<NormalCardRef, Props>((props, ref) => {
     onSwiped?.(card, dir);
   }
 
-  const handleAfterSwipe = () => {
-    onCardLeftScreen?.(card);
+  const handleAfterSwipe = (dir: direction) => {
+
+    onCardLeftScreen?.(card, dir);
   }
 
   const dragging = useRef(false)

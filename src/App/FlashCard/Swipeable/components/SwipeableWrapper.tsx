@@ -6,7 +6,6 @@ import directionEnum from '../constants/direction';
 import {
   getDirection,
   getOffset,
-  withX,
   getLimitOffset,
   getEvent,
 } from '../utils/helpers';
@@ -20,6 +19,7 @@ const INITIAL_STATE = {
   swiped: false,
   moving: false,
   pristine: true,
+  flyout: undefined,
 };
 
 export interface SwipeableWrapperProps {
@@ -35,7 +35,7 @@ export interface SwipeableWrapperProps {
     direction: directionEnum,
   ) => void,
   onOpacityChange?: (opacity: number) => void,
-  onAfterSwipe?: () => void,
+  onAfterSwipe?: (direction: directionEnum) => void,
   forceFlyout?: directionEnum,
   wrapperHeight?: string,
   wrapperWidth?: string,
@@ -74,16 +74,11 @@ const SwipeableWrapper = (props: SwipeableWrapperProps) => {
 
   const handleResetState = useCallback(() => {
     setState(INITIAL_STATE);
-
-    setState({
-      ...stateRef.current,
-      offset: 0,
-      start: 0,
-    });
+    console.log('reset!')
   }, []);
 
   const handleOnAfterSwipe = useCallback(() => {
-    onAfterSwipe?.();
+    onAfterSwipe?.(stateRef.current.flyout!);
 
     handleResetState();
   }, [handleResetState, onAfterSwipe]);
@@ -141,7 +136,7 @@ const SwipeableWrapper = (props: SwipeableWrapperProps) => {
       return;
     }
 
-    handleResetState();
+    // handleResetState();
   }, [handleOnBeforeSwipe, handleResetState, onDragEnd, swipeThreshold]);
 
   const handleOnDragMove = useCallback((e: any  ) => {
@@ -158,7 +153,7 @@ const SwipeableWrapper = (props: SwipeableWrapperProps) => {
       ...stateRef.current,
       offset,
     });
-  }, [disabled]);
+  }, [disabled, onDragging]);
 
   useEffect(() => {
     window.addEventListener('touchmove', handleOnDragMove);
@@ -180,18 +175,21 @@ const SwipeableWrapper = (props: SwipeableWrapperProps) => {
     if (!state.flyout) {
       return
     }
-    const amount = state.flyout === directionEnum.LEFT ? -40 : 40;
+    console.log('fly  ')
+    const amount = state.flyout === directionEnum.LEFT ? -120 : 120;
     const increment = () => {
-      if (Math.abs(stateRef.current.offset) > 1000) {
+      console.log('i')
+      if (Math.abs(stateRef.current.offset) > 600) {
         clearInterval(interval);
         handleOnAfterSwipe();
+        return;
       }
       setState({
         ...stateRef.current,
         offset: stateRef.current.offset + amount,
       });
     }
-    const interval = setInterval(increment, 25);
+    const interval = setInterval(increment, 450);
     return () => clearInterval(interval);
   }, [handleOnAfterSwipe, state.flyout])
 

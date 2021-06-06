@@ -29,16 +29,17 @@ const CardIntro = forwardRef<IntroCardRef, Props>((props, ref) => {
 
   useImperativeHandle(ref, () => ({
     swipe: (dir: direction) => {
+      whooshSound.play();
       setFlyout(dir);
     }
   }));
 
   const handleAfterSwipe = () => {
-    whooshSound.play();
     onCardLeftScreen?.();
   }
-
+  
   const handleSwipe = () => {
+    whooshSound.play();
     onSwiped?.();
   }
   
