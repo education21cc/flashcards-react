@@ -74,7 +74,6 @@ const SwipeableWrapper = (props: SwipeableWrapperProps) => {
 
   const handleResetState = useCallback(() => {
     setState(INITIAL_STATE);
-    console.log('reset!')
   }, []);
 
   const handleOnAfterSwipe = useCallback(() => {
@@ -175,10 +174,8 @@ const SwipeableWrapper = (props: SwipeableWrapperProps) => {
     if (!state.flyout) {
       return
     }
-    console.log('fly  ')
     const amount = state.flyout === directionEnum.LEFT ? -120 : 120;
     const increment = () => {
-      console.log('i')
       if (Math.abs(stateRef.current.offset) > 600) {
         clearInterval(interval);
         handleOnAfterSwipe();

@@ -52,7 +52,7 @@ const CardIntro = forwardRef<IntroCardRef, Props>((props, ref) => {
         forceFlyout={flyout}
       >
           <div className="card card-intro">
-            <h2>Intro</h2>
+            <h2>{translations.getText("intro-header")}</h2>
             <div className="intro-description">
               {translations.getText("intro-description")}
             </div>

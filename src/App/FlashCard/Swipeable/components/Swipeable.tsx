@@ -63,7 +63,6 @@ const Swipeable = ({
   // React.useEffect(() => {
   //   onOpacityChange?.(opacity);
   // }, [onOpacityChange, opacity]);
-console.log(state )
   return (
     <>
       <animated.div

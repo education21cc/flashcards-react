@@ -4,6 +4,7 @@ import create from "zustand";
 type TranslationsStore = {
   texts: {[key: string]: string},
   getText: (key: string) => ReactNode
+  getTextRaw: (key: string) => string
 }
 
 export const useTranslationStore = create<TranslationsStore>(
@@ -12,6 +13,9 @@ export const useTranslationStore = create<TranslationsStore>(
     getText: (key: string) => {
       const text = get().texts[key]
       return convertToJSX(text);
+    },
+    getTextRaw: (key: string) => {
+      return  get().texts[key];
     }
   })
 )

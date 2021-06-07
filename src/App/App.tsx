@@ -11,6 +11,8 @@ import { direction } from './FlashCard/Swipeable';
 import { NormalCardRef } from './FlashCard/cards/CardNormal';
 import { IntroCardRef } from './FlashCard/cards/CardIntro';
 import { useTranslationStore } from 'stores/translations';
+import CardOutro from './FlashCard/cards/CardOutro';
+import { Howl } from 'howler';
 import './styles/app.scss';
 
 enum GameState {
@@ -20,11 +22,16 @@ enum GameState {
   complete = 1 << 3
 }
   
+const tadaSound = new Howl({
+  src: ['sound/tada.ogg']
+});
+
 const App = () => {
   const [state, setState] = useState(GameState.loading);
   const [data, setData] = useState<GameData<Content>>();
   const [cards, setCards] = useState<Content>();
   const [progress, setProgress] = useState(0);
+  const [mistakes, setMistakes] = useState(0);
   const [animating, setAnimating] = useState(false);
   const forceUpdate = useForceUpdate();
   const latestCard = useRef<NormalCardRef>(null);
@@ -53,8 +60,8 @@ const App = () => {
       console.log("no bridge found, fetching fallback")      
 // 
       // fetch(`${process.env.PUBLIC_URL}/config/flashcards-adr-with-translations-nl.json`)
-      fetch(`${process.env.PUBLIC_URL}/config/flashcards-handlingpackaging-with-translations-hi.json`)
-      // fetch(`${process.env.PUBLIC_URL}/config/flashcards_vcaborden-with-translation-nl.json`)
+      // fetch(`${process.env.PUBLIC_URL}/config/flashcards-handlingpackaging-with-translations-hi.json`)
+      fetch(`${process.env.PUBLIC_URL}/config/flashcards_vcaborden-with-translation-nl.json`)
       .then((response) => {
         response.json().then((data) => {
 
@@ -65,12 +72,15 @@ const App = () => {
   }, [handleGameDataReceived]);
 
 
+
   const handleSwiped = (card: Card, dir: direction) => {
     setAnimating(true);
 
     if (!data || !cards) return
     if (dir === direction.RIGHT){
       setProgress(1 - (cards.length -1) / data.content.length)
+    } else {
+      setMistakes(mistakes + 1);
     }
   }
 
@@ -102,8 +112,11 @@ const App = () => {
     if (!cards || !data || animating) return    
     setAnimating(true);
     latestCard.current?.swipe(dir);
+
     if (dir === direction.RIGHT){
       setProgress(1 - (cards.length -1) / data.content.length)
+    } else {
+      setMistakes(mistakes + 1);
     }
   }
 
@@ -117,8 +130,16 @@ const App = () => {
   }  
 
   useEffect(() => {
+    if (cards?.length === 0 && state === GameState.normal){
+      setState(GameState.complete);
+    }
+  }, [cards?.length, state]);
+
+  useEffect(() => {
     // Show the confetti without any regretti!
     if (state === GameState.complete ){
+      tadaSound.play();
+      
       confetti();
       setTimeout(confetti, 750);
       setTimeout(confetti, 1500);
@@ -134,6 +155,7 @@ const App = () => {
         <>
           <ProgressBar progress={progress} />
           <div className='card-container'>
+            <CardOutro mistakes={mistakes} />
             {cards?.map((card, index) => {
               let ref = null;
               // If the current top card is animating, dont make that that latest card
