@@ -13,8 +13,8 @@ import { IntroCardRef } from './FlashCard/cards/CardIntro';
 import { useTranslationStore } from 'stores/translations';
 import CardOutro from './FlashCard/cards/CardOutro';
 import { Howl } from 'howler';
-import './styles/app.scss';
 import PlayerBridge from 'playerBridge';
+import './styles/app.scss';
 
 enum GameState {
   loading = 0,

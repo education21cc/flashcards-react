@@ -1,7 +1,6 @@
 import * as React from 'react';
-import { MouseEvent, ReactChild, ReactNode, TouchEvent,UIEvent, useCallback, useEffect, useRef, useState } from 'react';
+import { MouseEvent, ReactChild, ReactNode, TouchEvent, useCallback, useEffect, useRef, useState } from 'react';
 import directionEnum from '../constants/direction';
-
 
 import {
   getDirection,
@@ -136,7 +135,7 @@ const SwipeableWrapper = (props: SwipeableWrapperProps) => {
     }
 
     // handleResetState();
-  }, [handleOnBeforeSwipe, handleResetState, onDragEnd, swipeThreshold]);
+  }, [handleOnBeforeSwipe, onDragEnd, swipeThreshold]);
 
   const handleOnDragMove = useCallback((e: any  ) => {
     const end = getEvent(e).pageX;
