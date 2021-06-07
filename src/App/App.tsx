@@ -40,7 +40,7 @@ const App = () => {
 
   const handleGameDataReceived = useCallback((data: GameData<Content>) => {
     setData(data);
-    setCards(data.content)
+    setCards(data?.content?.sort(() => Math.random() - 0.5));
     setState(GameState.intro)
 
     if (data.translations){
@@ -139,12 +139,18 @@ const App = () => {
     // Show the confetti without any regretti!
     if (state === GameState.complete ){
       tadaSound.play();
-      
+
       confetti();
       setTimeout(confetti, 750);
       setTimeout(confetti, 1500);
     }
   }, [state]);
+
+  const handleReset = () => {
+    setProgress(0);
+    setMistakes(0);
+    setCards(data?.content?.sort(() => Math.random() - 0.5));
+  }
 
   return (
     <div className="app">
