@@ -150,6 +150,7 @@ const App = () => {
     setProgress(0);
     setMistakes(0);
     setCards(data?.content?.sort(() => Math.random() - 0.5));
+    setState(GameState.intro)
   }
 
   return (
@@ -194,12 +195,18 @@ const App = () => {
          )}
         {state === GameState.normal && (
           <ButtonBarNormal
-            enableLeftAndRight={latestCard?.current?.flipped}
-            onLeftClick={() => swipe(direction.LEFT)}
-            onFlip={handleFlip}
-            onRightClick={() => swipe(direction.RIGHT)}
+          enableLeftAndRight={latestCard?.current?.flipped}
+          onLeftClick={() => swipe(direction.LEFT)}
+          onFlip={handleFlip}
+          onRightClick={() => swipe(direction.RIGHT)}
           />
-         )}
+          )}
+          {state === GameState.complete && (
+            <ButtonBarIntro 
+              /** might as well use the intro component here ¯\_(ツ)_/¯ */
+              onPlay={handleReset}
+            />
+           )}
         </>
         )
       }
