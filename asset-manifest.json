@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/flashcards-react/static/css/main.e5ef0a32.chunk.css",
-    "main.js": "/flashcards-react/static/js/main.dc0dcc40.chunk.js",
-    "main.js.map": "/flashcards-react/static/js/main.dc0dcc40.chunk.js.map",
-    "runtime-main.js": "/flashcards-react/static/js/runtime-main.fdf5c86d.js",
-    "runtime-main.js.map": "/flashcards-react/static/js/runtime-main.fdf5c86d.js.map",
-    "static/js/2.d5e4d691.chunk.js": "/flashcards-react/static/js/2.d5e4d691.chunk.js",
-    "static/js/2.d5e4d691.chunk.js.map": "/flashcards-react/static/js/2.d5e4d691.chunk.js.map",
-    "static/js/3.b7e23c86.chunk.js": "/flashcards-react/static/js/3.b7e23c86.chunk.js",
-    "static/js/3.b7e23c86.chunk.js.map": "/flashcards-react/static/js/3.b7e23c86.chunk.js.map",
+    "main.css": "/flashcards-react/static/css/main.c218724f.chunk.css",
+    "main.js": "/flashcards-react/static/js/main.c82edb73.chunk.js",
+    "main.js.map": "/flashcards-react/static/js/main.c82edb73.chunk.js.map",
+    "runtime-main.js": "/flashcards-react/static/js/runtime-main.e286100d.js",
+    "runtime-main.js.map": "/flashcards-react/static/js/runtime-main.e286100d.js.map",
+    "static/js/2.29a24c3e.chunk.js": "/flashcards-react/static/js/2.29a24c3e.chunk.js",
+    "static/js/2.29a24c3e.chunk.js.map": "/flashcards-react/static/js/2.29a24c3e.chunk.js.map",
+    "static/js/3.aa7fa18f.chunk.js": "/flashcards-react/static/js/3.aa7fa18f.chunk.js",
+    "static/js/3.aa7fa18f.chunk.js.map": "/flashcards-react/static/js/3.aa7fa18f.chunk.js.map",
     "index.html": "/flashcards-react/index.html",
-    "static/css/main.e5ef0a32.chunk.css.map": "/flashcards-react/static/css/main.e5ef0a32.chunk.css.map",
-    "static/js/2.d5e4d691.chunk.js.LICENSE.txt": "/flashcards-react/static/js/2.d5e4d691.chunk.js.LICENSE.txt",
+    "static/css/main.c218724f.chunk.css.map": "/flashcards-react/static/css/main.c218724f.chunk.css.map",
+    "static/js/2.29a24c3e.chunk.js.LICENSE.txt": "/flashcards-react/static/js/2.29a24c3e.chunk.js.LICENSE.txt",
+    "static/media/close.72346ed5.svg": "/flashcards-react/static/media/close.72346ed5.svg",
     "static/media/flip-24px.3066e32e.svg": "/flashcards-react/static/media/flip-24px.3066e32e.svg",
     "static/media/flashCard.scss": "/flashcards-react/static/media/intro-help-wrong.45a2f3a0.png",
     "static/media/play-24px.8dd3f864.svg": "/flashcards-react/static/media/play-24px.8dd3f864.svg",
@@ -20,9 +21,9 @@
     "static/media/thumb-up-24px.e0c2b59e.svg": "/flashcards-react/static/media/thumb-up-24px.e0c2b59e.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.fdf5c86d.js",
-    "static/js/2.d5e4d691.chunk.js",
-    "static/css/main.e5ef0a32.chunk.css",
-    "static/js/main.dc0dcc40.chunk.js"
+    "static/js/runtime-main.e286100d.js",
+    "static/js/2.29a24c3e.chunk.js",
+    "static/css/main.c218724f.chunk.css",
+    "static/js/main.c82edb73.chunk.js"
   ]
 }
