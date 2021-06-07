@@ -1,0 +1,110 @@
+{
+    "userId":2,
+    "settings":{
+      "muted": false    
+    },
+    "content":[
+      { "text": "fragile-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/fragile.png" },
+      { "text": "handle-with-care-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/handle-with-care.png" },
+      { "text": "flammable-text",  "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/flammable.png" },
+      { "text": "this-way-up-text",  "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/this-way-up.png" },
+      { "text": "do-not-stack-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/do-not-stack.png" },
+      { "text": "maximum-stack-weight-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/maximum-stack-weight.png" },
+      { "text": "maximum-stack-height-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/maximum-stack-height.png" },
+      { "text": "protect-from-sunlight-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/protect-from-sunlight.png" },
+      { "text": "temperature-limitations-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/temperature-limitations.png" },
+      { "text": "keep-dry-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/keep-dry.png" },
+      { "text": "do-not-lift-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/do-not-lift.png" },
+      { "text": "two-person-lift-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/two-person-lift.png" },
+      { "text": "only-use-trolley-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/only-use-trolley.png" },
+      { "text": "do-not-use-hand-truck-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/do-not-use-hand-truck.png" },
+      { "text": "do-not-use-forklift-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/do-not-use-forklift.png" }
+     ], 
+    "levelsCompleted":[],
+    "translations": [
+        {
+            "key": "intro-header",
+            "value": "परिचय"
+        },
+        {
+            "key": "intro-description",
+            "value": "क्या आप हैंडलिंग और पैकेजिंग प्रतीकों को जानते हैं? उनका अर्थ देखने के लिए कार्डों को पलटें। फिर देखें कि आप सही थे या नहीं!"
+        },
+        {
+            "key": "intro-description-correct",
+            "value": "क्या आपको सही उत्तर पता था? दाईं ओर स्वाइप करें!"
+        },
+        {
+            "key": "intro-description-wrong",
+            "value": "सही उत्तर याद नहीं आ रहा? बाईं ओर स्वाइप करें!"
+        },
+        {
+            "key": "outro-header",
+            "value": "समाप्त!"
+        },
+        {
+            "key": "outro-description",
+            "value": "आपको {0} कार्ड याद नहीं थे"
+        },
+        {
+            "key": "fragile-text",
+            "value": "नाज़ुक"
+        },
+        {
+            "key": "handle-with-care-text",
+            "value": "ध्यान से संभालें"
+        },
+        {
+            "key": "flammable-text",
+            "value": "ज्वलनशील"
+        },
+        {
+            "key": "this-way-up-text",
+            "value": "इस तरफ ऊपर"
+        },
+        {
+            "key": "do-not-stack-text",
+            "value": "एक के ऊपर एक मत रखें"
+        },
+        {
+            "key": "maximum-stack-weight-text",
+            "value": "अधिकतम ढेर वजन"
+        },
+        {
+            "key": "maximum-stack-height-text",
+            "value": "अधिकतम ढेर ऊंचाई"
+        },
+        {
+            "key": "protect-from-sunlight-text",
+            "value": "धूप से बचाएं"
+        },
+        {
+            "key": "temperature-limitations-text",
+            "value": "तापमान सीमाएं"
+        },
+        {
+            "key": "keep-dry-text",
+            "value": "सूखा रखें"
+        },
+        {
+            "key": "do-not-lift-text",
+            "value": "हाथों से न उठाएं"
+        },
+        {
+            "key": "two-person-lift-text",
+            "value": "अन्य व्यक्ति के साथ उठाएं"
+        },
+        {
+            "key": "only-use-trolley-text",
+            "value": "केवल ट्रॉली का प्रयोग करें"
+        },
+        {
+            "key": "do-not-use-hand-truck-text",
+            "value": "हैंड ट्रक का प्रयोग न करें"
+        },
+        {
+            "key": "do-not-use-forklift-text",
+            "value": "फोर्कलिफ्ट का प्रयोग न करें"
+        }
+    ]
+}
