@@ -29,10 +29,6 @@
     height: 100%; 
     padding: 1rem;
     box-sizing: border-box;
-
-    &.card-intro {
-      color: #6A6A6A;
-    }
     
     &.front {
       .image {
@@ -54,6 +50,58 @@
         font-size: smaller;
       }
     }
+
+    &.card-intro { 
+      color: #6A6A6A;
+  
+      h2 {
+        margin: 1rem;
+      }
+      
+      display: flex;
+      flex-direction: column;
+  
+      .intro-description {
+        flex: 1;
+        @include responsive-font(4vw, 6px, 20px, 50px);
+
+      }
+  
+      .intro-help-correct, .intro-help-wrong {
+        background-size: contain;
+        position: relative;
+  
+        &:before {
+          content: "";
+          display: block;
+          padding-bottom: 30%;
+        }
+  
+        .text { 
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          @include responsive-font(4vw, 6px, 20px, 50px);
+        }
+      }
+  
+      .intro-help-correct {
+        background-image: url("./../images/intro-help-correct.png");
+  
+        .text { 
+          left: 20%;
+        }
+      }
+  
+      .intro-help-wrong {
+        background-image: url("./../images/intro-help-wrong.png");
+  
+        .text { 
+          text-align: right;
+          right: 20%;
+        }
+      }
+    }
   }
 
 
@@ -66,47 +114,5 @@
     will-change: transform;
   }
 
-  .card-intro { 
-    display: flex;
-    flex-direction: column;
-
-    .intro-description {
-      flex: 1;
-    }
-
-    .intro-help-correct, .intro-help-wrong {
-      background-size: contain;
-      position: relative;
-
-      &:before {
-        content: "";
-        display: block;
-        padding-bottom: 30%;
-      }
-
-      .text { 
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        @include responsive-font(4vw, 6px, 20px, 50px);
-      }
-    }
-
-    .intro-help-correct {
-      background-image: url("./../images/intro-help-correct.png");
-
-      .text { 
-        left: 20%;
-      }
-    }
-
-    .intro-help-wrong {
-      background-image: url("./../images/intro-help-wrong.png");
-
-      .text { 
-        text-align: right;
-        right: 20%;
-      }
-    }
-  }
+  
 }
