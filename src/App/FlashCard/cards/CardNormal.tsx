@@ -34,7 +34,8 @@ const whooshSound = new Howl({
 const CardNormal = forwardRef<NormalCardRef, Props>((props, ref) => {
   const { onSwiped, card, onCardLeftScreen, onFlipped } = props;
 
-  const wrapperRef = createRef<HTMLDivElement>();  
+  const flying = useRef(false);  
+  const dragging = useRef(false)
   const [flipped, setFlipped] = useState(false)
   const [flyout, setFlyout] = useState<direction>()
   const translations = useTranslationStore();
@@ -68,7 +69,6 @@ const CardNormal = forwardRef<NormalCardRef, Props>((props, ref) => {
     onCardLeftScreen?.(card, dir);
   }
 
-  const dragging = useRef(false)
   const handleDragging = (offset: number) => {
     dragging.current = true;
   }
@@ -79,7 +79,7 @@ const CardNormal = forwardRef<NormalCardRef, Props>((props, ref) => {
   }
   
   return (
-    <div ref={wrapperRef} className='flash-card-wrapper'>
+    <div className='flash-card-wrapper'>
       <Swipeable 
         onSwipe={handleSwipe} 
         fadeThreshold={60}
@@ -91,7 +91,12 @@ const CardNormal = forwardRef<NormalCardRef, Props>((props, ref) => {
         rightIcon={<ThumbsUpIcon />}
         disabled={!flipped}
       >
-        <ReactCardFlip isFlipped={flipped} flipDirection="horizontal">
+        <ReactCardFlip 
+          isFlipped={flipped} 
+          flipDirection="horizontal"         
+          flipSpeedFrontToBack={dragging.current ? 0 : undefined}
+          flipSpeedBackToFront={dragging.current ? 0 : undefined} 
+        >
           <div className="card front" onClick={handleFlip}>
             <div 
               style={{ backgroundImage: 'url(' + card.image + ')' }}
