@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import useForceUpdate from 'use-force-update';
+import confetti from 'canvas-confetti';
 import { GameData } from 'playerBridge/GameData';
 import { Content } from 'data/Content';
 import { CardNormal, CardIntro } from 'App/FlashCard';
@@ -9,8 +10,8 @@ import { ButtonBarIntro, ButtonBarNormal} from './ButtonBar';
 import { direction } from './FlashCard/Swipeable';
 import { NormalCardRef } from './FlashCard/cards/CardNormal';
 import { IntroCardRef } from './FlashCard/cards/CardIntro';
-import './styles/app.scss';
 import { useTranslationStore } from 'stores/translations';
+import './styles/app.scss';
 
 enum GameState {
   loading = 0,
@@ -114,8 +115,15 @@ const App = () => {
     if (animating) return;
     latestCard.current?.flip();
   }  
-  console.log(animating)
-  console.log(cards)
+
+  useEffect(() => {
+    // Show the confetti without any regretti!
+    if (state === GameState.complete ){
+      confetti();
+      setTimeout(confetti, 750);
+      setTimeout(confetti, 1500);
+    }
+  }, [state]);
 
   return (
     <div className="app">
