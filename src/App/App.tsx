@@ -14,6 +14,7 @@ import { useTranslationStore } from 'stores/translations';
 import CardOutro from './FlashCard/cards/CardOutro';
 import { Howl } from 'howler';
 import './styles/app.scss';
+import PlayerBridge from 'playerBridge';
 
 enum GameState {
   loading = 0,
@@ -155,6 +156,9 @@ const App = () => {
 
   return (
     <div className="app">
+      <PlayerBridge 
+        gameDataReceived={handleGameDataReceived}
+      />
       {state === GameState.loading && (
         <span></span>
       )}
