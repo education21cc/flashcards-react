@@ -1,0 +1,109 @@
+{
+    "userId":2,
+    "settings":{
+      "muted": false    
+    },
+    "content":[
+      { "text": "fragile-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/fragile.png" },
+      { "text": "handle-with-care-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/handle-with-care.png" },
+      { "text": "flammable-text",  "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/flammable.png" },
+      { "text": "this-way-up-text",  "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/this-way-up.png" },
+      { "text": "do-not-stack-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/do-not-stack.png" },
+      { "text": "maximum-stack-weight-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/maximum-stack-weight.png" },
+      { "text": "maximum-stack-height-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/maximum-stack-height.png" },
+      { "text": "protect-from-sunlight-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/protect-from-sunlight.png" },
+      { "text": "temperature-limitations-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/temperature-limitations.png" },
+      { "text": "keep-dry-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/keep-dry.png" },
+      { "text": "do-not-lift-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/do-not-lift.png" },
+      { "text": "two-person-lift-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/two-person-lift.png" },
+      { "text": "only-use-trolley-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/only-use-trolley.png" },
+      { "text": "do-not-use-hand-truck-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/do-not-use-hand-truck.png" },
+      { "text": "do-not-use-forklift-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/do-not-use-forklift.png" }
+     ], 
+    "levelsCompleted":[],
+    "translations":[{
+        "key": "intro-header",
+        "value": "Intro"
+    },
+    {
+        "key": "intro-description",
+        "value": "Do you remember the handling and packaging symbols? Turn the cards to reveal the meaning. Then judge if you were right"
+    },
+    {
+        "key": "intro-description-correct",
+        "value": "Did you know the answer?\nSwipe right!"
+    },
+    {
+        "key": "intro-description-wrong",
+        "value": "Couldn't remember the answer?\nSwipe left!"
+    },
+    {
+        "key": "outro-header",
+        "value": "Done!"
+    },
+    {
+        "key": "outro-description",
+        "value": "You did not remember {0} cards"
+    },
+    {
+        "key": "fragile-text",
+        "value": "Fragile"
+    },
+    {
+        "key": "handle-with-care-text",
+        "value": "Handle With Care"
+    },
+    {
+        "key": "flammable-text",
+        "value": "Flammable"
+    },
+    {
+        "key": "this-way-up-text",
+        "value": "This Way Up"
+    },
+    {
+        "key": "do-not-stack-text",
+        "value": "Do Not Stack"
+    },
+    {
+        "key": "maximum-stack-weight-text",
+        "value": "Maximum Stack Weight"
+    },
+    {
+        "key": "maximum-stack-height-text",
+        "value": "Maximum Stack Height"
+    },
+    {
+        "key": "protect-from-sunlight-text",
+        "value": "Protect from Sunlight"
+    },
+    {
+        "key": "temperature-limitations-text",
+        "value": "Temperature Limitations"
+    },
+    {
+        "key": "keep-dry-text",
+        "value": "Keep Dry"
+    },
+    {
+        "key": "do-not-lift-text",
+        "value": "Do Not Lift"
+    },
+    {
+        "key": "two-person-lift-text",
+        "value": "Two Person Lift"
+    },
+    {
+        "key": "only-use-trolley-text",
+        "value": "Only Use Trolley"
+    },
+    {
+        "key": "do-not-use-hand-truck-text",
+        "value": "Do Not Use Hand Truck"
+    },
+    {
+        "key": "do-not-use-forklift-text",
+        "value": "Do Not Use Forklift"
+    }
+]
+}
