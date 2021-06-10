@@ -142,6 +142,13 @@ const App = () => {
     if (state === GameState.complete ){
       tadaSound.play();
 
+      // @ts-ignore
+      window.setGameData({
+        levelsCompleted: [{
+          level: 1,
+          score: 3
+        }]
+      })
       confetti();
       setTimeout(confetti, 750);
       setTimeout(confetti, 1500);
