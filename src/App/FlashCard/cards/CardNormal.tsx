@@ -60,12 +60,14 @@ const CardNormal = forwardRef<NormalCardRef, Props>((props, ref) => {
 
   const handleSwipe = (dir: direction) => {
     whooshSound.play();
+    flying.current = true;
     onSwiped?.(card, dir);
   }
 
   const handleAfterSwipe = (dir: direction) => {
     setFlyout(undefined);
     setFlipped(false);
+    flying.current = true;
     onCardLeftScreen?.(card, dir);
   }
 
@@ -94,8 +96,8 @@ const CardNormal = forwardRef<NormalCardRef, Props>((props, ref) => {
         <ReactCardFlip 
           isFlipped={flipped} 
           flipDirection="horizontal"         
-          flipSpeedFrontToBack={dragging.current ? 0 : undefined}
-          flipSpeedBackToFront={dragging.current ? 0 : undefined} 
+          flipSpeedFrontToBack={flying.current ? 0 : undefined}
+          flipSpeedBackToFront={flying.current ? 0 : undefined} 
         >
           <div className="card front" onClick={handleFlip}>
             <div 
