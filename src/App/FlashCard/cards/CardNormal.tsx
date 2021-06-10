@@ -109,6 +109,10 @@ const CardNormal = forwardRef<NormalCardRef, Props>((props, ref) => {
             <div className="text">
              {translations.getText(card.text)}
             </div>
+            <div 
+              style={{ backgroundImage: 'url(' + card.image + ')' }}
+              className='image'
+            />
             {card.subtext1 && (<div className="subtext">
              {translations.getText(card.subtext1)}
             </div>)}

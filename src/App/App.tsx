@@ -60,10 +60,10 @@ const App = () => {
       // @ts-ignore
       console.log("no bridge found, fetching fallback")      
 // 
-      // fetch(`${process.env.PUBLIC_URL}/config/flashcards-adr-with-translations-nl.json`)
+      fetch(`${process.env.PUBLIC_URL}/config/flashcards-adr-with-translations-nl.json`)
       // fetch(`${process.env.PUBLIC_URL}/config/flashcards-handlingpackaging-with-translations-hi.json`)
       // fetch(`${process.env.PUBLIC_URL}/config/flashcards-handlingpackaging-with-translations-en.json`)
-      fetch(`${process.env.PUBLIC_URL}/config/flashcards_vcaborden-with-translation-nl.json`)
+      // fetch(`${process.env.PUBLIC_URL}/config/flashcards_vcaborden-with-translation-nl.json`)
       .then((response) => {
         response.json().then((data) => {
 
@@ -141,7 +141,6 @@ const App = () => {
     // Show the confetti without any regretti!
     if (state === GameState.complete ){
       tadaSound.play();
-
       // @ts-ignore
       window.setGameData({
         levelsCompleted: [{
