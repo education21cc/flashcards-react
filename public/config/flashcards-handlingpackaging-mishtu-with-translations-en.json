@@ -1,0 +1,59 @@
+{
+    "userId":2,
+    "settings":{
+      "muted": false    
+    },
+    "content":[
+      { "text": "fragile-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/fragile.png" },
+      { "text": "handle-with-care-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/handle-with-care.png" },
+      { "text": "flammable-text",  "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/flammable.png" },
+      { "text": "this-way-up-text",  "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/this-way-up.png" },
+      { "text": "keep-dry-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/keep-dry.png" }
+     ], 
+    "levelsCompleted":[],
+    "translations":[{
+        "key": "intro-header",
+        "value": "Intro"
+    },
+    {
+        "key": "intro-description",
+        "value": "Do you know the handling and packaging symbols? Turn the cards to reveal their meaning and see if you were right!"
+    },
+    {
+        "key": "intro-description-correct",
+        "value": "Did you know the answer?\nSwipe right!"
+    },
+    {
+        "key": "intro-description-wrong",
+        "value": "Couldn't remember the\n answer? Swipe left!"
+    },
+    {
+        "key": "outro-header",
+        "value": "Done!"
+    },
+    {
+        "key": "outro-description",
+        "value": "You did not remember {0} cards"
+    },
+    {
+        "key": "fragile-text",
+        "value": "Fragile"
+    },
+    {
+        "key": "handle-with-care-text",
+        "value": "Handle With Care"
+    },
+    {
+        "key": "flammable-text",
+        "value": "Flammable"
+    },
+    {
+        "key": "this-way-up-text",
+        "value": "This Way Up"
+    },
+    {
+        "key": "keep-dry-text",
+        "value": "Keep Dry"
+    }
+]
+}

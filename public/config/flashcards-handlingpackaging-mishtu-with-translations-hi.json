@@ -1,0 +1,60 @@
+{
+    "userId":2,
+    "settings":{
+      "muted": false    
+    },
+    "content":[
+      { "text": "fragile-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/fragile.png" },
+      { "text": "handle-with-care-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/handle-with-care.png" },
+      { "text": "flammable-text",  "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/flammable.png" },
+      { "text": "this-way-up-text",  "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/this-way-up.png" },
+      { "text": "keep-dry-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/keep-dry.png" }
+     ], 
+    "levelsCompleted":[],
+    "translations": [
+        {
+            "key": "intro-header",
+            "value": "परिचय"
+        },
+        {
+            "key": "intro-description",
+            "value": "क्या आप हैंडलिंग और पैकेजिंग प्रतीकों को जानते हैं? उनका अर्थ देखने के लिए कार्डों को पलटें। फिर देखें कि आप सही थे या नहीं!"
+        },
+        {
+            "key": "intro-description-correct",
+            "value": "क्या आपको सही उत्तर पता था?\n दाईं ओर स्वाइप करें!"
+        },
+        {
+            "key": "intro-description-wrong",
+            "value": "सही उत्तर याद नहीं आ रहा?\n बाईं ओर स्वाइप करें!"
+        },
+        {
+            "key": "outro-header",
+            "value": "समाप्त!"
+        },
+        {
+            "key": "outro-description",
+            "value": "आपको {0} कार्ड याद नहीं थे"
+        },
+        {
+            "key": "fragile-text",
+            "value": "नाज़ुक"
+        },
+        {
+            "key": "handle-with-care-text",
+            "value": "ध्यान से संभालें"
+        },
+        {
+            "key": "flammable-text",
+            "value": "ज्वलनशील"
+        },
+        {
+            "key": "this-way-up-text",
+            "value": "इस तरफ ऊपर"
+        },
+        {
+            "key": "keep-dry-text",
+            "value": "सूखा रखें"
+        }
+    ]
+}
