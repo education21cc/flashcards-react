@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/flashcards-react/static/css/main.a7ecee1d.chunk.css",
-    "main.js": "/flashcards-react/static/js/main.e78ff941.chunk.js",
-    "main.js.map": "/flashcards-react/static/js/main.e78ff941.chunk.js.map",
+    "main.js": "/flashcards-react/static/js/main.fd8e6b48.chunk.js",
+    "main.js.map": "/flashcards-react/static/js/main.fd8e6b48.chunk.js.map",
     "runtime-main.js": "/flashcards-react/static/js/runtime-main.e286100d.js",
     "runtime-main.js.map": "/flashcards-react/static/js/runtime-main.e286100d.js.map",
     "static/js/2.29a24c3e.chunk.js": "/flashcards-react/static/js/2.29a24c3e.chunk.js",
@@ -24,6 +24,6 @@
     "static/js/runtime-main.e286100d.js",
     "static/js/2.29a24c3e.chunk.js",
     "static/css/main.a7ecee1d.chunk.css",
-    "static/js/main.e78ff941.chunk.js"
+    "static/js/main.fd8e6b48.chunk.js"
   ]
 }
