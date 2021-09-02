@@ -4,3 +4,9 @@
     left: 8px;
     z-index: 2
 }
+
+@media (orientation: portrait) {
+    .close {
+        top: 32px;
+    }
+}

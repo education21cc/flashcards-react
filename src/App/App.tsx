@@ -37,7 +37,6 @@ const App = () => {
   const forceUpdate = useForceUpdate();
   const latestCard = useRef<NormalCardRef>(null);
   const introCard = useRef<IntroCardRef>(null);
-  const translations = useTranslationStore();
 
   const handleGameDataReceived = useCallback((data: GameData<Content>) => {
     setData(data);
