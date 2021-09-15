@@ -1,0 +1,110 @@
+{
+    "userId":2,
+    "settings":{
+      "muted": false
+    },
+    "content":[
+      { "text": "fragile-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/fragile.png" },
+      { "text": "handle-with-care-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/handle-with-care.png" },
+      { "text": "flammable-text",  "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/flammable.png" },
+      { "text": "this-way-up-text",  "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/this-way-up.png" },
+      { "text": "do-not-stack-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/do-not-stack.png" },
+      { "text": "maximum-stack-weight-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/maximum-stack-weight.png" },
+      { "text": "maximum-stack-height-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/maximum-stack-height.png" },
+      { "text": "protect-from-sunlight-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/protect-from-sunlight.png" },
+      { "text": "temperature-limitations-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/temperature-limitations.png" },
+      { "text": "keep-dry-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/keep-dry.png" },
+      { "text": "do-not-lift-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/do-not-lift.png" },
+      { "text": "two-person-lift-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/two-person-lift.png" },
+      { "text": "only-use-trolley-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/only-use-trolley.png" },
+      { "text": "do-not-use-hand-truck-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/do-not-use-hand-truck.png" },
+      { "text": "do-not-use-forklift-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/do-not-use-forklift.png" }
+     ],
+    "levelsCompleted":[],
+    "translations": [
+      {
+          "key": "intro-header",
+          "value": "Pengenalan"
+      },
+      {
+          "key": "intro-description",
+          "value": "Adakah anda tahu tentang simbol-simbol pengendalian dan pembungkusan? Putarkan kad-kad untuk menunjukkan maksudnya dan lihat sama ada anda betul!"
+      },
+      {
+          "key": "intro-description-correct",
+          "value": "Adakah anda tahu jawapannya?  Leret ke kanan!"
+      },
+      {
+          "key": "intro-description-wrong",
+          "value": "Tidak ingat jawapannya? Leret ke kiri!"
+      },
+      {
+          "key": "outro-header",
+          "value": "Selesai!"
+      },
+      {
+          "key": "outro-description",
+          "value": "Anda tidak teringat {0} keping kad."
+      },
+      {
+          "key": "fragile-text",
+          "value": "Mudah Pecah"
+      },
+      {
+          "key": "handle-with-care-text",
+          "value": "Kendali Dengan Cermat"
+      },
+      {
+          "key": "flammable-text",
+          "value": "Mudah Terbakar"
+      },
+      {
+          "key": "this-way-up-text",
+          "value": "Arah ini ke atas"
+      },
+      {
+          "key": "do-not-stack-text",
+          "value": "Jangan Ditimbun"
+      },
+      {
+          "key": "maximum-stack-weight-text",
+          "value": "Berat Timbunan Maksimum"
+      },
+      {
+          "key": "maximum-stack-height-text",
+          "value": "Tinggi Timbunan Maksimum"
+      },
+      {
+          "key": "protect-from-sunlight-text",
+          "value": "Lindungi Dari Cahaya Matahari"
+      },
+      {
+          "key": "temperature-limitations-text",
+          "value": "Batasan Suhu"
+      },
+      {
+          "key": "keep-dry-text",
+          "value": "Pastikan Kering"
+      },
+      {
+          "key": "do-not-lift-text",
+          "value": "Jangan Angkat"
+      },
+      {
+          "key": "two-person-lift-text",
+          "value": "Angkat Dengan Dua Orang"
+      },
+      {
+          "key": "only-use-trolley-text",
+          "value": "Hanya Gunakan Troli"
+      },
+      {
+          "key": "do-not-use-hand-truck-text",
+          "value": "Jangan Gunakan Trak Tangan"
+      },
+      {
+          "key": "do-not-use-forklift-text",
+          "value": "Jangan Gunakan Foklif"
+      }
+  ]
+}

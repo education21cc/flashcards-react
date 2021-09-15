@@ -1,0 +1,110 @@
+{
+    "userId":2,
+    "settings":{
+      "muted": false
+    },
+    "content":[
+      { "text": "fragile-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/fragile.png" },
+      { "text": "handle-with-care-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/handle-with-care.png" },
+      { "text": "flammable-text",  "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/flammable.png" },
+      { "text": "this-way-up-text",  "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/this-way-up.png" },
+      { "text": "do-not-stack-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/do-not-stack.png" },
+      { "text": "maximum-stack-weight-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/maximum-stack-weight.png" },
+      { "text": "maximum-stack-height-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/maximum-stack-height.png" },
+      { "text": "protect-from-sunlight-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/protect-from-sunlight.png" },
+      { "text": "temperature-limitations-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/temperature-limitations.png" },
+      { "text": "keep-dry-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/keep-dry.png" },
+      { "text": "do-not-lift-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/do-not-lift.png" },
+      { "text": "two-person-lift-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/two-person-lift.png" },
+      { "text": "only-use-trolley-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/only-use-trolley.png" },
+      { "text": "do-not-use-hand-truck-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/do-not-use-hand-truck.png" },
+      { "text": "do-not-use-forklift-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/do-not-use-forklift.png" }
+     ],
+    "levelsCompleted":[],
+    "translations": [
+      {
+          "key": "intro-header",
+          "value": "介绍"
+      },
+      {
+          "key": "intro-description",
+          "value": "你知道处理和包装标志吗？转动卡片以揭示它们的含义，看看你是否正确！"
+      },
+      {
+          "key": "intro-description-correct",
+          "value": "你知道答案吗？ 向右滑动！"
+      },
+      {
+          "key": "intro-description-wrong",
+          "value": "不记得答案吗？ 向左滑动！"
+      },
+      {
+          "key": "outro-header",
+          "value": "完成!"
+      },
+      {
+          "key": "outro-description",
+          "value": "你不记得了 {0} 张卡片。"
+      },
+      {
+          "key": "fragile-text",
+          "value": "易碎物品"
+      },
+      {
+          "key": "handle-with-care-text",
+          "value": "小心轻放"
+      },
+      {
+          "key": "flammable-text",
+          "value": "易燃品"
+      },
+      {
+          "key": "this-way-up-text",
+          "value": "此端向上"
+      },
+      {
+          "key": "do-not-stack-text",
+          "value": "不可堆叠"
+      },
+      {
+          "key": "maximum-stack-weight-text",
+          "value": "最大堆叠重量"
+      },
+      {
+          "key": "maximum-stack-height-text",
+          "value": "最大堆叠高度"
+      },
+      {
+          "key": "protect-from-sunlight-text",
+          "value": "防晒"
+      },
+      {
+          "key": "temperature-limitations-text",
+          "value": "温度限制"
+      },
+      {
+          "key": "keep-dry-text",
+          "value": "保持干燥"
+      },
+      {
+          "key": "do-not-lift-text",
+          "value": "不要抬起"
+      },
+      {
+          "key": "two-person-lift-text",
+          "value": "两人抬放"
+      },
+      {
+          "key": "only-use-trolley-text",
+          "value": "只能使用手推车"
+      },
+      {
+          "key": "do-not-use-hand-truck-text",
+          "value": "不要使用手车/拖车"
+      },
+      {
+          "key": "do-not-use-forklift-text",
+          "value": "不要使用叉车"
+      }
+  ]
+}
