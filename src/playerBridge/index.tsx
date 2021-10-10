@@ -1,3 +1,4 @@
+
 import React, {  useEffect } from 'react';
 import './style/styles.css';
 import { ReactComponent as CloseIcon } from './style/close.svg';
@@ -7,60 +8,64 @@ interface Props {
   gameDataReceived: (gameData: any) => void;
 }
 
+export type GameEvent = {
+  code: string,
+  level?: number,
+  additionalInfo?: string
+}
+
 declare global {
-  interface Window { 
-    GAMEDATA: any;
+  interface Window {
+    setGameData: (gameData: any) => void;
+    storeGameEvent: (gameData: any) => void;
+    getGameData: () => any
+    GAMEDATA: any
   }
 }
-// start w  REACT_APP_PLAYER_MODE=true npm start
-// dont forget to add listener to 'message' in index.html
-const PlayerBridge = (props: Props) => {   
+
+const PlayerBridge = (props: Props) => {
   const {gameDataReceived, disableBackButton} = props;
-  
-  const back = () => {     
+
+  const exit = () => {
     send({
-      type: 'back'
+      type: 'exit'
     });
   }
+
 
   useEffect(() => {
     if (!process.env.REACT_APP_PLAYER_MODE) {
       return;
     }
-    let interval: NodeJS.Timeout;
-    
-    const check = () => {
-      if (window.GAMEDATA) {
-        clearInterval(interval);
-        gameDataReceived(window.GAMEDATA);
-      }
-    }
-    // cordova iab just sets window.GAMEDATA
-    interval = setInterval(check, 250);
 
-    // @ts-ignore
-    window.setGameData = (gameData) => {
+    const receiveMessage = (msg: any) => {
+      if (!msg.data.hasOwnProperty('userId')){
+        return;
+      }
+      window.GAMEDATA = msg.data;
+      gameDataReceived(msg.data);
+    }
+
+    window.setGameData = (gameData: any) => {
       send({
         type: 'setGameData',
         data: gameData
       });
     }
-       
-    // @ts-ignore
-    window.exit = () => {
+
+    window.storeGameEvent = (gameEvent: GameEvent) => {
       send({
-        type: 'exit'
+        type: 'gameEvent',
+        data: gameEvent
       });
     }
 
-    // @ts-ignore
+    window.GAMEDATA = null;
+
     window.getGameData = () => {
       return window.GAMEDATA;
-    }   
-
-    return () => {
-      clearInterval(interval);
     }
+    window.addEventListener("message", receiveMessage, false);
   }, [gameDataReceived]);
 
   if (!process.env.REACT_APP_PLAYER_MODE) {
@@ -70,14 +75,16 @@ const PlayerBridge = (props: Props) => {
   if (disableBackButton === true) {
     return null;
   }
+
   return (
     <div className="close">
-      <CloseIcon onClick={back} />
+      <CloseIcon onClick={exit} />
     </div>
   )
 }
 
 export default PlayerBridge;
+
 
 export const send = (payload: any) => {
   // @ts-ignore

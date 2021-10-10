@@ -22,7 +22,7 @@ enum GameState {
   normal = 1 << 2,
   complete = 1 << 3
 }
-  
+
 const tadaSound = new Howl({
   src: ['sound/tada.ogg']
 });
@@ -57,8 +57,8 @@ const App = () => {
     // See if we are fed gamedata by 21ccplayer app, if not, go fetch it ourselves
     if (!process.env.REACT_APP_PLAYER_MODE) {
       // @ts-ignore
-      console.log("no bridge found, fetching fallback")      
-// 
+      console.log("no bridge found, fetching fallback")
+//
       // fetch(`${process.env.PUBLIC_URL}/config/flashcards-adr-with-translations-nl.json`)
       // fetch(`${process.env.PUBLIC_URL}/config/flashcards-handlingpackaging-with-translations-hi.json`)
       // fetch(`${process.env.PUBLIC_URL}/config/flashcards-handlingpackaging-with-translations-en.json`)
@@ -94,7 +94,7 @@ const App = () => {
   }
 
   const handleFlipped = (card: Card, flipped: boolean) => {
-    setTimeout(forceUpdate, 20); // not happy about this, but we have to repaint 
+    setTimeout(forceUpdate, 20); // not happy about this, but we have to repaint
                                  // to show/hide the buttons
   }
 
@@ -111,7 +111,7 @@ const App = () => {
   }
 
   const swipe = (dir: direction) => {
-    if (!cards || !data || animating) return    
+    if (!cards || !data || animating) return
     setAnimating(true);
     latestCard.current?.swipe(dir);
 
@@ -129,7 +129,7 @@ const App = () => {
   const handleFlip = () => {
     if (animating) return;
     latestCard.current?.flip();
-  }  
+  }
 
   useEffect(() => {
     if (cards?.length === 0 && state === GameState.normal){
@@ -141,7 +141,6 @@ const App = () => {
     // Show the confetti without any regretti!
     if (state === GameState.complete ){
       tadaSound.play();
-      // @ts-ignore
       window.setGameData({
         levelsCompleted: [{
           level: 1,
@@ -163,7 +162,7 @@ const App = () => {
 
   return (
     <div className="app">
-      <PlayerBridge 
+      <PlayerBridge
         gameDataReceived={handleGameDataReceived}
       />
       {state === GameState.loading && (
@@ -181,8 +180,8 @@ const App = () => {
                 ref = latestCard
               }
               return (
-              <CardNormal 
-                key={card.image} 
+              <CardNormal
+                key={card.image}
                 card={card}
                 onSwiped={handleSwiped}
                 onCardLeftScreen={handleCardLeftScreen}
@@ -192,7 +191,7 @@ const App = () => {
             )
           })}
          {state === GameState.intro && (
-          <CardIntro 
+          <CardIntro
             ref={introCard}
             onSwiped={handleIntroSwiped}
             onCardLeftScreen={handleIntroCardLeftScreen}
@@ -213,7 +212,7 @@ const App = () => {
           />
           )}
           {state === GameState.complete && (
-            <ButtonBarIntro 
+            <ButtonBarIntro
               /** might as well use the intro component here ¯\_(ツ)_/¯ */
               onPlay={handleReset}
             />
@@ -221,7 +220,7 @@ const App = () => {
         </>
         )
       }
-    </div>  
+    </div>
   );
 }
 
