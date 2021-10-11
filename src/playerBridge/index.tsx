@@ -17,7 +17,7 @@ export type GameEvent = {
 declare global {
   interface Window {
     setGameData: (gameData: any) => void;
-    storeGameEvent: (gameData: any) => void;
+    storeGameEvent: (gameEvent: GameEvent) => void;
     getGameData: () => any
     GAMEDATA: any
   }
@@ -46,20 +46,6 @@ const PlayerBridge = (props: Props) => {
       gameDataReceived(msg.data);
     }
 
-    window.setGameData = (gameData: any) => {
-      send({
-        type: 'setGameData',
-        data: gameData
-      });
-    }
-
-    window.storeGameEvent = (gameEvent: GameEvent) => {
-      send({
-        type: 'gameEvent',
-        data: gameEvent
-      });
-    }
-
     window.GAMEDATA = null;
 
     window.getGameData = () => {
@@ -85,6 +71,19 @@ const PlayerBridge = (props: Props) => {
 
 export default PlayerBridge;
 
+window.setGameData = (gameData: any) => {
+  send({
+    type: 'setGameData',
+    data: gameData
+  });
+}
+
+window.storeGameEvent = (gameEvent: GameEvent) => {
+  send({
+    type: 'gameEvent',
+    data: gameEvent
+  });
+}
 
 export const send = (payload: any) => {
   // @ts-ignore

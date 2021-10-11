@@ -43,6 +43,7 @@ const App = () => {
     setCards(data?.content?.sort(() => Math.random() - 0.5));
     setState(GameState.intro)
 
+
     if (data.translations){
       const t = data.translations.reduce<{[key: string]: string}>((acc, translation) => {
         acc[translation.key] = translation.value;
@@ -105,7 +106,16 @@ const App = () => {
     if (dir === direction.RIGHT){
       setCards(cards?.filter(c => c !== card))
     } else {
+
       const [first, ...rest] = cards;
+      const whichCard = rest[rest.length - 1]
+
+      // Log event!
+      window.storeGameEvent({
+        code: "mistake",
+        level: 1,
+        additionalInfo: whichCard.text.substring(0, whichCard.text.lastIndexOf('-text'))
+      })
       setCards([...rest,first])
     }
   }
@@ -118,6 +128,9 @@ const App = () => {
     if (dir === direction.RIGHT){
       setProgress(1 - (cards.length -1) / data.content.length)
     } else {
+
+
+
       setMistakes(mistakes + 1);
     }
   }
