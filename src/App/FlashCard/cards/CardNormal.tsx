@@ -1,5 +1,5 @@
 import { Card } from "data/Card"
-import React, { createRef, forwardRef, useImperativeHandle, useRef, useState } from "react"
+import React, { forwardRef, useImperativeHandle, useRef, useState } from "react"
 import ReactCardFlip from 'react-card-flip';
 import { Swipeable, direction } from "../Swipeable";
 import { ReactComponent as ThumbsDownIcon } from 'images/icons/thumb-down-24px.svg';
@@ -13,7 +13,7 @@ type Props = {
   onFlipped: (card: Card, flipped: boolean) => void,
   onSwiped: (card: Card, dir: direction) => void
   onCardLeftScreen: (card: Card, dir: direction) => void
-} 
+}
 
 export type NormalCardRef = {
   flipped: boolean;
@@ -24,17 +24,17 @@ export type NormalCardRef = {
 const flipSound = new Howl({
   src: ['sound/card-flip.ogg']
 });
- 
+
 
 const whooshSound = new Howl({
   src: ['sound/whoosh.ogg']
 });
- 
+
 
 const CardNormal = forwardRef<NormalCardRef, Props>((props, ref) => {
   const { onSwiped, card, onCardLeftScreen, onFlipped } = props;
 
-  const flying = useRef(false);  
+  const flying = useRef(false);
   const dragging = useRef(false)
   const [flipped, setFlipped] = useState(false)
   const [flyout, setFlyout] = useState<direction>()
@@ -79,28 +79,28 @@ const CardNormal = forwardRef<NormalCardRef, Props>((props, ref) => {
     // set dragging to false AFTER handleFlip fires
     setTimeout(() => { dragging.current = false; }, 20);
   }
-  
+
   return (
     <div className='flash-card-wrapper'>
-      <Swipeable 
-        onSwipe={handleSwipe} 
+      <Swipeable
+        onSwipe={handleSwipe}
         fadeThreshold={60}
         onDragging={handleDragging}
         onDragEnd={handleDragEnd}
-        onAfterSwipe={handleAfterSwipe} 
+        onAfterSwipe={handleAfterSwipe}
         forceFlyout={flyout}
         leftIcon={<ThumbsDownIcon />}
         rightIcon={<ThumbsUpIcon />}
         disabled={!flipped}
       >
-        <ReactCardFlip 
-          isFlipped={flipped} 
-          flipDirection="horizontal"         
+        <ReactCardFlip
+          isFlipped={flipped}
+          flipDirection="horizontal"
           flipSpeedFrontToBack={flying.current ? 0 : undefined}
-          flipSpeedBackToFront={flying.current ? 0 : undefined} 
+          flipSpeedBackToFront={flying.current ? 0 : undefined}
         >
           <div className="card front" onClick={handleFlip}>
-            <div 
+            <div
               style={{ backgroundImage: 'url(' + card.image + ')' }}
               className='image'
             />
@@ -109,7 +109,7 @@ const CardNormal = forwardRef<NormalCardRef, Props>((props, ref) => {
             <div className="text">
              {translations.getText(card.text)}
             </div>
-            <div 
+            <div
               style={{ backgroundImage: 'url(' + card.image + ')' }}
               className='image'
             />
@@ -120,7 +120,7 @@ const CardNormal = forwardRef<NormalCardRef, Props>((props, ref) => {
              {translations.getText(card.subtext2)}
             </div>)}
           </div>
-          </ReactCardFlip>    
+          </ReactCardFlip>
         </Swipeable>
     </div>
   )

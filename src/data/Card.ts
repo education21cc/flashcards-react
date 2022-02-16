@@ -6,10 +6,12 @@ export enum CardType {
 
 export interface Card {
   type: CardType;
-  image: string;
-  frontText: string;
-  text: string;
-  subtext1: string;
-  subtext2: string;
-} 
-  
+  front: string; // preferred way to set content of front. markdown enabled string
+  back: string;  // preferred way to set content of front. markdown enabled string
+
+  image?: string;
+  frontText?: string;
+  text?: string;
+  subtext1?: string;
+  subtext2?: string;
+}

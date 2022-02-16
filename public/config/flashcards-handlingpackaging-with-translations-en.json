@@ -1,25 +1,25 @@
 {
     "userId":2,
     "settings":{
-      "muted": false    
+      "muted": false
     },
     "content":[
-      { "text": "fragile-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/fragile.png" },
-      { "text": "handle-with-care-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/handle-with-care.png" },
-      { "text": "flammable-text",  "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/flammable.png" },
-      { "text": "this-way-up-text",  "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/this-way-up.png" },
-      { "text": "do-not-stack-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/do-not-stack.png" },
-      { "text": "maximum-stack-weight-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/maximum-stack-weight.png" },
-      { "text": "maximum-stack-height-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/maximum-stack-height.png" },
-      { "text": "protect-from-sunlight-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/protect-from-sunlight.png" },
-      { "text": "temperature-limitations-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/temperature-limitations.png" },
-      { "text": "keep-dry-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/keep-dry.png" },
-      { "text": "do-not-lift-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/do-not-lift.png" },
-      { "text": "two-person-lift-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/two-person-lift.png" },
-      { "text": "only-use-trolley-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/only-use-trolley.png" },
-      { "text": "do-not-use-hand-truck-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/do-not-use-hand-truck.png" },
-      { "text": "do-not-use-forklift-text", "image": "https://21cceducation.nl/content/games/images/image.php?image=flashcards/shippinghandling/do-not-use-forklift.png" }
-     ], 
+      { "text": "fragile-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/fragile.png" },
+      { "text": "handle-with-care-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/handle-with-care.png" },
+      { "text": "flammable-text",  "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/flammable.png" },
+      { "text": "this-way-up-text",  "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/this-way-up.png" },
+      { "text": "do-not-stack-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-stack.png" },
+      { "text": "maximum-stack-weight-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/maximum-stack-weight.png" },
+      { "text": "maximum-stack-height-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/maximum-stack-height.png" },
+      { "text": "protect-from-sunlight-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/protect-from-sunlight.png" },
+      { "text": "temperature-limitations-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/temperature-limitations.png" },
+      { "text": "keep-dry-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/keep-dry.png" },
+      { "text": "do-not-lift-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-lift.png" },
+      { "text": "two-person-lift-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/two-person-lift.png" },
+      { "text": "only-use-trolley-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/only-use-trolley.png" },
+      { "text": "do-not-use-hand-truck-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-use-hand-truck.png" },
+      { "text": "do-not-use-forklift-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-use-forklift.png" }
+     ],
     "levelsCompleted":[],
     "translations":[{
         "key": "intro-header",
