@@ -4,22 +4,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
-    "canvas-confetti": "^1.4.0",
-    "howler": "^2.2.1",
+    "canvas-confetti": "^1.5.1",
+    "howler": "^2.2.3",
     "node-sass": "^7.0.1",
     "react": "^17.0.2",
-    "react-card-flip": "^1.1.1",
+    "react-card-flip": "^1.1.5",
     "react-deck-swiper": "^1.0.9",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
-    "react-spring": "^9.0.0-rc.3",
-    "typescript": "^4.3.2",
+    "react-spring": "^9.4.3",
+    "typescript": "^4.5.5",
     "use-force-update": "^1.0.7",
     "web-vitals": "^1.1.2",
-    "zustand": "^3.5.2"
+    "zustand": "^3.7.0"
   },
   "scripts": {
     "start:player": "REACT_APP_PLAYER_MODE=true react-scripts start",
@@ -49,12 +49,12 @@
     ]
   },
   "devDependencies": {
-    "@types/canvas-confetti": "^1.4.0",
-    "@types/howler": "^2.2.2",
-    "@types/jest": "^26.0.23",
-    "@types/node": "^12.20.14",
-    "@types/react": "^17.0.9",
-    "@types/react-dom": "^17.0.6",
-    "gh-pages": "^3.2.0"
+    "@types/canvas-confetti": "^1.4.2",
+    "@types/howler": "^2.2.4",
+    "@types/jest": "^26.0.24",
+    "@types/node": "^12.20.46",
+    "@types/react": "^17.0.39",
+    "@types/react-dom": "^17.0.11",
+    "gh-pages": "^3.2.3"
   }
 }
