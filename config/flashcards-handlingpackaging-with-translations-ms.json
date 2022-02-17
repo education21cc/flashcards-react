@@ -3,23 +3,37 @@
     "settings":{
       "muted": false
     },
-    "content":[
-      { "text": "fragile-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/fragile.png" },
-      { "text": "handle-with-care-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/handle-with-care.png" },
-      { "text": "flammable-text",  "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/flammable.png" },
-      { "text": "this-way-up-text",  "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/this-way-up.png" },
-      { "text": "do-not-stack-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-stack.png" },
-      { "text": "maximum-stack-weight-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/maximum-stack-weight.png" },
-      { "text": "maximum-stack-height-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/maximum-stack-height.png" },
-      { "text": "protect-from-sunlight-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/protect-from-sunlight.png" },
-      { "text": "temperature-limitations-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/temperature-limitations.png" },
-      { "text": "keep-dry-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/keep-dry.png" },
-      { "text": "do-not-lift-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-lift.png" },
-      { "text": "two-person-lift-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/two-person-lift.png" },
-      { "text": "only-use-trolley-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/only-use-trolley.png" },
-      { "text": "do-not-use-hand-truck-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-use-hand-truck.png" },
-      { "text": "do-not-use-forklift-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-use-forklift.png" }
-     ],
+    "content": [{
+      "id": "fragile"
+    }, {
+      "id": "handle-with-care"
+    }, {
+      "id": "flammable"
+    }, {
+      "id": "this-way-up"
+    }, {
+      "id": "do-not-stack"
+    }, {
+      "id": "maximum-stack-weight"
+    }, {
+      "id": "maximum-stack-height"
+    }, {
+      "id": "protect-from-sunlight"
+    }, {
+      "id": "temperature-limitations"
+    }, {
+      "id": "keep-dry"
+    }, {
+      "id": "do-not-lift"
+    }, {
+      "id": "two-person-lift"
+    }, {
+      "id": "only-use-trolley"
+    }, {
+      "id": "do-not-use-hand-truck"
+    }, {
+      "id": "do-not-use-forklift"
+    }],
     "levelsCompleted":[],
     "translations": [
       {
@@ -36,7 +50,7 @@
       },
       {
           "key": "intro-description-wrong",
-          "value": "Tidak ingat jawapannya? Leret ke kiri!"
+          "value": "Tidak ingat jawapannya?\n Leret ke kiri!"
       },
       {
           "key": "outro-header",
@@ -46,65 +60,126 @@
           "key": "outro-description",
           "value": "Anda tidak teringat {0} keping kad."
       },
-      {
-          "key": "fragile-text",
-          "value": "Mudah Pecah"
-      },
-      {
-          "key": "handle-with-care-text",
-          "value": "Kendali Dengan Cermat"
-      },
-      {
-          "key": "flammable-text",
-          "value": "Mudah Terbakar"
-      },
-      {
-          "key": "this-way-up-text",
-          "value": "Arah ini ke atas"
-      },
-      {
-          "key": "do-not-stack-text",
-          "value": "Jangan Ditimbun"
-      },
-      {
-          "key": "maximum-stack-weight-text",
-          "value": "Berat Timbunan Maksimum"
-      },
-      {
-          "key": "maximum-stack-height-text",
-          "value": "Tinggi Timbunan Maksimum"
-      },
-      {
-          "key": "protect-from-sunlight-text",
-          "value": "Lindungi Dari Cahaya Matahari"
-      },
-      {
-          "key": "temperature-limitations-text",
-          "value": "Batasan Suhu"
-      },
-      {
-          "key": "keep-dry-text",
-          "value": "Pastikan Kering"
-      },
-      {
-          "key": "do-not-lift-text",
-          "value": "Jangan Angkat"
-      },
-      {
-          "key": "two-person-lift-text",
-          "value": "Angkat Dengan Dua Orang"
-      },
-      {
-          "key": "only-use-trolley-text",
-          "value": "Hanya Gunakan Troli"
-      },
-      {
-          "key": "do-not-use-hand-truck-text",
-          "value": "Jangan Gunakan Trak Tangan"
-      },
-      {
-          "key": "do-not-use-forklift-text",
-          "value": "Jangan Gunakan Foklif"
-      }
+        {
+          "key": "card-fragile-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/fragile.png)"
+        },
+        {
+          "key": "card-fragile-back",
+          "value": "Mudah Pecah\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/fragile.png)"
+        },
+        {
+          "key": "card-handle-with-care-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/handle-with-care.png)"
+        },
+        {
+          "key": "card-handle-with-care-back",
+          "value": "Kendali Dengan Cermat\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/handle-with-care.png)"
+        },
+        {
+          "key": "card-flammable-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/flammable.png)"
+        },
+        {
+          "key": "card-flammable-back",
+          "value": "Mudah Terbakar\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/flammable.png)"
+        },
+        {
+          "key": "card-this-way-up-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/this-way-up.png)"
+        },
+        {
+          "key": "card-this-way-up-back",
+          "value": "Arah ini ke atas\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/this-way-up.png)"
+        },
+        {
+          "key": "card-do-not-stack-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-stack.png)"
+        },
+        {
+          "key": "card-do-not-stack-back",
+          "value": "Jangan Ditimbun\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-stack.png)"
+        },
+        {
+          "key": "card-maximum-stack-weight-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/maximum-stack-weight.png)"
+        },
+        {
+          "key": "card-maximum-stack-weight-back",
+          "value": "Berat Timbunan Maksimum\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/maximum-stack-weight.png)"
+        },
+        {
+          "key": "card-maximum-stack-height-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/maximum-stack-height.png)"
+        },
+        {
+          "key": "card-maximum-stack-height-back",
+          "value": "Tinggi Timbunan Maksimum\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/maximum-stack-height.png)"
+        },
+        {
+          "key": "card-protect-from-sunlight-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/protect-from-sunlight.png)"
+        },
+        {
+          "key": "card-protect-from-sunlight-back",
+          "value": "Lindungi Dari Cahaya Matahari\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/protect-from-sunlight.png)"
+        },
+        {
+          "key": "card-temperature-limitations-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/temperature-limitations.png)"
+        },
+        {
+          "key": "card-temperature-limitations-back",
+          "value": "Batasan Suhu\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/temperature-limitations.png)"
+        },
+        {
+          "key": "card-keep-dry-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/keep-dry.png)"
+        },
+        {
+          "key": "card-keep-dry-back",
+          "value": "Pastikan Kering\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/keep-dry.png)"
+        },
+        {
+          "key": "card-do-not-lift-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-lift.png)"
+        },
+        {
+          "key": "card-do-not-lift-back",
+          "value": "Jangan Angkat\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-lift.png)"
+        },
+        {
+          "key": "card-two-person-lift-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/two-person-lift.png)"
+        },
+        {
+          "key": "card-two-person-lift-back",
+          "value": "Angkat Dengan Dua Orang\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/two-person-lift.png)"
+        },
+        {
+          "key": "card-only-use-trolley-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/only-use-trolley.png)"
+        },
+        {
+          "key": "card-only-use-trolley-back",
+          "value": "Hanya Gunakan Troli\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/only-use-trolley.png)"
+        },
+        {
+          "key": "card-do-not-use-hand-truck-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-use-hand-truck.png)"
+        },
+        {
+          "key": "card-do-not-use-hand-truck-back",
+          "value": "Jangan Gunakan Trak Tangan\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-use-forklift.png)"
+        },
+        {
+          "key": "card-do-not-use-forklift-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-use-forklift.png)"
+        },
+        {
+          "key": "card-do-not-use-forklift-back",
+          "value": "Jangan Gunakan Foklif\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-use-forklift.png)"
+        }
+
   ]
 }

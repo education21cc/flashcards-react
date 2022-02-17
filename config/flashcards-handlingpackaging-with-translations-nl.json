@@ -1,110 +1,183 @@
 {
-    "userId":2,
-    "settings":{
-      "muted": false
+  "userId": 2,
+  "settings": {
+    "muted": false
+  },
+  "content": [{
+     "id": "fragile"
+  }, {
+     "id": "handle-with-care"
+  }, {
+     "id": "flammable"
+  }, {
+     "id": "this-way-up"
+  }, {
+     "id": "do-not-stack"
+  }, {
+     "id": "maximum-stack-weight"
+  }, {
+     "id": "maximum-stack-height"
+  }, {
+     "id": "protect-from-sunlight"
+  }, {
+     "id": "temperature-limitations"
+  }, {
+     "id": "keep-dry"
+  }, {
+     "id": "do-not-lift"
+  }, {
+     "id": "two-person-lift"
+  }, {
+     "id": "only-use-trolley"
+  }, {
+     "id": "do-not-use-hand-truck"
+  }, {
+     "id": "do-not-use-forklift"
+  }],
+  "levelsCompleted": [],
+  "translations": [{
+      "key": "intro-header",
+      "value": "Intro"
     },
-    "content":[
-      { "text": "fragile-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/fragile.png" },
-      { "text": "handle-with-care-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/handle-with-care.png" },
-      { "text": "flammable-text",  "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/flammable.png" },
-      { "text": "this-way-up-text",  "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/this-way-up.png" },
-      { "text": "do-not-stack-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-stack.png" },
-      { "text": "maximum-stack-weight-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/maximum-stack-weight.png" },
-      { "text": "maximum-stack-height-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/maximum-stack-height.png" },
-      { "text": "protect-from-sunlight-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/protect-from-sunlight.png" },
-      { "text": "temperature-limitations-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/temperature-limitations.png" },
-      { "text": "keep-dry-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/keep-dry.png" },
-      { "text": "do-not-lift-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-lift.png" },
-      { "text": "two-person-lift-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/two-person-lift.png" },
-      { "text": "only-use-trolley-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/only-use-trolley.png" },
-      { "text": "do-not-use-hand-truck-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-use-hand-truck.png" },
-      { "text": "do-not-use-forklift-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-use-forklift.png" }
-     ],
-    "levelsCompleted":[],
-    "translations": [
-        {
-            "key": "intro-header",
-            "value": "Intro"
-        },
-        {
-            "key": "intro-description",
-            "value": "Ken jij de handling en verpakkings symbolen? Bedenk het goede antwoord eerst zelf, draai dan de kaart om en zie wat de juiste betekenis van het symbool is."
-        },
-        {
-            "key": "intro-description-correct",
-            "value": "Had je het goed? \nSwipe naar rechts."
-        },
-        {
-            "key": "intro-description-wrong",
-            "value": "Wist je het antwoord niet? \nSwipe naar links."
-        },
-        {
-            "key": "outro-header",
-            "value": "Klaar!"
-        },
-        {
-            "key": "outro-description",
-            "value": "Je wist de betekenis van (0) kaarten niet"
-        },
-        {
-            "key": "fragile-text",
-            "value": "Kwetsbaar"
-        },
-        {
-            "key": "handle-with-care-text",
-            "value": "Voorzichtig behandelen"
-        },
-        {
-            "key": "flammable-text",
-            "value": "Brandbaar"
-        },
-        {
-            "key": "this-way-up-text",
-            "value": "Deze kant boven"
-        },
-        {
-            "key": "do-not-stack-text",
-            "value": "Niet stapelen"
-        },
-        {
-            "key": "maximum-stack-weight-text",
-            "value": "Maximaal gewicht"
-        },
-        {
-            "key": "maximum-stack-height-text",
-            "value": "Maximale hoogte"
-        },
-        {
-            "key": "protect-from-sunlight-text",
-            "value": "Bescherm tegen zonlicht"
-        },
-        {
-            "key": "temperature-limitations-text",
-            "value": "Temperatuurbeperkingen"
-        },
-        {
-            "key": "keep-dry-text",
-            "value": "Droog houden"
-        },
-        {
-            "key": "do-not-lift-text",
-            "value": "Niet optillen"
-        },
-        {
-            "key": "two-person-lift-text",
-            "value": "2 Persoons lift"
-        },
-        {
-            "key": "only-use-trolley-text",
-            "value": "Alleen een trolley gebruiken"
-        },
-        {
-            "key": "do-not-use-hand-truck-text",
-            "value": "Gebruik geen Hand truck"
-        },
-        {
-            "key": "do-not-use-forklift-text",
-            "value": "Gebruik geen Forkheftruck"
-        }
-    ]
+    {
+      "key": "intro-description",
+      "value": "Ken jij de handling en verpakkings symbolen? Bedenk het goede antwoord eerst zelf, draai dan de kaart om en zie wat de juiste betekenis van het symbool is."
+    },
+    {
+      "key": "intro-description-correct",
+      "value": "Had je het goed? \nSwipe naar rechts."
+    },
+    {
+      "key": "intro-description-wrong",
+      "value": "Wist je het antwoord niet? \nSwipe naar links."
+    },
+    {
+      "key": "outro-header",
+      "value": "Klaar!"
+    },
+    {
+      "key": "outro-description",
+      "value": "Je wist de betekenis van (0) kaarten niet"
+    },
+    {
+      "key": "card-fragile-front",
+      "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/fragile.png)"
+    },
+    {
+      "key": "card-fragile-back",
+      "value": "Kwetsbaar\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/fragile.png)"
+    },
+    {
+      "key": "card-handle-with-care-front",
+      "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/handle-with-care.png)"
+    },
+    {
+      "key": "card-handle-with-care-back",
+      "value": "Voorzichtig behandelen\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/handle-with-care.png)"
+    },
+    {
+      "key": "card-flammable-front",
+      "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/flammable.png)"
+    },
+    {
+      "key": "card-flammable-back",
+      "value": "Brandbaar\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/flammable.png)"
+    },
+    {
+      "key": "card-this-way-up-front",
+      "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/this-way-up.png)"
+    },
+    {
+      "key": "card-this-way-up-back",
+      "value": "Deze kant boven\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/this-way-up.png)"
+    },
+    {
+      "key": "card-do-not-stack-front",
+      "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-stack.png)"
+    },
+    {
+      "key": "card-do-not-stack-back",
+      "value": "Niet stapelen\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-stack.png)"
+    },
+    {
+      "key": "card-maximum-stack-weight-front",
+      "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/maximum-stack-weight.png)"
+    },
+    {
+      "key": "card-maximum-stack-weight-back",
+      "value": "Maximaal gewicht\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/maximum-stack-weight.png)"
+    },
+    {
+      "key": "card-maximum-stack-height-front",
+      "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/maximum-stack-height.png)"
+    },
+    {
+      "key": "card-maximum-stack-height-back",
+      "value": "Maximale hoogte\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/maximum-stack-height.png)"
+    },
+    {
+      "key": "card-protect-from-sunlight-front",
+      "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/protect-from-sunlight.png)"
+    },
+    {
+      "key": "card-protect-from-sunlight-back",
+      "value": "Bescherm tegen zonlicht\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/protect-from-sunlight.png)"
+    },
+    {
+      "key": "card-temperature-limitations-front",
+      "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/temperature-limitations.png)"
+    },
+    {
+      "key": "card-temperature-limitations-back",
+      "value": "Temperatuur&shy;beperkingen\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/temperature-limitations.png)"
+    },
+    {
+      "key": "card-keep-dry-front",
+      "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/keep-dry.png)"
+    },
+    {
+      "key": "card-keep-dry-back",
+      "value": "Droog houden\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/keep-dry.png)"
+    },
+    {
+      "key": "card-do-not-lift-front",
+      "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-lift.png)"
+    },
+    {
+      "key": "card-do-not-lift-back",
+      "value": "Niet optillen\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-lift.png)"
+    },
+    {
+      "key": "card-two-person-lift-front",
+      "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/two-person-lift.png)"
+    },
+    {
+      "key": "card-two-person-lift-back",
+      "value": "2 Persoons lift\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/two-person-lift.png)"
+    },
+    {
+      "key": "card-only-use-trolley-front",
+      "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/only-use-trolley.png)"
+    },
+    {
+      "key": "card-only-use-trolley-back",
+      "value": "Alleen een trolley gebruiken\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/only-use-trolley.png)"
+    },
+    {
+      "key": "card-do-not-use-hand-truck-front",
+      "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-use-hand-truck.png)"
+    },
+    {
+      "key": "card-do-not-use-hand-truck-back",
+      "value": "Gebruik geen Hand truck\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-use-forklift.png)"
+    },
+    {
+      "key": "card-do-not-use-forklift-front",
+      "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-use-forklift.png)"
+    },
+    {
+      "key": "card-do-not-use-forklift-back",
+      "value": "Gebruik geen Forkheftruck\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-use-forklift.png)"
+    }
+  ]
 }

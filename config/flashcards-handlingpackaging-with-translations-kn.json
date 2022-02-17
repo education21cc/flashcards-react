@@ -3,23 +3,37 @@
     "settings":{
       "muted": false
     },
-    "content":[
-      { "text": "fragile-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/fragile.png" },
-      { "text": "handle-with-care-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/handle-with-care.png" },
-      { "text": "flammable-text",  "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/flammable.png" },
-      { "text": "this-way-up-text",  "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/this-way-up.png" },
-      { "text": "do-not-stack-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-stack.png" },
-      { "text": "maximum-stack-weight-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/maximum-stack-weight.png" },
-      { "text": "maximum-stack-height-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/maximum-stack-height.png" },
-      { "text": "protect-from-sunlight-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/protect-from-sunlight.png" },
-      { "text": "temperature-limitations-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/temperature-limitations.png" },
-      { "text": "keep-dry-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/keep-dry.png" },
-      { "text": "do-not-lift-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-lift.png" },
-      { "text": "two-person-lift-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/two-person-lift.png" },
-      { "text": "only-use-trolley-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/only-use-trolley.png" },
-      { "text": "do-not-use-hand-truck-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-use-hand-truck.png" },
-      { "text": "do-not-use-forklift-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-use-forklift.png" }
-     ],
+    "content": [{
+        "id": "fragile"
+    }, {
+        "id": "handle-with-care"
+    }, {
+        "id": "flammable"
+    }, {
+        "id": "this-way-up"
+    }, {
+        "id": "do-not-stack"
+    }, {
+        "id": "maximum-stack-weight"
+    }, {
+        "id": "maximum-stack-height"
+    }, {
+        "id": "protect-from-sunlight"
+    }, {
+        "id": "temperature-limitations"
+    }, {
+        "id": "keep-dry"
+    }, {
+        "id": "do-not-lift"
+    }, {
+        "id": "two-person-lift"
+    }, {
+        "id": "only-use-trolley"
+    }, {
+        "id": "do-not-use-hand-truck"
+    }, {
+        "id": "do-not-use-forklift"
+    }],
     "levelsCompleted":[],
     "translations": [
       {
@@ -46,65 +60,126 @@
           "key": "outro-description",
           "value": "ನಿಮಗೆ {0} ಕಾರ್ಡ್‌ಗಳು ನೆನಪಿಲ್ಲ."
       },
-      {
-          "key": "fragile-text",
-          "value": "ದುರ್ಬಲವಾದ"
-      },
-      {
-          "key": "handle-with-care-text",
-          "value": "ಜಾಗರೂಕತೆಯಿಂದ ನಿರ್ವಹಿಸಿ"
-      },
-      {
-          "key": "flammable-text",
-          "value": "ಸುಡುವಂತಹದ್ದು"
-      },
-      {
-          "key": "this-way-up-text",
-          "value": "ಈ ರೀತಿಯಲ್ಲಿ ಮೇಲೆ"
-      },
-      {
-          "key": "do-not-stack-text",
-          "value": "ಒಂದರ ಮೇಲೊಂದರಂತೆ ಜೋಡಿಸಬೇಡಿ"
-      },
-      {
-          "key": "maximum-stack-weight-text",
-          "value": "ಗರಿಷ್ಠ ಒಂದರ ಮೇಲೊಂದರಂತೆ ಜೋಡಿಸುವ ತೂಕ"
-      },
-      {
-          "key": "maximum-stack-height-text",
-          "value": "ಗರಿಷ್ಠ ಒಂದರ ಮೇಲೊಂದರಂತೆ ಜೋಡಿಸುವ ಎತ್ತರ"
-      },
-      {
-          "key": "protect-from-sunlight-text",
-          "value": "ಸೂರ್ಯನ ಬೆಳಕಿನಿಂದ ರಕ್ಷಿಸಿ"
-      },
-      {
-          "key": "temperature-limitations-text",
-          "value": "ತಾಪಮಾನ ಮಿತಿಗಳು"
-      },
-      {
-          "key": "keep-dry-text",
-          "value": "ಒಣ ಸ್ಥಳದಲ್ಲಿ  ಸಂಗ್ರಹಿಸಿ"
-      },
-      {
-          "key": "do-not-lift-text",
-          "value": "ಎತ್ತಬೇಡಿ"
-      },
-      {
-          "key": "two-person-lift-text",
-          "value": "ಎರಡು ವ್ಯಕ್ತಿಗಳು ಎತ್ತಬೇಕು"
-      },
-      {
-          "key": "only-use-trolley-text",
-          "value": "ಟ್ರಾಲಿಯನ್ನು ಮಾತ್ರ ಬಳಸಿ"
-      },
-      {
-          "key": "do-not-use-hand-truck-text",
-          "value": "ಹ್ಯಾಂಡ್ ಟ್ರಕ್ ಬಳಸಬೇಡಿ"
-      },
-      {
-          "key": "do-not-use-forklift-text",
-          "value": "ಫೋರ್ಕ್ಲಿಫ್ಟ್ ಬಳಸಬೇಡಿ"
-      }
+       {
+          "key": "card-fragile-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/fragile.png)"
+        },
+        {
+          "key": "card-fragile-back",
+          "value": "ದುರ್ಬಲವಾದ\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/fragile.png)"
+        },
+        {
+          "key": "card-handle-with-care-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/handle-with-care.png)"
+        },
+        {
+          "key": "card-handle-with-care-back",
+          "value": "ಜಾಗರೂಕತೆಯಿಂದ ನಿರ್ವಹಿಸಿ\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/handle-with-care.png)"
+        },
+        {
+          "key": "card-flammable-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/flammable.png)"
+        },
+        {
+          "key": "card-flammable-back",
+          "value": "ಸುಡುವಂತಹದ್ದು\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/flammable.png)"
+        },
+        {
+          "key": "card-this-way-up-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/this-way-up.png)"
+        },
+        {
+          "key": "card-this-way-up-back",
+          "value": "ಈ ರೀತಿಯಲ್ಲಿ ಮೇಲೆ\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/this-way-up.png)"
+        },
+        {
+          "key": "card-do-not-stack-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-stack.png)"
+        },
+        {
+          "key": "card-do-not-stack-back",
+          "value": "ಒಂದರ ಮೇಲೊಂದರಂತೆ ಜೋಡಿಸಬೇಡಿ\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-stack.png)"
+        },
+        {
+          "key": "card-maximum-stack-weight-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/maximum-stack-weight.png)"
+        },
+        {
+          "key": "card-maximum-stack-weight-back",
+          "value": "ಗರಿಷ್ಠ ಒಂದರ ಮೇಲೊಂದರಂತೆ ಜೋಡಿಸುವ ತೂಕ\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/maximum-stack-weight.png)"
+        },
+        {
+          "key": "card-maximum-stack-height-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/maximum-stack-height.png)"
+        },
+        {
+          "key": "card-maximum-stack-height-back",
+          "value": "ಗರಿಷ್ಠ ಒಂದರ ಮೇಲೊಂದರಂತೆ ಜೋಡಿಸುವ ಎತ್ತರ\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/maximum-stack-height.png)"
+        },
+        {
+          "key": "card-protect-from-sunlight-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/protect-from-sunlight.png)"
+        },
+        {
+          "key": "card-protect-from-sunlight-back",
+          "value": "ಸೂರ್ಯನ ಬೆಳಕಿನಿಂದ ರಕ್ಷಿಸಿ\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/protect-from-sunlight.png)"
+        },
+        {
+          "key": "card-temperature-limitations-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/temperature-limitations.png)"
+        },
+        {
+          "key": "card-temperature-limitations-back",
+          "value": "ತಾಪಮಾನ ಮಿತಿಗಳು\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/temperature-limitations.png)"
+        },
+        {
+          "key": "card-keep-dry-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/keep-dry.png)"
+        },
+        {
+          "key": "card-keep-dry-back",
+          "value": "ಒಣ ಸ್ಥಳದಲ್ಲಿ  ಸಂಗ್ರಹಿಸಿ\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/keep-dry.png)"
+        },
+        {
+          "key": "card-do-not-lift-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-lift.png)"
+        },
+        {
+          "key": "card-do-not-lift-back",
+          "value": "ಎತ್ತಬೇಡಿ\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-lift.png)"
+        },
+        {
+          "key": "card-two-person-lift-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/two-person-lift.png)"
+        },
+        {
+          "key": "card-two-person-lift-back",
+          "value": "ಎರಡು ವ್ಯಕ್ತಿಗಳು ಎತ್ತಬೇಕು\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/two-person-lift.png)"
+        },
+        {
+          "key": "card-only-use-trolley-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/only-use-trolley.png)"
+        },
+        {
+          "key": "card-only-use-trolley-back",
+          "value": "ಟ್ರಾಲಿಯನ್ನು ಮಾತ್ರ ಬಳಸಿ\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/only-use-trolley.png)"
+        },
+        {
+          "key": "card-do-not-use-hand-truck-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-use-hand-truck.png)"
+        },
+        {
+          "key": "card-do-not-use-hand-truck-back",
+          "value": "ಹ್ಯಾಂಡ್ ಟ್ರಕ್ ಬಳಸಬೇಡಿ\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-use-forklift.png)"
+        },
+        {
+          "key": "card-do-not-use-forklift-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-use-forklift.png)"
+        },
+        {
+          "key": "card-do-not-use-forklift-back",
+          "value": "ಫೋರ್ಕ್ಲಿಫ್ಟ್ ಬಳಸಬೇಡಿ\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-use-forklift.png)"
+        }
+
   ]
 }

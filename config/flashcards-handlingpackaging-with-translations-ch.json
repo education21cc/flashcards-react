@@ -46,65 +46,126 @@
           "key": "outro-description",
           "value": "你不记得了 {0} 张卡片。"
       },
-      {
-          "key": "fragile-text",
-          "value": "易碎物品"
-      },
-      {
-          "key": "handle-with-care-text",
-          "value": "小心轻放"
-      },
-      {
-          "key": "flammable-text",
-          "value": "易燃品"
-      },
-      {
-          "key": "this-way-up-text",
-          "value": "此端向上"
-      },
-      {
-          "key": "do-not-stack-text",
-          "value": "不可堆叠"
-      },
-      {
-          "key": "maximum-stack-weight-text",
-          "value": "最大堆叠重量"
-      },
-      {
-          "key": "maximum-stack-height-text",
-          "value": "最大堆叠高度"
-      },
-      {
-          "key": "protect-from-sunlight-text",
-          "value": "防晒"
-      },
-      {
-          "key": "temperature-limitations-text",
-          "value": "温度限制"
-      },
-      {
-          "key": "keep-dry-text",
-          "value": "保持干燥"
-      },
-      {
-          "key": "do-not-lift-text",
-          "value": "不要抬起"
-      },
-      {
-          "key": "two-person-lift-text",
-          "value": "两人抬放"
-      },
-      {
-          "key": "only-use-trolley-text",
-          "value": "只能使用手推车"
-      },
-      {
-          "key": "do-not-use-hand-truck-text",
-          "value": "不要使用手车/拖车"
-      },
-      {
-          "key": "do-not-use-forklift-text",
-          "value": "不要使用叉车"
-      }
+        {
+          "key": "card-fragile-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/fragile.png)"
+        },
+        {
+          "key": "card-fragile-back",
+          "value": "易碎物品\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/fragile.png)"
+        },
+        {
+          "key": "card-handle-with-care-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/handle-with-care.png)"
+        },
+        {
+          "key": "card-handle-with-care-back",
+          "value": "小心轻放\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/handle-with-care.png)"
+        },
+        {
+          "key": "card-flammable-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/flammable.png)"
+        },
+        {
+          "key": "card-flammable-back",
+          "value": "易燃品\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/flammable.png)"
+        },
+        {
+          "key": "card-this-way-up-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/this-way-up.png)"
+        },
+        {
+          "key": "card-this-way-up-back",
+          "value": "此端向上\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/this-way-up.png)"
+        },
+        {
+          "key": "card-do-not-stack-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-stack.png)"
+        },
+        {
+          "key": "card-do-not-stack-back",
+          "value": "不可堆叠\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-stack.png)"
+        },
+        {
+          "key": "card-maximum-stack-weight-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/maximum-stack-weight.png)"
+        },
+        {
+          "key": "card-maximum-stack-weight-back",
+          "value": "最大堆叠重量\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/maximum-stack-weight.png)"
+        },
+        {
+          "key": "card-maximum-stack-height-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/maximum-stack-height.png)"
+        },
+        {
+          "key": "card-maximum-stack-height-back",
+          "value": "最大堆叠高度\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/maximum-stack-height.png)"
+        },
+        {
+          "key": "card-protect-from-sunlight-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/protect-from-sunlight.png)"
+        },
+        {
+          "key": "card-protect-from-sunlight-back",
+          "value": "防晒\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/protect-from-sunlight.png)"
+        },
+        {
+          "key": "card-temperature-limitations-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/temperature-limitations.png)"
+        },
+        {
+          "key": "card-temperature-limitations-back",
+          "value": "温度限制\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/temperature-limitations.png)"
+        },
+        {
+          "key": "card-keep-dry-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/keep-dry.png)"
+        },
+        {
+          "key": "card-keep-dry-back",
+          "value": "保持干燥\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/keep-dry.png)"
+        },
+        {
+          "key": "card-do-not-lift-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-lift.png)"
+        },
+        {
+          "key": "card-do-not-lift-back",
+          "value": "不要抬起\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-lift.png)"
+        },
+        {
+          "key": "card-two-person-lift-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/two-person-lift.png)"
+        },
+        {
+          "key": "card-two-person-lift-back",
+          "value": "两人抬放\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/two-person-lift.png)"
+        },
+        {
+          "key": "card-only-use-trolley-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/only-use-trolley.png)"
+        },
+        {
+          "key": "card-only-use-trolley-back",
+          "value": "只能使用手推车\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/only-use-trolley.png)"
+        },
+        {
+          "key": "card-do-not-use-hand-truck-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-use-hand-truck.png)"
+        },
+        {
+          "key": "card-do-not-use-hand-truck-back",
+          "value": "不要使用手车/拖车\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-use-forklift.png)"
+        },
+        {
+          "key": "card-do-not-use-forklift-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-use-forklift.png)"
+        },
+        {
+          "key": "card-do-not-use-forklift-back",
+          "value": "不要使用叉车\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-use-forklift.png)"
+        }
+
   ]
 }

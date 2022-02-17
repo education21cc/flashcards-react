@@ -3,108 +3,182 @@
     "settings":{
       "muted": false
     },
-    "content":[
-      { "text": "fragile-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/fragile.png" },
-      { "text": "handle-with-care-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/handle-with-care.png" },
-      { "text": "flammable-text",  "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/flammable.png" },
-      { "text": "this-way-up-text",  "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/this-way-up.png" },
-      { "text": "do-not-stack-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-stack.png" },
-      { "text": "maximum-stack-weight-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/maximum-stack-weight.png" },
-      { "text": "maximum-stack-height-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/maximum-stack-height.png" },
-      { "text": "protect-from-sunlight-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/protect-from-sunlight.png" },
-      { "text": "temperature-limitations-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/temperature-limitations.png" },
-      { "text": "keep-dry-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/keep-dry.png" },
-      { "text": "do-not-lift-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-lift.png" },
-      { "text": "two-person-lift-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/two-person-lift.png" },
-      { "text": "only-use-trolley-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/only-use-trolley.png" },
-      { "text": "do-not-use-hand-truck-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-use-hand-truck.png" },
-      { "text": "do-not-use-forklift-text", "image": "https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-use-forklift.png" }
-     ],
+    "content": [{
+        "id": "fragile"
+    }, {
+        "id": "handle-with-care"
+    }, {
+        "id": "flammable"
+    }, {
+        "id": "this-way-up"
+    }, {
+        "id": "do-not-stack"
+    }, {
+        "id": "maximum-stack-weight"
+    }, {
+        "id": "maximum-stack-height"
+    }, {
+        "id": "protect-from-sunlight"
+    }, {
+        "id": "temperature-limitations"
+    }, {
+        "id": "keep-dry"
+    }, {
+        "id": "do-not-lift"
+    }, {
+        "id": "two-person-lift"
+    }, {
+        "id": "only-use-trolley"
+    }, {
+        "id": "do-not-use-hand-truck"
+    }, {
+        "id": "do-not-use-forklift"
+    }],
     "levelsCompleted":[],
     "translations": [
-        {
-            "key": "intro-header",
-            "value": "परिचय"
-        },
-        {
-            "key": "intro-description",
-            "value": "क्या आप हैंडलिंग और पैकेजिंग प्रतीकों को जानते हैं? उनका अर्थ देखने के लिए कार्डों को पलटें। फिर देखें कि आप सही थे या नहीं!"
-        },
-        {
-            "key": "intro-description-correct",
-            "value": "क्या आपको सही उत्तर पता था?\n दाईं ओर स्वाइप करें!"
-        },
-        {
-            "key": "intro-description-wrong",
-            "value": "सही उत्तर याद नहीं आ रहा?\n बाईं ओर स्वाइप करें!"
-        },
-        {
-            "key": "outro-header",
-            "value": "समाप्त!"
-        },
-        {
-            "key": "outro-description",
-            "value": "आपको {0} कार्ड याद नहीं थे"
-        },
-        {
-            "key": "fragile-text",
-            "value": "नाज़ुक"
-        },
-        {
-            "key": "handle-with-care-text",
-            "value": "ध्यान से संभालें"
-        },
-        {
-            "key": "flammable-text",
-            "value": "ज्वलनशील"
-        },
-        {
-            "key": "this-way-up-text",
-            "value": "इस तरफ ऊपर"
-        },
-        {
-            "key": "do-not-stack-text",
-            "value": "एक के ऊपर एक मत रखें"
-        },
-        {
-            "key": "maximum-stack-weight-text",
-            "value": "अधिकतम ढेर वजन"
-        },
-        {
-            "key": "maximum-stack-height-text",
-            "value": "अधिकतम ढेर ऊंचाई"
-        },
-        {
-            "key": "protect-from-sunlight-text",
-            "value": "धूप से बचाएं"
-        },
-        {
-            "key": "temperature-limitations-text",
-            "value": "तापमान सीमाएं"
-        },
-        {
-            "key": "keep-dry-text",
-            "value": "सूखा रखें"
-        },
-        {
-            "key": "do-not-lift-text",
-            "value": "हाथों से न उठाएं"
-        },
-        {
-            "key": "two-person-lift-text",
-            "value": "अन्य व्यक्ति के साथ उठाएं"
-        },
-        {
-            "key": "only-use-trolley-text",
-            "value": "केवल ट्रॉली का प्रयोग करें"
-        },
-        {
-            "key": "do-not-use-hand-truck-text",
-            "value": "हैंड ट्रक का प्रयोग न करें"
-        },
-        {
-            "key": "do-not-use-forklift-text",
-            "value": "फोर्कलिफ्ट का प्रयोग न करें"
-        }
-    ]
+    {
+        "key": "intro-header",
+        "value": "परिचय"
+    },
+    {
+        "key": "intro-description",
+        "value": "क्या आप हैंडलिंग और पैकेजिंग प्रतीकों को जानते हैं? उनका अर्थ देखने के लिए कार्डों को पलटें। फिर देखें कि आप सही थे या नहीं!"
+    },
+    {
+        "key": "intro-description-correct",
+        "value": "क्या आपको सही उत्तर पता था?\n दाईं ओर स्वाइप करें!"
+    },
+    {
+        "key": "intro-description-wrong",
+        "value": "सही उत्तर याद नहीं आ रहा?\n बाईं ओर स्वाइप करें!"
+    },
+    {
+        "key": "outro-header",
+        "value": "समाप्त!"
+    },
+    {
+        "key": "outro-description",
+        "value": "आपको {0} कार्ड याद नहीं थे"
+    },
+    {
+      "key": "card-fragile-front",
+      "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/fragile.png)"
+    },
+    {
+      "key": "card-fragile-back",
+      "value": "नाज़ुक\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/fragile.png)"
+    },
+    {
+      "key": "card-handle-with-care-front",
+      "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/handle-with-care.png)"
+    },
+    {
+      "key": "card-handle-with-care-back",
+      "value": "ध्यान से संभालें\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/handle-with-care.png)"
+    },
+    {
+      "key": "card-flammable-front",
+      "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/flammable.png)"
+    },
+    {
+      "key": "card-flammable-back",
+      "value": "ज्वलनशील\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/flammable.png)"
+    },
+    {
+      "key": "card-this-way-up-front",
+      "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/this-way-up.png)"
+    },
+    {
+      "key": "card-this-way-up-back",
+      "value": "इस तरफ ऊपर\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/this-way-up.png)"
+    },
+    {
+      "key": "card-do-not-stack-front",
+      "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-stack.png)"
+    },
+    {
+      "key": "card-do-not-stack-back",
+      "value": "एक के ऊपर एक मत रखें\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-stack.png)"
+    },
+    {
+      "key": "card-maximum-stack-weight-front",
+      "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/maximum-stack-weight.png)"
+    },
+    {
+      "key": "card-maximum-stack-weight-back",
+      "value": "अधिकतम ढेर वजन\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/maximum-stack-weight.png)"
+    },
+    {
+      "key": "card-maximum-stack-height-front",
+      "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/maximum-stack-height.png)"
+    },
+    {
+      "key": "card-maximum-stack-height-back",
+      "value": "अधिकतम ढेर ऊंचाई\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/maximum-stack-height.png)"
+    },
+    {
+      "key": "card-protect-from-sunlight-front",
+      "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/protect-from-sunlight.png)"
+    },
+    {
+      "key": "card-protect-from-sunlight-back",
+      "value": "धूप से बचाएं\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/protect-from-sunlight.png)"
+    },
+    {
+      "key": "card-temperature-limitations-front",
+      "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/temperature-limitations.png)"
+    },
+    {
+      "key": "card-temperature-limitations-back",
+      "value": "तापमान सीमाएं\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/temperature-limitations.png)"
+    },
+    {
+      "key": "card-keep-dry-front",
+      "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/keep-dry.png)"
+    },
+    {
+      "key": "card-keep-dry-back",
+      "value": "सूखा रखें\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/keep-dry.png)"
+    },
+    {
+      "key": "card-do-not-lift-front",
+      "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-lift.png)"
+    },
+    {
+      "key": "card-do-not-lift-back",
+      "value": "हाथों से न उठाएं\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-lift.png)"
+    },
+    {
+      "key": "card-two-person-lift-front",
+      "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/two-person-lift.png)"
+    },
+    {
+      "key": "card-two-person-lift-back",
+      "value": "अन्य व्यक्ति के साथ उठाएं\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/two-person-lift.png)"
+    },
+    {
+      "key": "card-only-use-trolley-front",
+      "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/only-use-trolley.png)"
+    },
+    {
+      "key": "card-only-use-trolley-back",
+      "value": "केवल ट्रॉली का प्रयोग करें\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/only-use-trolley.png)"
+    },
+    {
+      "key": "card-do-not-use-hand-truck-front",
+      "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-use-hand-truck.png)"
+    },
+    {
+      "key": "card-do-not-use-hand-truck-back",
+      "value": "हैंड ट्रक का प्रयोग न करें\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-use-forklift.png)"
+    },
+    {
+      "key": "card-do-not-use-forklift-front",
+      "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-use-forklift.png)"
+    },
+    {
+      "key": "card-do-not-use-forklift-back",
+      "value": "फोर्कलिफ्ट का प्रयोग न करें\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-use-forklift.png)"
+    }
+  ]
 }
