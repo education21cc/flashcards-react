@@ -40,7 +40,7 @@ const App = () => {
 
   const handleGameDataReceived = useCallback((data: GameData<Content>) => {
     setData(data);
-    // setCards(data?.content?.sort(() => Math.random() - 0.5));
+    setCards(data?.content?.sort(() => Math.random() - 0.5));
     setCards(data?.content);
     setState(GameState.intro)
 
@@ -64,9 +64,9 @@ const App = () => {
 //
       // fetch(`${process.env.PUBLIC_URL}/config/flashcards-adr-with-translations-nl.json`)
       // fetch(`${process.env.PUBLIC_URL}/config/flashcards-handlingpackaging-with-translations-hi.json`)
-      // fetch(`${process.env.PUBLIC_URL}/config/flashcards-handlingpackaging-with-translations-en.json`)
+      fetch(`${process.env.PUBLIC_URL}/config/flashcards-handlingpackaging-with-translations-en.json`)
       // fetch(`${process.env.PUBLIC_URL}/config/flashcards-handlingpackaging-with-translations-nl.json`)
-      fetch(`${process.env.PUBLIC_URL}/config/flashcards-handlingpackaging-with-translations-ms.json`)
+      // fetch(`${process.env.PUBLIC_URL}/config/flashcards-handlingpackaging-with-translations-ms.json`)
       // fetch(`${process.env.PUBLIC_URL}/config/flashcards_vcaborden-with-translation-nl.json`)
       .then((response) => {
         response.json().then((data) => {
