@@ -14,6 +14,7 @@
     "react-card-flip": "^1.1.5",
     "react-deck-swiper": "^1.0.9",
     "react-dom": "^17.0.2",
+    "react-markdown": "^8.0.0",
     "react-scripts": "4.0.3",
     "react-spring": "^9.4.3",
     "typescript": "^4.5.5",

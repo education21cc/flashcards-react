@@ -7,7 +7,7 @@
   background-size: cover;
   background-position: center;
   box-sizing: border-box;
-  
+
   .overlay {
     position: absolute;
     top: 0;
@@ -25,13 +25,13 @@
   .card {
     border-radius: 1rem;
     border: 3px solid #CDCDCD;
-    background-color: #fff; 
-    height: 100%; 
+    background-color: #fff;
+    height: 100%;
     padding: 1rem;
     box-sizing: border-box;
-    
+
     &.front {
-      .image {
+      img, .image {
         width: 80%;
         height: 80%;
         background-size: contain;
@@ -46,67 +46,70 @@
       flex-direction: column;
       justify-content: space-evenly;
 
-      .image {
+      img, .image {
         width: 40%;
-        height: 40%;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
         margin: auto;
       }
 
-      .subtext {
+      .image { //legacy
+        height: 40%;
+      }
+
+      .subtext {  //legacy
         font-size: smaller;
       }
     }
 
-    &.card-intro { 
+    &.card-intro {
       color: #6A6A6A;
-  
+
       h2 {
         margin: 1rem;
       }
-      
+
       display: flex;
       flex-direction: column;
-  
+
       .intro-description {
         flex: 1;
         @include responsive-font(4vw, 6px, 20px, 50px);
 
       }
-  
+
       .intro-help-correct, .intro-help-wrong {
         background-size: contain;
         position: relative;
-  
+
         &:before {
           content: "";
           display: block;
           padding-bottom: 30%;
         }
-  
-        .text { 
+
+        .text {
           position: absolute;
           top: 50%;
           transform: translateY(-50%);
           @include responsive-font(4vw, 6px, 20px, 50px);
         }
       }
-  
+
       .intro-help-correct {
         background-image: url("./../images/intro-help-correct.png");
-  
-        .text { 
+
+        .text {
           text-align: left;
           left: 20%;
         }
       }
-  
+
       .intro-help-wrong {
         background-image: url("./../images/intro-help-wrong.png");
-  
-        .text { 
+
+        .text {
           text-align: right;
           right: 20%;
         }
@@ -124,5 +127,5 @@
     will-change: transform;
   }
 
-  
+
 }

@@ -1,24 +1,33 @@
 import { Card } from "data/Card";
 import { ComponentProps } from "react";
 import { useTranslationStore } from "stores/translations";
+import ReactMarkdown from 'react-markdown';
 
 type Props = {
   card: Card
+  side: 'front' | 'back'
 } & ComponentProps<'div'>
 
 
 const CardFace = (props: Props) => {
-  const { card, ...rest } = props;
-  const className = "card " + (rest.className ?? "");
+  const { card, side, ...rest } = props;
+  const className = "card " + (side ?? "");
   const translations = useTranslationStore();
 
   if (card.id) {
-
+    const content: string = translations.getTextRaw(`card-${card.id}-${side}`) || ""
+    return (
+      <div {...rest} className={className}>
+        <ReactMarkdown>
+          {content}
+        </ReactMarkdown>
+      </div>
+    )
   }
   // fallback (old configs)
   return (
     <div {...rest} className={className}>
-      {rest.className === "back" && card.text && (
+      {side === "back" && card.text && (
         <div className="text">
           {translations.getText(card.text)}
         </div>
@@ -27,12 +36,12 @@ const CardFace = (props: Props) => {
         style={{ backgroundImage: 'url(' + card.image + ')' }}
         className='image'
       />
-      {rest.className === "back" && card.subtext1 && (
+      {side === "back" && card.subtext1 && (
         <div className="subtext">
           {translations.getText(card.subtext1)}
         </div>
         )}
-      { rest.className === "back" && card.subtext2 &&
+      { side === "back" && card.subtext2 &&
       (<div className="subtext">
         {translations.getText(card.subtext2)}
        </div>

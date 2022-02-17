@@ -40,11 +40,13 @@ const App = () => {
 
   const handleGameDataReceived = useCallback((data: GameData<Content>) => {
     setData(data);
-    setCards(data?.content?.sort(() => Math.random() - 0.5));
+    // setCards(data?.content?.sort(() => Math.random() - 0.5));
+    setCards(data?.content);
     setState(GameState.intro)
 
 
-    if (data.translations){
+    if (data.translations) {
+      // store translations in zustand
       const t = data.translations.reduce<{[key: string]: string}>((acc, translation) => {
         acc[translation.key] = translation.value;
         return acc;
@@ -63,7 +65,8 @@ const App = () => {
       // fetch(`${process.env.PUBLIC_URL}/config/flashcards-adr-with-translations-nl.json`)
       // fetch(`${process.env.PUBLIC_URL}/config/flashcards-handlingpackaging-with-translations-hi.json`)
       // fetch(`${process.env.PUBLIC_URL}/config/flashcards-handlingpackaging-with-translations-en.json`)
-      fetch(`${process.env.PUBLIC_URL}/config/flashcards-handlingpackaging-with-translations-nl.json`)
+      // fetch(`${process.env.PUBLIC_URL}/config/flashcards-handlingpackaging-with-translations-nl.json`)
+      fetch(`${process.env.PUBLIC_URL}/config/flashcards-handlingpackaging-with-translations-ms.json`)
       // fetch(`${process.env.PUBLIC_URL}/config/flashcards_vcaborden-with-translation-nl.json`)
       .then((response) => {
         response.json().then((data) => {
@@ -114,7 +117,7 @@ const App = () => {
       window.storeGameEvent({
         code: "mistake",
         level: 1,
-        additionalInfo: whichCard.text?.substring(0, whichCard.text?.lastIndexOf('-text'))
+        additionalInfo: whichCard.text?.substring(0, whichCard.text?.lastIndexOf('-front'))
       })
       setCards([...rest,first])
     }
@@ -172,7 +175,6 @@ const App = () => {
     setCards(data?.content?.sort(() => Math.random() - 0.5));
     setState(GameState.intro)
   }
-
   return (
     <div className="app">
       <PlayerBridge
@@ -193,16 +195,16 @@ const App = () => {
                 ref = latestCard
               }
               return (
-              <CardNormal
-                key={card.image}
-                card={card}
-                onSwiped={handleSwiped}
-                onCardLeftScreen={handleCardLeftScreen}
-                onFlipped={handleFlipped}
-                ref={ref}
-              />
-            )
-          })}
+                <CardNormal
+                  key={card.image}
+                  card={card}
+                  onSwiped={handleSwiped}
+                  onCardLeftScreen={handleCardLeftScreen}
+                  onFlipped={handleFlipped}
+                  ref={ref}
+                />
+              )
+            })}
          {state === GameState.intro && (
           <CardIntro
             ref={introCard}
@@ -218,10 +220,10 @@ const App = () => {
          )}
         {state === GameState.normal && (
           <ButtonBarNormal
-          enableLeftAndRight={latestCard?.current?.flipped}
-          onLeftClick={() => swipe(direction.LEFT)}
-          onFlip={handleFlip}
-          onRightClick={() => swipe(direction.RIGHT)}
+            enableLeftAndRight={latestCard?.current?.flipped}
+            onLeftClick={() => swipe(direction.LEFT)}
+            onFlip={handleFlip}
+            onRightClick={() => swipe(direction.RIGHT)}
           />
           )}
           {state === GameState.complete && (
@@ -238,3 +240,4 @@ const App = () => {
 }
 
 export default App;
+

@@ -99,8 +99,8 @@ const CardNormal = forwardRef<NormalCardRef, Props>((props, ref) => {
           flipSpeedFrontToBack={flying.current ? 0 : undefined}
           flipSpeedBackToFront={flying.current ? 0 : undefined}
         >
-         <CardFace onClick={handleFlip} className="front" card={card} />
-         <CardFace onClick={handleFlip} className="back" card={card} />
+         <CardFace onClick={handleFlip} side="front" card={card} />
+         <CardFace onClick={handleFlip} side="back" card={card} />
         </ReactCardFlip>
       </Swipeable>
     </div>
