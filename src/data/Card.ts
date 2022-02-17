@@ -6,8 +6,7 @@ export enum CardType {
 
 export interface Card {
   type: CardType;
-  front: string; // preferred way to set content of front. markdown enabled string
-  back: string;  // preferred way to set content of front. markdown enabled string
+  id?: string;   // preferred way to set content of front. find content in translation file
 
   image?: string;
   frontText?: string;

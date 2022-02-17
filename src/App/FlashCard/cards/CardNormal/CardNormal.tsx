@@ -1,12 +1,13 @@
 import { Card } from "data/Card"
 import React, { forwardRef, useImperativeHandle, useRef, useState } from "react"
 import ReactCardFlip from 'react-card-flip';
-import { Swipeable, direction } from "../Swipeable";
+import { Swipeable, direction } from "../../Swipeable";
 import { ReactComponent as ThumbsDownIcon } from 'images/icons/thumb-down-24px.svg';
 import { ReactComponent as ThumbsUpIcon } from 'images/icons/thumb-up-24px.svg';
 import {Howl} from 'howler';
-import './../styles/flashCard.scss'
 import { useTranslationStore } from "stores/translations";
+import CardFace from "./CardFace";
+import './../../styles/flashCard.scss'
 
 type Props = {
   card: Card
@@ -38,7 +39,6 @@ const CardNormal = forwardRef<NormalCardRef, Props>((props, ref) => {
   const dragging = useRef(false)
   const [flipped, setFlipped] = useState(false)
   const [flyout, setFlyout] = useState<direction>()
-  const translations = useTranslationStore();
 
   const handleFlip = () => {
     if (!dragging.current) {
@@ -99,29 +99,10 @@ const CardNormal = forwardRef<NormalCardRef, Props>((props, ref) => {
           flipSpeedFrontToBack={flying.current ? 0 : undefined}
           flipSpeedBackToFront={flying.current ? 0 : undefined}
         >
-          <div className="card front" onClick={handleFlip}>
-            <div
-              style={{ backgroundImage: 'url(' + card.image + ')' }}
-              className='image'
-            />
-          </div>
-          <div className="card back" onClick={handleFlip}>
-            <div className="text">
-             {translations.getText(card.text)}
-            </div>
-            <div
-              style={{ backgroundImage: 'url(' + card.image + ')' }}
-              className='image'
-            />
-            {card.subtext1 && (<div className="subtext">
-             {translations.getText(card.subtext1)}
-            </div>)}
-            {card.subtext2 && (<div className="subtext">
-             {translations.getText(card.subtext2)}
-            </div>)}
-          </div>
-          </ReactCardFlip>
-        </Swipeable>
+         <CardFace onClick={handleFlip} className="front" card={card} />
+         <CardFace onClick={handleFlip} className="back" card={card} />
+        </ReactCardFlip>
+      </Swipeable>
     </div>
   )
 })

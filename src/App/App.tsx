@@ -114,7 +114,7 @@ const App = () => {
       window.storeGameEvent({
         code: "mistake",
         level: 1,
-        additionalInfo: whichCard.text.substring(0, whichCard.text.lastIndexOf('-text'))
+        additionalInfo: whichCard.text?.substring(0, whichCard.text?.lastIndexOf('-text'))
       })
       setCards([...rest,first])
     }
