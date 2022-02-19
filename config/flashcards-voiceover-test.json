@@ -1,0 +1,183 @@
+{
+    "userId":2,
+    "settings":{
+      "muted": false
+    },
+    "content": [{
+        "id": "fragile"
+    }, {
+        "id": "handle-with-care"
+    }, {
+        "id": "flammable"
+    }, {
+        "id": "this-way-up"
+    }, {
+        "id": "do-not-stack"
+    }, {
+        "id": "maximum-stack-weight"
+    }, {
+        "id": "maximum-stack-height"
+    }, {
+        "id": "protect-from-sunlight"
+    }, {
+        "id": "temperature-limitations"
+    }, {
+        "id": "keep-dry"
+    }, {
+        "id": "do-not-lift"
+    }, {
+        "id": "two-person-lift"
+    }, {
+        "id": "only-use-trolley"
+    }, {
+        "id": "do-not-use-hand-truck"
+    }, {
+        "id": "do-not-use-forklift"
+    }],
+    "levelsCompleted":[],
+    "translations":[{
+        "key": "intro-header",
+        "value": "Intro"
+    },
+    {
+        "key": "intro-description",
+        "value": "Do you know the handling and packaging symbols? Turn the cards to reveal their meaning and see if you were right!"
+    },
+    {
+        "key": "intro-description-correct",
+        "value": "Did you know the answer?\nSwipe right!"
+    },
+    {
+        "key": "intro-description-wrong",
+        "value": "Couldn't remember the\nanswer? Swipe left!"
+    },
+    {
+        "key": "outro-header",
+        "value": "Done!"
+    },
+    {
+        "key": "outro-description",
+        "value": "You did not remember {0} cards"
+    },
+      {
+        "key": "card-fragile-front",
+        "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/fragile.png)"
+      },
+      {
+        "key": "card-fragile-back",
+        "value": "Fragile\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/fragile.png)"
+      },
+      {
+        "key": "card-handle-with-care-front",
+        "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/handle-with-care.png)"
+      },
+      {
+        "key": "card-handle-with-care-back",
+        "value": "Handle With Care\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/handle-with-care.png)"
+      },
+      {
+        "key": "card-flammable-front",
+        "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/flammable.png)"
+      },
+      {
+        "key": "card-flammable-back",
+        "value": "Flammable\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/flammable.png)"
+      },
+      {
+        "key": "card-this-way-up-front",
+        "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/this-way-up.png)"
+      },
+      {
+        "key": "card-this-way-up-back",
+        "value": "This Way Up\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/this-way-up.png)"
+      },
+      {
+        "key": "card-do-not-stack-front",
+        "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-stack.png)"
+      },
+      {
+        "key": "card-do-not-stack-back",
+        "value": "Do Not Stack\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-stack.png)"
+      },
+      {
+        "key": "card-maximum-stack-weight-front",
+        "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/maximum-stack-weight.png)"
+      },
+      {
+        "key": "card-maximum-stack-weight-back",
+        "value": "Maximum Stack Weight\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/maximum-stack-weight.png)"
+      },
+      {
+        "key": "card-maximum-stack-height-front",
+        "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/maximum-stack-height.png)"
+      },
+      {
+        "key": "card-maximum-stack-height-back",
+        "value": "Maximum Stack Height\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/maximum-stack-height.png)"
+      },
+      {
+        "key": "card-protect-from-sunlight-front",
+        "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/protect-from-sunlight.png)"
+      },
+      {
+        "key": "card-protect-from-sunlight-back",
+        "value": "Protect from Sunlight\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/protect-from-sunlight.png)"
+      },
+      {
+        "key": "card-temperature-limitations-front",
+        "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/temperature-limitations.png)"
+      },
+      {
+        "key": "card-temperature-limitations-back",
+        "value": "Temperature Limitations\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/temperature-limitations.png)"
+      },
+      {
+        "key": "card-keep-dry-front",
+        "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/keep-dry.png)"
+      },
+      {
+        "key": "card-keep-dry-back",
+        "value": "Keep Dry\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/keep-dry.png)"
+      },
+      {
+        "key": "card-do-not-lift-front",
+        "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-lift.png)"
+      },
+      {
+        "key": "card-do-not-lift-back",
+        "value": "Do Not Lift\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-lift.png)"
+      },
+      {
+        "key": "card-two-person-lift-front",
+        "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/two-person-lift.png)"
+      },
+      {
+        "key": "card-two-person-lift-back",
+        "value": "Two Person Lift\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/two-person-lift.png)"
+      },
+      {
+        "key": "card-only-use-trolley-front",
+        "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/only-use-trolley.png)"
+      },
+      {
+        "key": "card-only-use-trolley-back",
+        "value": "Only Use Trolley\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/only-use-trolley.png)"
+      },
+      {
+        "key": "card-do-not-use-hand-truck-front",
+        "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-use-hand-truck.png)"
+      },
+      {
+        "key": "card-do-not-use-hand-truck-back",
+        "value": "Do Not Use Hand Truck\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-use-forklift.png)"
+      },
+      {
+        "key": "card-do-not-use-forklift-front",
+        "value": ":voice[the quick brown fox jumped over the lazy dog]{lang='nl'} :abbr[HTML]{title='HyperText Markup Language'} ![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-use-forklift.png)"
+      },
+      {
+        "key": "card-do-not-use-forklift-back",
+        "value": "Do Not Use Forklift\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-use-forklift.png)"
+      }
+    ]
+}
