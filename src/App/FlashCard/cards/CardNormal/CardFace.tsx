@@ -1,7 +1,10 @@
+import ReactMarkdown from 'react-markdown';
+import directive from 'remark-directive';
 import { Card } from "data/Card";
 import { ComponentProps } from "react";
 import { useTranslationStore } from "stores/translations";
-import ReactMarkdown from 'react-markdown';
+import { reactMarkdownRemarkDirective } from "markdown/reactMarkdownDirective";
+import Voice from 'markdown/Voice';
 
 type Props = {
   card: Card
@@ -18,7 +21,10 @@ const CardFace = (props: Props) => {
     const content: string = translations.getTextRaw(`card-${card.id}-${side}`) || ""
     return (
       <div {...rest} className={className}>
-        <ReactMarkdown>
+        <ReactMarkdown
+          remarkPlugins={[directive, reactMarkdownRemarkDirective]}
+          components={{ voice: Voice }}
+        >
           {content}
         </ReactMarkdown>
       </div>
