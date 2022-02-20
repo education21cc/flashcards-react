@@ -29,15 +29,25 @@ const useSpeechSynthesis = (onEnd = () => {}) => {
   }, []);
 
   useEffect(() => {
+
     const voicesChanged = (event: any) => {
       let voiceOptions = event.target?.getVoices();
       processVoices(voiceOptions);
     }
-    window.speechSynthesis.addEventListener("voiceschanged", voicesChanged);
-    return () => {
-      window.speechSynthesis.removeEventListener("voiceschanged", voicesChanged);
+    if (supported) {
+      console.log('speechSynthesis', window.speechSynthesis)
+      console.log('onvoiceschanged', window.speechSynthesis.onvoiceschanged)
+      console.log('getVoices', window.speechSynthesis.getVoices())
+      if (window.speechSynthesis.addEventListener) {
+        window.speechSynthesis.addEventListener("voiceschanged", voicesChanged);
+      }
     }
-  }, [])
+    return () => {
+      if (window.speechSynthesis.removeEventListener) {
+        window.speechSynthesis.removeEventListener("voiceschanged", voicesChanged);
+      }
+    }
+  }, [supported])
 
   const handleEnd = () => {
     setSpeaking(false);
