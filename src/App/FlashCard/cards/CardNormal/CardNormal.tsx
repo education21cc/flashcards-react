@@ -5,7 +5,6 @@ import { Swipeable, direction } from "../../Swipeable";
 import { ReactComponent as ThumbsDownIcon } from 'images/icons/thumb-down-24px.svg';
 import { ReactComponent as ThumbsUpIcon } from 'images/icons/thumb-up-24px.svg';
 import {Howl} from 'howler';
-import { useTranslationStore } from "stores/translations";
 import CardFace from "./CardFace";
 import './../../styles/flashCard.scss'
 
@@ -36,7 +35,7 @@ const CardNormal = forwardRef<NormalCardRef, Props>((props, ref) => {
   const { onSwiped, card, onCardLeftScreen, onFlipped } = props;
 
   const flying = useRef(false);
-  const dragging = useRef(false)
+  const dragging = useRef(false);
   const [flipped, setFlipped] = useState(false)
   const [flyout, setFlyout] = useState<direction>()
 
@@ -44,6 +43,7 @@ const CardNormal = forwardRef<NormalCardRef, Props>((props, ref) => {
     if (!dragging.current) {
       flipSound.play();
 
+      dragging.current = false;
       setFlipped(!flipped)
       onFlipped(card, flipped)
     }

@@ -91,7 +91,7 @@ const SwipeableWrapper = (props: SwipeableWrapperProps) => {
       swiped: true,
       flyout: direction
     });
-    
+
   }, [onSwipe, swipeThreshold]);
 
   const handleOnBeforeSwipe = useCallback((direction: directionEnum) => {
@@ -134,8 +134,8 @@ const SwipeableWrapper = (props: SwipeableWrapperProps) => {
       return;
     }
 
-    // handleResetState();
-  }, [handleOnBeforeSwipe, onDragEnd, swipeThreshold]);
+    handleResetState();
+  }, [handleOnBeforeSwipe, handleResetState, onDragEnd, swipeThreshold]);
 
   const handleOnDragMove = useCallback((e: any  ) => {
     const end = getEvent(e).pageX;

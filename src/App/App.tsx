@@ -40,7 +40,7 @@ const App = () => {
 
   const handleGameDataReceived = useCallback((data: GameData<Content>) => {
     setData(data);
-    setCards(data?.content/*?.sort(() => Math.random() - 0.5)*/);
+    setCards(data?.content.sort(() => Math.random() - 0.5));
     setCards(data?.content);
     setState(GameState.intro)
 
