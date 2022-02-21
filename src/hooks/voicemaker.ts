@@ -11,7 +11,8 @@ type Response = {
 const voiceIds: { [key: string]: string } = {
   "en-GB": "ai1-Amy",
   "hi-IN": "ai2-hi-IN-Dhru",
-  "nl-NL": "ai3-nl-NL-Colette"
+  "nl-NL": "ai3-nl-NL-Colette",
+  "es-ES": "ai3-es-ES-Alvaro",
   // if other voices needeed, see https://developer.voicemaker.in/apidocs
 }
 
