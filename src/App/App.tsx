@@ -76,6 +76,7 @@ const App = () => {
         })
       })
     };
+
   }, [handleGameDataReceived]);
 
 
@@ -132,9 +133,6 @@ const App = () => {
     if (dir === direction.RIGHT){
       setProgress(1 - (cards.length -1) / data.content.length)
     } else {
-
-
-
       setMistakes(mistakes + 1);
     }
   }

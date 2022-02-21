@@ -1,4 +1,4 @@
-import useSpeechSynthesis from "hooks/speech";
+import useSpeech from "hooks/speech";
 import { MouseEvent, ReactNode, useMemo } from "react";
 import { ElementContent } from "react-markdown/lib/ast-to-react";
 
@@ -9,7 +9,7 @@ type Props = {
 
 const Voice = (props: Props) => {
   const { children, lang = "en" } = props;
-  const { supported, voices, speak } = useSpeechSynthesis();
+  const { speak } = useSpeech(lang);
 // console.log(voices)
 
   const text = useMemo(() => {
@@ -19,17 +19,9 @@ const Voice = (props: Props) => {
     return "";
   }, [children]);
 
-  const voice = useMemo(() => {
-    if (!voices) return null;
-    return voices.find(v => v.lang === lang) ?? null
-  }, [lang, voices])
-
-  console.log(voice)
   const handleClick = (e: MouseEvent<HTMLButtonElement> ) => {
     // console.log('speaking ', lang, voice, 'voices', voices)
-    if (supported) {
-      speak({ text, voice });
-    }
+    speak(text);
     e.stopPropagation();
   }
   return (
