@@ -35,7 +35,7 @@
     },
       {
         "key": "card-truck-front",
-        "value": ":voice[truck]{lang='en'} :abbr[en]{title='english'} ![](https://www.dafusedtrucks.com/-/media/images/daf-used-trucks/daf-used-trucks-first-choice_2016271-hr.jpg?mw=1920&hash=826D5E6C148937EDC6602D25BCA8F51DB9890FAA)"
+        "value": ":voice[truck]{lang='en-GB'} :abbr[en-GB]{title='english'} ![](https://www.dafusedtrucks.com/-/media/images/daf-used-trucks/daf-used-trucks-first-choice_2016271-hr.jpg?mw=1920&hash=826D5E6C148937EDC6602D25BCA8F51DB9890FAA)"
       },
       {
         "key": "card-truck-back",
@@ -47,7 +47,7 @@
       },
       {
         "key": "card-toothbrush-back",
-        "value": ":voice[toothbrush]{lang='en'} :abbr[en]{title='english'} \n\n ![](https://media.wired.co.uk/photos/606d9e7f1e0ddb19555fb8ee/16:9/w_2560%2Cc_limit/bigtoothbrush.jpg)"
+        "value": ":voice[toothbrush]{lang='en-GB'} :abbr[en-GB]{title='english'} \n\n ![](https://media.wired.co.uk/photos/606d9e7f1e0ddb19555fb8ee/16:9/w_2560%2Cc_limit/bigtoothbrush.jpg)"
       }
     ]
 }
