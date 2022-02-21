@@ -1,47 +1,67 @@
 import axios from "axios";
 import { Howl } from "howler";
 import { useCallback } from "react";
+import { useSoundsStore } from "stores/sounds";
 
 type Response = {
   success: boolean
   path: string
 }
 
-const useVoicemaker = (lang: string) => {
-  const speak = useCallback(async (text: string) => {
-    const headers = {
-      'content-type': 'application/json',
-      'Authorization': `Bearer ${process.env.REACT_APP_VOICEMAKER_API_KEY}`,
-    }
-    const data = {
-      // "Engine": "neural",
-      // "VoiceId": "ai3-Jony",
-      // "LanguageCode": "en-US",
-      // "Text": "Welcome to the Air.",
-      Engine: "neural",
-      VoiceId: "ai3-Jony",
-      LanguageCode: lang,
-      Text: text,
-      OutputFormat: "mp3",
-      SampleRate: "48000",
-      Effect: "default",
-      MasterSpeed: "0",
-      MasterVolume: "0",
-      MasterPitch: "0"
-    }
-    // console.log(JSON.stringify(body))
-    const response = await axios.post<Response>('https://developer.voicemaker.in/voice/api', data, {
-      headers: headers
-    })
-    if (response.data.success) {
-      const { path } = response.data;
-      const howl = new Howl({
-        src: [path]
-      });
+const voiceIds: { [key: string]: string } = {
+  "en-GB": "ai1-Amy",
+  "hi-IN": "ai2-hi-IN-Dhru",
+  "nl-NL": "ai3-nl-NL-Colette"
+  // if other voices needeed, see https://developer.voicemaker.in/apidocs
+}
 
+const useVoicemaker = (lang: string) => {
+  const { getSound, setSound } = useSoundsStore();
+
+  const speak = useCallback(async (text: string) => {
+    const key = `${lang}-${text}`;
+
+    let howl = getSound(key);
+    if (!howl) {
+      if (!voiceIds[lang]) {
+        throw new Error(`No voiceId found for language ${lang}`);
+      }
+
+      const headers = {
+        'content-type': 'application/json',
+        'Authorization': `Bearer ${process.env.REACT_APP_VOICEMAKER_API_KEY}`,
+      }
+
+      const data = {
+        Engine: "neural",
+        VoiceId: voiceIds[lang],
+        LanguageCode: lang,
+        Text: text,
+        OutputFormat: "mp3",
+        SampleRate: "48000",
+        Effect: "default",
+        MasterSpeed: "0",
+        MasterVolume: "0",
+        MasterPitch: "0"
+      }
+      // console.log(JSON.stringify(body))
+      const response = await axios.post<Response>('https://developer.voicemaker.in/voice/api', data, {
+        headers: headers
+      })
+
+      if (response.data.success) {
+        const { path } = response.data;
+        howl = new Howl({
+          src: [path]
+        });
+
+        setSound(key, howl); // store for retrieval later
+      }
+    }
+    if (howl) {
       howl.play();
     }
-  }, [lang]);
+  }, [getSound, lang, setSound]);
 
   return {
     speak
@@ -49,14 +69,3 @@ const useVoicemaker = (lang: string) => {
 }
 
 export default useVoicemaker;
-
-// const sendRequest = (url: string, method: string, body: unknown, headers: Headers) => {
-//   const options = {
-//       method: method,
-//       headers,
-//       mode: 'no-cors' as RequestMode,
-//       body: JSON.stringify(body)
-//   };
-
-//   return fetch(url, options);
-// }
