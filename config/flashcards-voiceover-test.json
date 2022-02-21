@@ -7,6 +7,8 @@
         "id": "truck"
     }, {
         "id": "toothbrush"
+    }, {
+        "id": "tent"
     }],
     "levelsCompleted":[],
     "translations":[{
@@ -48,6 +50,14 @@
       {
         "key": "card-toothbrush-back",
         "value": ":voice[toothbrush]{lang='en-GB'} :abbr[en-GB]{title='english'} \n\n ![](https://media.wired.co.uk/photos/606d9e7f1e0ddb19555fb8ee/16:9/w_2560%2Cc_limit/bigtoothbrush.jpg)"
+      },
+      {
+        "key": "card-tent-front",
+        "value": ":voice[tent]{lang='nl-NL'} :abbr[nl-NL]{title='Nederlands'} ![](https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2-seconds-easy-decathlon-tent-1399-1596717081.jpg)"
+      },
+      {
+        "key": "card-tent-back",
+        "value": ":voice[tent]{lang='en-GB'} :abbr[en-GB]{title='english'} \n\n :voice[तंबू]{lang='hi-IN'} :abbr[hi-IN]{title='Hindi'} \n\n :voice[carpa]{lang='es-ES'} :abbr[es-ES]{title='Spanish'} \n\n ![](https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2-seconds-easy-decathlon-tent-1399-1596717081.jpg)"
       }
     ]
 }
