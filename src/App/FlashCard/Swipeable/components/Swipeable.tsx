@@ -1,7 +1,5 @@
-import * as React from 'react';
-import { useSpring, animated } from 'react-spring';
+=import { useSpring, animated } from 'react-spring';
 import { SwipeableWrapperProps, SwipeableState } from './SwipeableWrapper';
-import directionEnum from '../constants/direction';
 import { getOpacity } from '../utils/helpers';
 
 export interface SwipeableProps extends SwipeableWrapperProps {
@@ -51,18 +49,11 @@ const Swipeable = ({
     width: wrapperWidth,
   };
 
-  const { opacity } = useSpring({ 
+  const { opacity } = useSpring({
     from: { opacity: 0 },
-    to: { opacity: getOpacity(state.offset, swipeThreshold, fadeThreshold) }, 
+    to: { opacity: getOpacity(state.offset, swipeThreshold, fadeThreshold) },
   })
 
-  // const overlayStyle = {
-  //   // opacity: opacity as any, 
-  //   ...overlaySpring
-  // };
-  // React.useEffect(() => {
-  //   onOpacityChange?.(opacity);
-  // }, [onOpacityChange, opacity]);
   return (
     <>
       <animated.div
@@ -71,8 +62,8 @@ const Swipeable = ({
         style={animatedStyle}
       >
         {children}
-        <animated.div 
-          style={{ opacity: opacity as any}} //https://github.com/pmndrs/react-spring/issues/1102 
+        <animated.div
+          style={{ opacity: opacity as any}} //https://github.com/pmndrs/react-spring/issues/1102
           className="overlay"
         >
           {offset < 0 ? leftIcon : rightIcon }
