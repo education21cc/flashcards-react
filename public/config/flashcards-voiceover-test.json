@@ -37,7 +37,7 @@
     },
       {
         "key": "card-truck-front",
-        "value": ":voice[truck]{lang='en-GB'} :abbr[en-GB]{title='english'} ![](https://www.dafusedtrucks.com/-/media/images/daf-used-trucks/daf-used-trucks-first-choice_2016271-hr.jpg?mw=1920&hash=826D5E6C148937EDC6602D25BCA8F51DB9890FAA)"
+        "value": ":voice[truck]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-US/afternoon.mp3'} :abbr[en-GB]{title='english'} ![](https://www.dafusedtrucks.com/-/media/images/daf-used-trucks/daf-used-trucks-first-choice_2016271-hr.jpg?mw=1920&hash=826D5E6C148937EDC6602D25BCA8F51DB9890FAA)"
       },
       {
         "key": "card-truck-back",

@@ -1,0 +1,169 @@
+{
+    "userId":2,
+    "settings":{
+      "muted": false
+    },
+    "content": [
+      { "id": "hello" },
+      { "id": "morning" },
+      { "id": "afternoon" },
+      { "id": "evening" },
+      { "id": "night" },
+      { "id": "good-morning" },
+      { "id": "good-afternoon" },
+      { "id": "good-evening" },
+      { "id": "good-night" },
+      { "id": "bye" },
+      { "id": "hello-good-morning" },
+      { "id": "hello-good-afternoon" },
+      { "id": "hello-good-evening" },
+      { "id": "hello-good-night" },
+      { "id": "bye-good-night" }
+    ],
+    "levelsCompleted":[],
+    "translations":[{
+        "key": "intro-header",
+        "value": "Intro"
+    },
+    {
+        "key": "intro-description",
+        "value": "Do you know the handling and packaging symbols? Turn the cards to reveal their meaning and see if you were right!"
+    },
+    {
+        "key": "intro-description-correct",
+        "value": "Did you know the answer?\nSwipe right!"
+    },
+    {
+        "key": "intro-description-wrong",
+        "value": "Couldn't remember the\nanswer? Swipe left!"
+    },
+    {
+        "key": "outro-header",
+        "value": "Done!"
+    },
+    {
+        "key": "outro-description",
+        "value": "You did not remember {0} cards"
+    },
+    {
+      "key": "card-hello-front",
+      "value": "नमस्ते :voice[नमस्ते]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/namaste.mp3'} "
+  },
+  {
+      "key": "card-hello-back",
+      "value": "Hello :voice[hello]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/hello.mp3'} \n\nHi :voice[hi]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/hi.mp3'}"
+  },
+  {
+      "key": "card-morning-front",
+      "value": "सुबह :voice[सुबह]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/subah.mp3'} "
+  },
+  {
+      "key": "card-morning-back",
+      "value": "Morning :voice[morning]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/morning.mp3'}"
+  },
+  {
+      "key": "card-afternoon-front",
+      "value": "दोपहर  :voice[दोपहर]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/dopahar.mp3'} "
+  },
+  {
+      "key": "card-afternoon-back",
+      "value": "Afternoon :voice[afternoon]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/afternoon.mp3'}"
+  },
+  {
+      "key": "card-evening-front",
+      "value": "शाम :voice[शाम]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/shaam.mp3'} "
+  },
+  {
+      "key": "card-evening-back",
+      "value": "Evening :voice[evening]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/evening.mp3'}"
+  },
+  {
+      "key": "card-night-front",
+      "value": "रात  :voice[रात]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/raat.mp3'} "
+  },
+  {
+      "key": "card-night-back",
+      "value": "Night :voice[night]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/night.mp3'}"
+  },
+  {
+      "key": "card-good-morning-front",
+      "value": "सुप्रभात  :voice[suprabhaat]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/suprabhaat.mp3'} "
+  },
+  {
+      "key": "card-good-morning-back",
+      "value": "Good morning :voice[good morning]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/good-morning.mp3'}"
+  },
+  {
+      "key": "card-good-afternoon-front",
+      "value": "शुभ अपराह्न :voice[शुभ अपराह्न]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/shubh-aparaahn.mp3'} "
+  },
+  {
+      "key": "card-good-afternoon-back",
+      "value": "Good afternoon :voice[good afternoon]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/good-afternoon.mp3'}"
+  },
+  {
+      "key": "card-good-evening-front",
+      "value": "सुसंध्या  :voice[susandhyā]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/susandhya.mp3'} "
+  },
+  {
+      "key": "card-good-evening-back",
+      "value": "Good evening :voice[good evening]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/good-evening.mp3'}"
+  },
+  {
+      "key": "card-good-night-front",
+      "value": "शुभ रात्रि :voice[शुभ रात्रि]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/shubh-raatri.mp3'} "
+  },
+  {
+      "key": "card-good-night-back",
+      "value": "Good night :voice[good night]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/good-night.mp3'}"
+  },
+  {
+      "key": "card-bye-front",
+      "value": "अलविदा :voice[अलविदा]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/alavida.mp3'} "
+  },
+  {
+      "key": "card-bye-back",
+      "value": "Bye :voice[bye]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/bye.mp3'}\n\nGoodbye :voice[goodbye]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/goodbye.mp3'}"
+  },
+  {
+      "key": "card-hello-good-morning-front",
+      "value": "नमस्ते, सुप्रभात  :voice[नमस्ते सुप्रभात]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/namaste-suprabhaat.mp3'} "
+  },
+  {
+      "key": "card-hello-good-morning-back",
+      "value": "Hello, good morning :voice[hello good morning]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/hello-good-morning.mp3'}\n\nHi, good morning :voice[hi good morning]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/hi-good-morning.mp3'}"
+  },
+  {
+      "key": "card-hello-good-afternoon-front",
+      "value": "नमस्ते, शुभ अपराह्न :voice[नमस्ते, शुभ अपराह्न]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/namaste-shubh-aparaahn.mp3'} "
+  },
+  {
+      "key": "card-hello-good-afternoon-back",
+      "value": "Hello, good afternoon :voice[hello good afternoon]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/hello-good-afternoon.mp3'}\n\nHi, good afternoon :voice[hi good afternoon]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/hi-good-afternoon.mp3'}"
+  },
+  {
+      "key": "card-hello-good-evening-front",
+      "value": "नमस्ते, सुसंध्या :voice[नमस्ते, सुसंध्या]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/namaste-susandhya.mp3'} "
+  },
+  {
+      "key": "card-hello-good-evening-back",
+      "value": "Hello, good evening :voice[hello good evening]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/hello-good-evening.mp3'}\n\nHi, good evening :voice[hi good evening]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/hi-good-evening.mp3'}"
+  },
+  {
+      "key": "card-hello-good-night-front",
+      "value": "नमस्ते, शुभ रात्रि  :voice[नमस्ते, शुभ रात्रि]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/namaste-shubh-raatri.mp3.mp3'} "
+  },
+  {
+      "key": "card-hello-good-night-back",
+      "value": "Hello, good night :voice[hello good night]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/hello-good-night.mp3'}\n\nHi, good night :voice[hi good night]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/hi-good-night.mp3'}"
+  },
+  {
+      "key": "card-bye-good-night-front",
+      "value": "अलविदा, शुभ रात्रि  :voice[अलविदा, शुभ रात्रि]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/alavida-shubh-raatri.mp3'} "
+  },
+  {
+      "key": "card-bye-good-night-back",
+      "value": "Bye, good night :voice[bye good night]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/bye-good-night.mp3'}"
+  }
+    ]
+}

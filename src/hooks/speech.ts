@@ -1,13 +1,14 @@
 import useSpeechSynthesis from "./speechSynthesis";
+import useMP3 from "./useMP3";
 import useVoicemaker from "./voicemaker";
 
 const useSpeech = (lang: string) => {
   const speechSynthesis = useSpeechSynthesis(lang); //native API
-  const voicemaker = useVoicemaker(lang); // voicemaker fallback
+  const mp3 = useMP3(); // voicemaker fallback
 
-  const speak = (text = '') => {
+  const speak = (text = '', url = '') => {
     if (!speechSynthesis.supported) {
-      voicemaker.speak(text);
+      mp3.speak(url);
     } else {
       speechSynthesis.speak({ text });
     }

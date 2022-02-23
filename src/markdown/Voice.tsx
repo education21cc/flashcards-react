@@ -5,12 +5,12 @@ import { ElementContent } from "react-markdown/lib/ast-to-react";
 type Props = {
   children: ReactNode[]
   lang?: string
+  fallback?: string
 };
 
 const Voice = (props: Props) => {
-  const { children, lang = "en" } = props;
+  const { children, fallback, lang = "en-US" } = props;
   const { speak } = useSpeech(lang);
-// console.log(voices)
 
   const text = useMemo(() => {
     if (typeof children[0] === 'string') {
@@ -20,8 +20,7 @@ const Voice = (props: Props) => {
   }, [children]);
 
   const handleClick = (e: MouseEvent<HTMLButtonElement> ) => {
-    // console.log('speaking ', lang, voice, 'voices', voices)
-    speak(text);
+    speak(text, fallback);
     e.stopPropagation();
   }
   return (

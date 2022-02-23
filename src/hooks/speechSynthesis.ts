@@ -7,6 +7,7 @@ type SpeechArgs = {
   volume?: number
 }
 
+// native speech sythesis API
 const useSpeechSynthesis = (lang: string) => {
   const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([]);
   const [speaking, setSpeaking] = useState(false);

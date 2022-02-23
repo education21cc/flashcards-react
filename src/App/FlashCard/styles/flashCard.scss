@@ -30,6 +30,20 @@
     padding: 1rem;
     box-sizing: border-box;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    button {
+      // style buttons (audio)
+      display: block;
+      margin: 0 auto;
+      border-radius: 50%;
+      width: 3rem;
+      height: 3rem;
+      font-size: 1.5rem;
+    }
+
     &.front {
       img, .image {
         width: 80%;
@@ -42,9 +56,6 @@
     }
 
     &.back {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
 
       img, .image {
         width: 40%;
