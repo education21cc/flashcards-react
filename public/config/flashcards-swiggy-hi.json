@@ -23,27 +23,27 @@
     "levelsCompleted":[],
     "translations":[{
         "key": "intro-header",
-        "value": "Intro"
+        "value": "परिचय"
     },
     {
         "key": "intro-description",
-        "value": "Do you know the handling and packaging symbols? Turn the cards to reveal their meaning and see if you were right!"
+        "value": "क्या आप हैंडलिंग और पैकेजिंग प्रतीकों को जानते हैं? उनका अर्थ देखने के लिए कार्डों को पलटें। फिर देखें कि आप सही थे या नहीं!"
     },
     {
         "key": "intro-description-correct",
-        "value": "Did you know the answer?\nSwipe right!"
+        "value": "क्या आपको सही उत्तर पता था?\nदाईं ओर स्वाइप करें!"
     },
     {
         "key": "intro-description-wrong",
-        "value": "Couldn't remember the\nanswer? Swipe left!"
+        "value": "सही उत्तर याद नहीं आ रहा? \nबाईं ओर स्वाइप करें!"
     },
     {
         "key": "outro-header",
-        "value": "Done!"
+        "value": "समाप्त!"
     },
     {
         "key": "outro-description",
-        "value": "You did not remember {0} cards"
+        "value": "आपको {0} कार्ड याद नहीं थे"
     },
     {
       "key": "card-hello-front",
