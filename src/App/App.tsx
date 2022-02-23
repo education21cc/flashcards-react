@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import useForceUpdate from 'use-force-update';
 import confetti from 'canvas-confetti';
 import { GameData } from 'playerBridge/GameData';
@@ -196,7 +196,7 @@ const App = () => {
               }
               return (
                 <CardNormal
-                  key={card.image}
+                  key={card.id}
                   card={card}
                   onSwiped={handleSwiped}
                   onCardLeftScreen={handleCardLeftScreen}

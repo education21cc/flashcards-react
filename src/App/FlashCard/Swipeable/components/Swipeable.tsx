@@ -1,4 +1,4 @@
-=import { useSpring, animated } from 'react-spring';
+import { useSpring, animated } from 'react-spring';
 import { SwipeableWrapperProps, SwipeableState } from './SwipeableWrapper';
 import { getOpacity } from '../utils/helpers';
 
