@@ -46,6 +46,10 @@
           "key": "outro-description",
           "value": "你不记得了 {0} 张卡片。"
       },
+      {
+          "key": "outro-description-flawless",
+          "value": "你记得所有的卡片"
+      },
         {
           "key": "card-fragile-front",
           "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/fragile.png)"

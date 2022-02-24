@@ -46,6 +46,10 @@
         "value": "आपको {0} कार्ड याद नहीं थे"
     },
     {
+        "key": "outro-description-flawless",
+        "value": "आपको सभी कार्ड याद थे!"
+    },
+    {
       "key": "card-hello-front",
       "value": "नमस्ते :voice[नमस्ते]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/namaste.mp3'} "
   },

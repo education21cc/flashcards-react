@@ -60,7 +60,11 @@
           "key": "outro-description",
           "value": "ನಿಮಗೆ {0} ಕಾರ್ಡ್‌ಗಳು ನೆನಪಿಲ್ಲ."
       },
-       {
+      {
+        "key": "outro-description-flawless",
+        "value": "ನೀವು ಎಲ್ಲಾ ಕಾರ್ಡ್‌ಗಳನ್ನು ನೆನಪಿಸಿಕೊಂಡಿದ್ದೀರಿ"
+      },
+      {
           "key": "card-fragile-front",
           "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/fragile.png)"
         },

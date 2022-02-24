@@ -59,6 +59,10 @@
         "key": "outro-description",
         "value": "You did not remember {0} cards"
     },
+    {
+        "key": "outro-description-flawless",
+        "value": "You remembered all the cards"
+    },
       {
         "key": "card-fragile-front",
         "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/fragile.png)"
