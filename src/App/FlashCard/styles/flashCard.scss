@@ -28,16 +28,18 @@
     background-color: #fff;
     height: 100%;
     padding: 1rem;
+    padding-bottom: 2rem;
     box-sizing: border-box;
 
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    @include responsive-font(5vw, 16px, 62px, 50px);
 
     button {
       // style buttons (audio)
       display: block;
-      margin: 0 auto;
+      margin: 2rem auto 0 auto;
       border-radius: 50%;
       width: 3rem;
       height: 3rem;

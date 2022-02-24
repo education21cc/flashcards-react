@@ -61,6 +61,10 @@
         "value": "आपको {0} कार्ड याद नहीं थे"
     },
     {
+      "key": "outro-description-flawless",
+      "value": "आपको सभी कार्ड याद थे!"
+    },
+    {
       "key": "card-fragile-front",
       "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/fragile.png)"
     },

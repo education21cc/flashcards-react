@@ -60,7 +60,11 @@
           "key": "outro-description",
           "value": "Anda tidak teringat {0} keping kad."
       },
-        {
+      {
+          "key": "outro-description-flawless",
+          "value": "Anda ingat semua kad itu!"
+      },
+      {
           "key": "card-fragile-front",
           "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/fragile.png)"
         },

@@ -60,6 +60,10 @@
       "value": "Je wist de betekenis van (0) kaarten niet"
     },
     {
+      "key": "outro-description-flawless",
+      "value": "Je wist alle kaarten nog!"
+    },
+    {
       "key": "card-fragile-front",
       "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/fragile.png)"
     },
