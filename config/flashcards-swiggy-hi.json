@@ -28,7 +28,7 @@
       },
       {
           "key": "intro-description",
-          "value": "क्या आपको याद है कि इन हिंदी शब्दों को अंग्रेजी में कैसे कहते हैं"
+          "value": "क्या आपको याद है कि इन हिंदी शब्दों को अंग्रेजी में कैसे कहते हैं? हिंदी के शब्दों को अंग्रेजी में क्या कहते हैं, यह देखने के लिए कार्डों को पलटें। और देखें कि आप सही थे या नहीं!"
       },
       {
           "key": "intro-description-correct",
@@ -44,7 +44,7 @@
       },
       {
           "key": "outro-description",
-          "value": "आपको {0} कार्ड याद नहीं थे"
+          "value": "आपको {0} कार्ड याद नहीं थे।"
       },
       {
           "key": "outro-description-flawless",
@@ -68,7 +68,7 @@
       },
       {
           "key": "card-afternoon-front",
-          "value": "दोपहर :voice[दोपहर]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/dopahar.mp3'} "
+          "value": "दोपहर  :voice[दोपहर]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/dopahar.mp3'} "
       },
       {
           "key": "card-afternoon-back",
