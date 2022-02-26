@@ -1,12 +1,12 @@
 .close {
-    position: fixed;
-    top: 16px;
-    left: 8px;
-    z-index: 2
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 2
 }
 
 @media (orientation: portrait) {
-    .close {
-        top: 32px;
-    }
+  .close {
+    top: 32px;
+  }
 }
