@@ -30,7 +30,7 @@ const tadaSound = new Howl({
 const App = () => {
   const [state, setState] = useState(GameState.loading);
   const [data, setData] = useState<GameData<Content>>();
-  const [cards, setCards] = useState<Content>();
+  const [cards, setCards] = useState<Card[]>();
   const [progress, setProgress] = useState(0);
   const [mistakes, setMistakes] = useState(0);
   const [animating, setAnimating] = useState(false);
@@ -40,10 +40,8 @@ const App = () => {
 
   const handleGameDataReceived = useCallback((data: GameData<Content>) => {
     setData(data);
-    setCards(data?.content.sort(() => Math.random() - 0.5));
-    setCards(data?.content);
+    setCards(data?.content.cards.sort(() => Math.random() - 0.5));
     setState(GameState.intro)
-
 
     if (data.translations) {
       // store translations in zustand
@@ -72,7 +70,17 @@ const App = () => {
       // fetch(`${process.env.PUBLIC_URL}/config/flashcards_vcaborden-with-translation-nl.json`)
       .then((response) => {
         response.json().then((data) => {
+          if (Array.isArray(data.content)) {
+            console.log('Received data in the old format. Please update XML to put content array under `cards` prop')
+            handleGameDataReceived({
+              ...data,
+              content: {
+                cards: data.content
+              }
+            });
 
+            return
+          }
           handleGameDataReceived(data);
         })
       })
@@ -87,7 +95,7 @@ const App = () => {
 
     if (!data || !cards) return
     if (dir === direction.RIGHT){
-      setProgress(1 - (cards.length -1) / data.content.length)
+      setProgress(1 - (cards.length -1) / data.content.cards.length)
     } else {
       setMistakes(mistakes + 1);
     }
@@ -132,7 +140,7 @@ const App = () => {
     latestCard.current?.swipe(dir);
 
     if (dir === direction.RIGHT){
-      setProgress(1 - (cards.length -1) / data.content.length)
+      setProgress(1 - (cards.length -1) / data.content.cards.length)
     } else {
       setMistakes(mistakes + 1);
     }
@@ -172,7 +180,7 @@ const App = () => {
   const handleReset = () => {
     setProgress(0);
     setMistakes(0);
-    setCards(data?.content?.sort(() => Math.random() - 0.5));
+    setCards(data?.content?.cards.sort(() => Math.random() - 0.5));
     setState(GameState.intro)
   }
   return (

@@ -12,7 +12,6 @@ const CardOutro = (props: Props) => {
   const { mistakes } = props;
   const translations = useTranslationStore();
 
-  console.log(translations.getText('outro-description-flawless'))
   const mistakeText = useMemo(() => {
     if (mistakes === 0 && !!translations.getText('outro-description-flawless')) return translations.getText('outro-description-flawless');
     return translations.getTextRaw("outro-description")?.replace("{0}", `${mistakes}`);

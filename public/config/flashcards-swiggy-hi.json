@@ -3,23 +3,25 @@
     "settings":{
       "muted": false
     },
-    "content": [
-      { "id": "hello" },
-      { "id": "morning" },
-      { "id": "afternoon" },
-      { "id": "evening" },
-      { "id": "night" },
-      { "id": "good-morning" },
-      { "id": "good-afternoon" },
-      { "id": "good-evening" },
-      { "id": "good-night" },
-      { "id": "bye" },
-      { "id": "hello-good-morning" },
-      { "id": "hello-good-afternoon" },
-      { "id": "hello-good-evening" },
-      { "id": "hello-good-night" },
-      { "id": "bye-good-night" }
-    ],
+    "content": {
+      "cards": [
+        { "id": "hello" },
+        { "id": "morning" },
+        { "id": "afternoon" },
+        { "id": "evening" },
+        { "id": "night" },
+        { "id": "good-morning" },
+        { "id": "good-afternoon" },
+        { "id": "good-evening" },
+        { "id": "good-night" },
+        { "id": "bye" },
+        { "id": "hello-good-morning" },
+        { "id": "hello-good-afternoon" },
+        { "id": "hello-good-evening" },
+        { "id": "hello-good-night" },
+        { "id": "bye-good-night" }
+      ]
+    },
     "levelsCompleted":[],
     "translations": [
       {
