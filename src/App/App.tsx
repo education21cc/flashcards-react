@@ -14,13 +14,15 @@ import { useTranslationStore } from 'stores/translations';
 import CardOutro from './FlashCard/cards/CardOutro';
 import { Howl } from 'howler';
 import PlayerBridge from 'playerBridge';
+import Instructions from './Instructions/Instructions';
 import './styles/app.scss';
 
 enum GameState {
   loading = 0,
-  intro = 1 << 1,
-  normal = 1 << 2,
-  complete = 1 << 3
+  instructions = 1 << 2,
+  intro = 1 << 3,
+  normal = 1 << 4,
+  complete = 1 << 5
 }
 
 const tadaSound = new Howl({
@@ -41,7 +43,12 @@ const App = () => {
   const handleGameDataReceived = useCallback((data: GameData<Content>) => {
     setData(data);
     setCards(data?.content.cards.sort(() => Math.random() - 0.5));
-    setState(GameState.intro)
+
+    if (data.content.instructions?.length) {
+      setState(GameState.instructions)
+    } else {
+      setState(GameState.intro)
+    }
 
     if (data.translations) {
       // store translations in zustand
@@ -183,15 +190,19 @@ const App = () => {
     setCards(data?.content?.cards.sort(() => Math.random() - 0.5));
     setState(GameState.intro)
   }
+
   return (
     <div className="app">
       <PlayerBridge
         gameDataReceived={handleGameDataReceived}
       />
       {state === GameState.loading && (
-        <span></span>
+        <span>Loading...</span>
       )}
-      {state !== GameState.loading && (
+      {state === GameState.instructions && data && (
+        <Instructions instructions={data.content.instructions} onComplete={handleReset} />
+      )}
+      {state !== (GameState.loading | GameState.instructions) && (
         <>
           <ProgressBar progress={progress} />
           <div className='card-container'>

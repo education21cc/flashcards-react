@@ -15,6 +15,9 @@ const Instructions = (props: Props) => {
   const handleNextPage = () => {
     setCurrentPage(currentPage + 1)
   }
+  const handlePreviousPage = () => {
+    setCurrentPage(currentPage - 1)
+  }
 
   useEffect(() => {
     if (currentPage === instructions.length) {
@@ -24,8 +27,14 @@ const Instructions = (props: Props) => {
 
   return (
     <div className="instructions">
-      {instructions.map(instruction => (
-        <InstructionPage instruction={instruction} onNextPage={handleNextPage} />
+      {instructions.map((instruction, i) => (
+        <InstructionPage
+          active={i === currentPage}
+          hasPrevious={i > 0}
+          instruction={instruction}
+          onNextPage={handleNextPage}
+          onPreviousPage={handlePreviousPage}
+        />
       ))}
     </div>
   )

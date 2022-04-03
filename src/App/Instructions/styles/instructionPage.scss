@@ -1,0 +1,27 @@
+@import '../../../styles/variables';
+
+.instruction-page {
+  display: none;
+  opacity: 0;
+  transition: opacity 5s;
+
+  &.active {
+    display: block;
+    opacity: 1;
+  }
+}
+
+
+.button-prev {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  transform: scaleX(-1);
+}
+
+.button-next {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+

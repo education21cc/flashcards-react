@@ -1,8 +1,8 @@
 import { createRef, forwardRef, useImperativeHandle, useState } from "react"
 import { Swipeable, direction } from "../Swipeable";
 import {Howl} from 'howler';
-import './../styles/flashCard.scss'
 import { useTranslationStore } from "stores/translations";
+import './../styles/flashCard.scss'
 
 type Props = {
   onSwiped: () => void
