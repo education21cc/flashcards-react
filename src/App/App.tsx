@@ -42,7 +42,8 @@ const App = () => {
 
   const handleGameDataReceived = useCallback((data: GameData<Content>) => {
     setData(data);
-    setCards(data?.content.cards.sort(() => Math.random() - 0.5));
+    const cards = data?.content.cards ? data.content.cards : data.content as unknown as Card[]
+    setCards(cards.sort(() => Math.random() - 0.5));
 
     if (data.content.instructions?.length) {
       setState(GameState.instructions)
