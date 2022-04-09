@@ -42,7 +42,11 @@ const App = () => {
 
   const handleGameDataReceived = useCallback((data: GameData<Content>) => {
     setData(data);
-    const cards = data?.content.cards ? data.content.cards : data.content as unknown as Card[]
+    if (!data.content.cards) {
+      // old style config - backwards compat
+      data.content.cards = data.content as unknown as Card[]
+    }
+    const cards = data?.content.cards;
     setCards(cards.sort(() => Math.random() - 0.5));
 
     if (data.content.instructions?.length) {
@@ -102,7 +106,7 @@ const App = () => {
     setAnimating(true);
 
     if (!data || !cards) return
-    if (dir === direction.RIGHT){
+    if (dir === direction.RIGHT) {
       setProgress(1 - (cards.length -1) / data.content.cards.length)
     } else {
       setMistakes(mistakes + 1);
