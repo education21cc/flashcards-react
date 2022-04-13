@@ -5,9 +5,9 @@ import './styles/buttonBar.scss';
 
 interface Props {
   enableLeftAndRight?: boolean
-  onLeftClick: () => void 
-  onFlip: () => void 
-  onRightClick: () => void 
+  onLeftClick: () => void
+  onFlip: () => void
+  onRightClick: () => void
 }
 
 const ButtonBarNormal = (props: Props) => {
@@ -21,7 +21,7 @@ const ButtonBarNormal = (props: Props) => {
   return (
     <div className="button-bar">
       {enableLeftAndRight && (
-        <button className="button-circle" onClick={onLeftClick}>
+        <button className="button-circle button-left" onClick={onLeftClick}>
           <ThumbsDownIcon />
         </button>
       )}
@@ -29,7 +29,7 @@ const ButtonBarNormal = (props: Props) => {
         <FlipIcon />
       </button>
       {enableLeftAndRight && (
-        <button className="button-circle" onClick={onRightClick}>
+        <button className="button-circle button-right" onClick={onRightClick}>
           <ThumbsUpIcon />
         </button>
       )}
