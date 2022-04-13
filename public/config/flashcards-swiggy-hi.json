@@ -22,7 +22,8 @@
         { "id": "bye-good-night" }
       ],
       "instructions": [{
-        "body": "instructions-page1"
+        "body2": "instructions-page1",
+        "componentPath": "./instructionPages/swiggy/Instruction"
       }, {
         "body": "instructions-page2"
       }]
@@ -35,11 +36,11 @@
       },
       {
           "key": "instructions-page1",
-          "value": "लोरेम इप्सम डोलर सिट एमेट, कॉन्सेक्टेटूर एडिपिसिसिंग एलीट। ननक सोडालेस ग्रेविडा नेक, मैक्सिमस कमोडो निस्ल कॉन्सेक्वेट इन। सेड फैसिलिसिस, नेक ए पोर्टिटिटर हेन्ड्रेरिट, मैग्ना लिबेरो उलमकॉर्पर डुई, ईयू कॉन्ग्यू ऑग्यू यूरना इन लैकस। क्रैस मैटिस एक्यूमसन मील ए एलीफेंड। विवामस प्लेसरेट डिक्टम मोलिस। ऐनियन ग्रेविडा लिबरो सिट एमेट वल्पुटेट ऑर्नारे। प्रेज़ेंट प्रीटियम क्वाम कॉन्डिमेंटम वेलिट वल्पुटेट, सेड ऑरनारे निस्ल यूइसमॉड।"
+          "value": "# परिचय \n\nइस फ़्लैशकार्ड गेम में आपका स्वागत है!"
       },
       {
           "key": "instructions-page2",
-          "value": "क्रास यूट एलीट एट एनिम कॉन्डिमेंटम लॉरीट एट यू निसी। क्युराबिटुर नॉन मोलिस नन. डोनेक एलिमेंटम कॉन्सेक्टेटूर आर्कू सेड लैकिनिया। इटियम और डिग्निसिम मील। वेस्टिबुलम या सेम्पर इरेट, आईडी पोर्टिटर आर्कू। क्युराबिटुर विवरा एरोस एसी रिसस टिनसीडंट, क्विस मोलिस मि प्रीटियम। ऐनियन जस्टो पुरुस, बिबेंडम सेड मेटस इन, ब्लैंडिट इम्परडिएट वेलिट।"
+          "value": "# परिचय  <div class='text-balloon'>Each card in this game has a word or a phrase in Hindi.          </div>"
       },
       {
           "key": "intro-description",
@@ -64,6 +65,10 @@
       {
           "key": "outro-description-flawless",
           "value": "आपको सभी कार्ड याद थे!"
+      },
+      {
+        "key": "card-demo-front",
+        "value": "नमस्ते :voice[नमस्ते]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/namaste.mp3'} "
       },
       {
           "key": "card-hello-front",

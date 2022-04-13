@@ -34,7 +34,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    @include responsive-font(5vw, 16px, 62px, 50px);
+    @include responsive-font(5vw, 16px, 42px, 42px);
 
     button {
       // style buttons (audio)

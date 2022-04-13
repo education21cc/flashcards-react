@@ -41,11 +41,11 @@ const App = () => {
   const introCard = useRef<IntroCardRef>(null);
 
   const handleGameDataReceived = useCallback((data: GameData<Content>) => {
-    setData(data);
     if (!data.content.cards) {
       // old style config - backwards compat
       data.content.cards = data.content as unknown as Card[]
     }
+    setData(data);
     const cards = data?.content.cards;
     setCards(cards.sort(() => Math.random() - 0.5));
 

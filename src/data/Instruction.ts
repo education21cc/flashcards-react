@@ -1,3 +1,4 @@
 export type Instruction = {
-  body: string
+  body?: string
+  componentPath?: string
 }
