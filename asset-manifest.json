@@ -1,30 +1,36 @@
 {
   "files": {
-    "main.css": "/flashcards-react/static/css/main.94025b85.chunk.css",
-    "main.js": "/flashcards-react/static/js/main.2b16752f.chunk.js",
-    "main.js.map": "/flashcards-react/static/js/main.2b16752f.chunk.js.map",
-    "runtime-main.js": "/flashcards-react/static/js/runtime-main.ef054568.js",
-    "runtime-main.js.map": "/flashcards-react/static/js/runtime-main.ef054568.js.map",
-    "static/js/2.9121699e.chunk.js": "/flashcards-react/static/js/2.9121699e.chunk.js",
-    "static/js/2.9121699e.chunk.js.map": "/flashcards-react/static/js/2.9121699e.chunk.js.map",
-    "static/js/3.c2342b37.chunk.js": "/flashcards-react/static/js/3.c2342b37.chunk.js",
-    "static/js/3.c2342b37.chunk.js.map": "/flashcards-react/static/js/3.c2342b37.chunk.js.map",
+    "main.css": "/flashcards-react/static/css/main.0761c69c.chunk.css",
+    "main.js": "/flashcards-react/static/js/main.b1a8a20d.chunk.js",
+    "main.js.map": "/flashcards-react/static/js/main.b1a8a20d.chunk.js.map",
+    "runtime-main.js": "/flashcards-react/static/js/runtime-main.858de068.js",
+    "runtime-main.js.map": "/flashcards-react/static/js/runtime-main.858de068.js.map",
+    "static/js/2.44f72892.chunk.js": "/flashcards-react/static/js/2.44f72892.chunk.js",
+    "static/js/2.44f72892.chunk.js.map": "/flashcards-react/static/js/2.44f72892.chunk.js.map",
+    "static/css/3.c50981d2.chunk.css": "/flashcards-react/static/css/3.c50981d2.chunk.css",
+    "static/js/3.dfda0357.chunk.js": "/flashcards-react/static/js/3.dfda0357.chunk.js",
+    "static/js/3.dfda0357.chunk.js.map": "/flashcards-react/static/js/3.dfda0357.chunk.js.map",
+    "static/js/4.3a2c60b9.chunk.js": "/flashcards-react/static/js/4.3a2c60b9.chunk.js",
+    "static/js/4.3a2c60b9.chunk.js.map": "/flashcards-react/static/js/4.3a2c60b9.chunk.js.map",
+    "static/js/5.67d6354f.chunk.js": "/flashcards-react/static/js/5.67d6354f.chunk.js",
+    "static/js/5.67d6354f.chunk.js.map": "/flashcards-react/static/js/5.67d6354f.chunk.js.map",
     "index.html": "/flashcards-react/index.html",
-    "static/css/main.94025b85.chunk.css.map": "/flashcards-react/static/css/main.94025b85.chunk.css.map",
-    "static/js/2.9121699e.chunk.js.LICENSE.txt": "/flashcards-react/static/js/2.9121699e.chunk.js.LICENSE.txt",
+    "static/css/3.c50981d2.chunk.css.map": "/flashcards-react/static/css/3.c50981d2.chunk.css.map",
+    "static/css/main.0761c69c.chunk.css.map": "/flashcards-react/static/css/main.0761c69c.chunk.css.map",
+    "static/js/2.44f72892.chunk.js.LICENSE.txt": "/flashcards-react/static/js/2.44f72892.chunk.js.LICENSE.txt",
     "static/media/close.72346ed5.svg": "/flashcards-react/static/media/close.72346ed5.svg",
     "static/media/flip-24px.3066e32e.svg": "/flashcards-react/static/media/flip-24px.3066e32e.svg",
     "static/media/flashCard.scss": "/flashcards-react/static/media/intro-help-wrong.45a2f3a0.png",
     "static/media/next-24px.04706935.svg": "/flashcards-react/static/media/next-24px.04706935.svg",
     "static/media/play-24px.8dd3f864.svg": "/flashcards-react/static/media/play-24px.8dd3f864.svg",
     "static/media/school-24px.d0e18e44.svg": "/flashcards-react/static/media/school-24px.d0e18e44.svg",
-    "static/media/thumb-down-24px.5adfad48.svg": "/flashcards-react/static/media/thumb-down-24px.5adfad48.svg",
-    "static/media/thumb-up-24px.e0c2b59e.svg": "/flashcards-react/static/media/thumb-up-24px.e0c2b59e.svg"
+    "static/media/thumb-down-24px.svg": "/flashcards-react/static/media/thumb-down-24px.5adfad48.svg",
+    "static/media/thumb-up-24px.svg": "/flashcards-react/static/media/thumb-up-24px.e0c2b59e.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ef054568.js",
-    "static/js/2.9121699e.chunk.js",
-    "static/css/main.94025b85.chunk.css",
-    "static/js/main.2b16752f.chunk.js"
+    "static/js/runtime-main.858de068.js",
+    "static/js/2.44f72892.chunk.js",
+    "static/css/main.0761c69c.chunk.css",
+    "static/js/main.b1a8a20d.chunk.js"
   ]
 }

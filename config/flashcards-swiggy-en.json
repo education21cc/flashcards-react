@@ -33,28 +33,29 @@
       },
       {
           "key": "instructions-text1",
-          "value": "इस गेम में प्रत्येक कार्ड पर हिंदी में एक या एक से अधिक शब्द दिए गए हैं।"
+          "value": "Each card in this game has a word or a phrase in Hindi."
       },
       {
           "key": "instructions-text2",
-          "value": "देखें कि क्या आपको याद है कि उन शब्दों को अंग्रेजी में कैसे कहा जाता है। फिर इस बटन पर टैप करके कार्ड को फ्लिप करें।"
+          "value": "See if remember how to say that phrase in English. Then flip the card by tapping this button."
       },
       {
           "key": "instructions-text3",
-          "value": "हिंदी या अंग्रेजी के शब्दों को सुनने के लिए साउंड बटन पर टैप करें।"
+          "value": "Tap on the sound button to listen to the Hindi or English phrases."
       },
       {
           "key": "instructions-text4",
-          "value": "अगर आपको सही अनुवाद याद था, तो हरे रंग के थम्स अप बटन पर टैप करें या दाएं ओर स्वाइप करें।"
+          "value": "If you remembered the correct translation, tap on the green thumbs up button or swipe right."
       },
       {
           "key": "instructions-text5",
-          "value": "अगर आपको सही अनुवाद याद नहीं था, तो नीले रंग के थम्स डाउन बटन पर टैप करें या बाईं ओर स्वाइप करें।"
+          "value": "If you didn't remember the correct translation, tap on the blue thumbs down button or swipe left."
       },
       {
           "key": "instructions-text6",
-          "value": "क्या आप अपनी याददाश्त को परखने के लिए तैयार हैं?"
+          "value": "Are you ready to put your memory to test?"
       },
+
       {
           "key": "intro-description",
           "value": "क्या आपको याद है कि इन हिंदी शब्दों को अंग्रेजी में कैसे कहते हैं? हिंदी के शब्दों को अंग्रेजी में क्या कहते हैं, यह देखने के लिए कार्डों को पलटें। और देखें कि आप सही थे या नहीं!"
