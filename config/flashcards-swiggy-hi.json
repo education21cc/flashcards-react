@@ -22,7 +22,7 @@
         { "id": "bye-good-night" }
       ],
       "instructions": [{
-        "componentPath": "./instructionPages/swiggy/Instruction"
+        "componentPath": "swiggy/Instruction"
       }]
     },
     "levelsCompleted":[],
