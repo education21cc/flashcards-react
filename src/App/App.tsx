@@ -40,19 +40,30 @@ const App = () => {
   const latestCard = useRef<NormalCardRef>(null);
   const introCard = useRef<IntroCardRef>(null);
 
+  const start = useCallback(() => {
+    if (data?.content.skipIntroCard) {
+      setState(GameState.normal)
+    } else {
+      setState(GameState.intro)
+    }
+  }, [data?.content.skipIntroCard])
+
   const handleGameDataReceived = useCallback((data: GameData<Content>) => {
     if (!data.content.cards) {
       // old style config - backwards compat
       data.content.cards = data.content as unknown as Card[]
     }
+    // if `skipIntroCard` is not present, treat as false
+    data.content.skipIntroCard = !!data.content?.skipIntroCard
+
     setData(data);
     const cards = data?.content.cards;
     setCards(cards.sort(() => Math.random() - 0.5));
 
-    if (data.content.instructions?.length) {
+    if (data.content?.instructions?.length) {
       setState(GameState.instructions)
     } else {
-      setState(GameState.intro)
+      start()
     }
 
     if (data.translations) {
@@ -64,7 +75,7 @@ const App = () => {
       useTranslationStore.setState({ texts: t });
     }
 
-  }, []);
+  }, [start]);
 
   useEffect(() => {
     // See if we are fed gamedata by 21ccplayer app, if not, go fetch it ourselves
@@ -72,11 +83,11 @@ const App = () => {
       // @ts-ignore
       console.log("no bridge found, fetching fallback")
 //
-      // fetch(`${process.env.PUBLIC_URL}/config/flashcards-adr-with-translations-nl.json`)
+      fetch(`${process.env.PUBLIC_URL}/config/flashcards-adr-with-translations-nl.json`)
       // fetch(`${process.env.PUBLIC_URL}/config/flashcards-handlingpackaging-with-translations-hi.json`)
       // fetch(`${process.env.PUBLIC_URL}/config/flashcards-voiceover-test.json`)
       // fetch(`${process.env.PUBLIC_URL}/config/flashcards-swiggy-1-hi.json`)
-      fetch(`${process.env.PUBLIC_URL}/config/flashcards-swiggy-2-hi.json`)
+      // fetch(`${process.env.PUBLIC_URL}/config/flashcards-swiggy-2-hi.json`)
       // fetch(`${process.env.PUBLIC_URL}/config/flashcards-handlingpackaging-with-translations-en.json`)
       // fetch(`${process.env.PUBLIC_URL}/config/flashcards-handlingpackaging-with-translations-nl.json`)
       // fetch(`${process.env.PUBLIC_URL}/config/flashcards-handlingpackaging-with-translations-ms.json`)
@@ -191,10 +202,10 @@ const App = () => {
   }, [state]);
 
   const handleReset = () => {
+    start();
     setProgress(0);
     setMistakes(0);
     setCards(data?.content?.cards.sort(() => Math.random() - 0.5));
-    setState(GameState.intro)
   }
 
   return (
