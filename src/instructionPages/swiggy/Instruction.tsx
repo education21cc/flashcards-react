@@ -23,24 +23,24 @@ const Instruction = () => {
   const translations = useTranslationStore();
 
   const instructions = useMemo(() => ([{
-    duration: 3500,
+    duration: 10000,
     elementSelector: '.flash-card-wrapper p',
     text: translations.getTextRaw("instructions-text1"),
   }, {
-    duration: 3500,
+    duration: 10000,
     elementSelector: '.button-bar button',
     text: translations.getTextRaw("instructions-text2")
   }, {
-    duration: 3500,
+    duration: 10000,
     elementSelector: '.flash-card-wrapper p button',
     text: translations.getTextRaw("instructions-text3"),
     placement: 'bottom' as Placement
   }, {
-    duration: 3500,
+    duration: 10000,
     elementSelector: '.button-bar .button-right',
     text: translations.getTextRaw("instructions-text4")
   }, {
-    duration: 3500,
+    duration: 10000,
     elementSelector: '.button-bar .button-left',
     text: translations.getTextRaw("instructions-text5")
   }]), [translations])
