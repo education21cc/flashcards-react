@@ -1,15 +1,15 @@
 {
   "files": {
     "static/css/0.c50981d2.chunk.css": "/flashcards-react/static/css/0.c50981d2.chunk.css",
-    "static/js/0.50380803.chunk.js": "/flashcards-react/static/js/0.50380803.chunk.js",
-    "static/js/0.50380803.chunk.js.map": "/flashcards-react/static/js/0.50380803.chunk.js.map",
+    "static/js/0.670706be.chunk.js": "/flashcards-react/static/js/0.670706be.chunk.js",
+    "static/js/0.670706be.chunk.js.map": "/flashcards-react/static/js/0.670706be.chunk.js.map",
     "static/js/1.781115df.chunk.js": "/flashcards-react/static/js/1.781115df.chunk.js",
     "static/js/1.781115df.chunk.js.map": "/flashcards-react/static/js/1.781115df.chunk.js.map",
     "main.css": "/flashcards-react/static/css/main.0761c69c.chunk.css",
-    "main.js": "/flashcards-react/static/js/main.ecab6e63.chunk.js",
-    "main.js.map": "/flashcards-react/static/js/main.ecab6e63.chunk.js.map",
-    "runtime-main.js": "/flashcards-react/static/js/runtime-main.9476ffb9.js",
-    "runtime-main.js.map": "/flashcards-react/static/js/runtime-main.9476ffb9.js.map",
+    "main.js": "/flashcards-react/static/js/main.61f16315.chunk.js",
+    "main.js.map": "/flashcards-react/static/js/main.61f16315.chunk.js.map",
+    "runtime-main.js": "/flashcards-react/static/js/runtime-main.14358aee.js",
+    "runtime-main.js.map": "/flashcards-react/static/js/runtime-main.14358aee.js.map",
     "static/js/4.943f7464.chunk.js": "/flashcards-react/static/js/4.943f7464.chunk.js",
     "static/js/4.943f7464.chunk.js.map": "/flashcards-react/static/js/4.943f7464.chunk.js.map",
     "static/css/5.c50981d2.chunk.css": "/flashcards-react/static/css/5.c50981d2.chunk.css",
@@ -32,9 +32,9 @@
     "static/media/thumb-up-24px.svg": "/flashcards-react/static/media/thumb-up-24px.e0c2b59e.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.9476ffb9.js",
+    "static/js/runtime-main.14358aee.js",
     "static/js/4.943f7464.chunk.js",
     "static/css/main.0761c69c.chunk.css",
-    "static/js/main.ecab6e63.chunk.js"
+    "static/js/main.61f16315.chunk.js"
   ]
 }

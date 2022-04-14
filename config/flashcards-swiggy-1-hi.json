@@ -23,7 +23,8 @@
       ],
       "instructions": [{
         "componentPath": "swiggy/Instruction"
-      }]
+        }],
+      "skipIntroCard": true
     },
     "levelsCompleted":[],
     "translations": [
