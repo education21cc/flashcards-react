@@ -56,18 +56,6 @@
           "value": "क्या आप अपनी याददाश्त को परखने के लिए तैयार हैं?"
       },
       {
-          "key": "intro-description",
-          "value": "क्या आपको याद है कि इन हिंदी शब्दों को अंग्रेजी में कैसे कहते हैं? हिंदी के शब्दों को अंग्रेजी में क्या कहते हैं, यह देखने के लिए कार्डों को पलटें। और देखें कि आप सही थे या नहीं!"
-      },
-      {
-          "key": "intro-description-correct",
-          "value": "क्या आप सही थे?\nदाईं ओर स्वाइप करें!"
-      },
-      {
-          "key": "intro-description-wrong",
-          "value": "क्या आप गलत थे?\nबाईं ओर स्वाइप करें!"
-      },
-      {
           "key": "outro-header",
           "value": "समाप्त!"
       },
@@ -101,11 +89,11 @@
       },
       {
           "key": "card-my-name-back",
-          "value": "Morning :voice[morning]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/morning.mp3'}"
+          "value": "My name :voice[my name]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/morning.mp3'}"
       },
       {
           "key": "card-my-name-is-ram-front",
-          "value": "मेरा नाम राम है  :voice[मेरा नाम राम है]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/mera-naam-raam-hai.mp3'} "
+          "value": "मेरा नाम राम है :voice[मेरा नाम राम है]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/mera-naam-raam-hai.mp3'} "
       },
       {
           "key": "card-my-name-is-ram-back",
