@@ -26,174 +26,174 @@
       "skipIntroCard": true
     },
     "levelsCompleted":[],
-    "translations": [
-      {
-          "key": "intro-header",
-          "value": "परिचय"
+      "translations": [
+        {
+            "key": "intro-header",
+            "value": "परिचय"
+        },
+        {
+            "key": "instructions-text1",
+            "value": "इस गेम में प्रत्येक कार्ड पर हिंदी में एक या एक से अधिक शब्द दिए गए हैं।"
+        },
+        {
+            "key": "instructions-text2",
+            "value": "देखें कि क्या आपको याद है कि उन शब्दों को अंग्रेजी में कैसे कहा जाता है। फिर इस बटन पर टैप करके कार्ड को फ्लिप करें।"
+        },
+        {
+            "key": "instructions-text3",
+            "value": "हिंदी या अंग्रेजी के शब्दों को सुनने के लिए साउंड बटन पर टैप करें।"
+        },
+        {
+            "key": "instructions-text4",
+            "value": "अगर आपको सही अनुवाद याद था, तो हरे रंग के थम्स अप बटन पर टैप करें या दाएं ओर स्वाइप करें।"
+        },
+        {
+            "key": "instructions-text5",
+            "value": "अगर आपको सही अनुवाद याद नहीं था, तो नीले रंग के थम्स डाउन बटन पर टैप करें या बाईं ओर स्वाइप करें।"
+        },
+        {
+            "key": "instructions-text6",
+            "value": "क्या आप अपनी याददाश्त को परखने के लिए तैयार हैं?"
+        },
+        {
+            "key": "outro-header",
+            "value": "समाप्त!"
+        },
+        {
+            "key": "outro-description",
+            "value": "आपको {0} कार्ड याद नहीं थे।"
+        },
+        {
+            "key": "outro-description-flawless",
+            "value": "आपको सभी कार्ड याद थे!"
+        },
+        {
+          "key": "card-demo-front",
+          "value": "नमस्ते :voice[नमस्ते]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/namaste.mp3'} "
+        },
+        {
+            "key": "card-demo-back",
+            "value": "Hello :voice[hello]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/hello.mp3'}"
+        },
+        {
+            "key": "card-name-front",
+            "value": "नाम :voice[नाम]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/naam.mp3'} "
+        },
+        {
+            "key": "card-name-back",
+            "value": "My name :voice[my name]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/my-name.mp3'}"
+        },
+        {
+            "key": "card-my-name-front",
+            "value": "मेरा नाम :voice[मेरा नाम]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/mera-naam.mp3'} "
+        },
+        {
+            "key": "card-my-name-back",
+            "value": "My name :voice[my name]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/my-name.mp3'}"
+        },
+        {
+            "key": "card-my-name-is-ram-front",
+            "value": "मेरा नाम राम है :voice[मेरा नाम राम है]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/mera-naam-raam-hai.mp3'} "
+        },
+        {
+            "key": "card-my-name-is-ram-back",
+            "value": "My name is Ram :voice[My name is Ram]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/my-name-is-ram.mp3'}"
+        },
+        {
+            "key": "card-i-am-ram-front",
+            "value": "मैं राम हूँ :voice[मैं राम हूँ]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/shaam.mp3'} "
+        },
+        {
+            "key": "card-i-am-ram-back",
+            "value": "I am Ram :voice[evening]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/i-am-ram.mp3'}"
+        },
+        {
+            "key": "card-i-am-from-swiggy-front",
+            "value": "मैं स्विग्गी से आया हूं  :voice[मैं स्विग्गी से आया हूं]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/main-sviggee-se-aaya-hoon.mp3'} "
+        },
+        {
+            "key": "card-i-am-from-swiggy-back",
+            "value": "I am from Swiggy :voice[i am from swiggy]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/i-am-from-swiggy.mp3'}"
+        },
+        {
+            "key": "card-order-front",
+            "value": "आर्डर  :voice[आर्डर]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/aardar.mp3'} "
+        },
+        {
+            "key": "card-order-back",
+            "value": "Order :voice[order]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/order.mp3'}"
+        },
+        {
+            "key": "card-your-order-front",
+            "value": "आपका आर्डर :voice[आपका आर्डर]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/aapaka-aardar.mp3'} "
+        },
+        {
+            "key": "card-your-order-back",
+            "value": "Your order :voice[your order]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/your-order.mp3'}"
+        },
+        {
+            "key": "card-i-have-your-order-front",
+            "value": "मेरे पास आपका ऑर्डर है। :voice[मेरे पास आपका ऑर्डर है।]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/mere-paas-aapaka-ordar-hai.mp3'} "
+        },
+        {
+            "key": "card-i-have-your-order-back",
+            "value": "I have your order :voice[i have your order]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/i-have-your-order.mp3'}"
+        },
+        {
+            "key": "card-thank-you-front",
+            "value": "धन्यवाद :voice[धन्यवाद]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/dhanyavaad.mp3'} "
+        },
+        {
+            "key": "card-thank-you-back",
+            "value": "Thank you :voice[thank you]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/thank-you.mp3'}"
+        },
+        {
+            "key": "card-you-are-welcome-front",
+            "value": "कोई बात नहीं :voice[कोई बात नहीं]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/koee-baat-nahin.mp3'} "
+        },
+        {
+            "key": "card-you-are-welcome-back",
+            "value": "You are welcome :voice[you are welcome]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/you-are-welcome.mp3'}"
+        },
+        {
+          "key": "card-hello-good-morning-front",
+            "value": "नमस्ते, सुप्रभात  :voice[नमस्ते सुप्रभात]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/namaste-suprabhaat.mp3'} "
+        },
+        {
+            "key": "card-hello-good-morning-back",
+            "value": "Hello, good morning :voice[hello good morning]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/hello-good-morning.mp3'}\n\nHi, \ngood morning :voice[hi good morning]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/hi-good-morning.mp3'}"
+        },
+        {
+          "key": "card-hello-good-night-front",
+          "value": "नमस्ते, शुभ रात्रि  :voice[नमस्ते, शुभ रात्रि]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/namaste-shubh-raatri.mp3'} "
       },
       {
-          "key": "instructions-text1",
-          "value": "इस गेम में प्रत्येक कार्ड पर हिंदी में एक या एक से अधिक शब्द दिए गए हैं।"
+          "key": "card-hello-good-night-back",
+          "value": "Hello, good night :voice[hello good night]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/hello-good-night.mp3'}\n\nHi, good night :voice[hi good night]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/hi-good-night.mp3'}"
       },
-      {
-          "key": "instructions-text2",
-          "value": "देखें कि क्या आपको याद है कि उन शब्दों को अंग्रेजी में कैसे कहा जाता है। फिर इस बटन पर टैप करके कार्ड को फ्लिप करें।"
-      },
-      {
-          "key": "instructions-text3",
-          "value": "हिंदी या अंग्रेजी के शब्दों को सुनने के लिए साउंड बटन पर टैप करें।"
-      },
-      {
-          "key": "instructions-text4",
-          "value": "अगर आपको सही अनुवाद याद था, तो हरे रंग के थम्स अप बटन पर टैप करें या दाएं ओर स्वाइप करें।"
-      },
-      {
-          "key": "instructions-text5",
-          "value": "अगर आपको सही अनुवाद याद नहीं था, तो नीले रंग के थम्स डाउन बटन पर टैप करें या बाईं ओर स्वाइप करें।"
-      },
-      {
-          "key": "instructions-text6",
-          "value": "क्या आप अपनी याददाश्त को परखने के लिए तैयार हैं?"
-      },
-      {
-          "key": "outro-header",
-          "value": "समाप्त!"
-      },
-      {
-          "key": "outro-description",
-          "value": "आपको {0} कार्ड याद नहीं थे।"
-      },
-      {
-          "key": "outro-description-flawless",
-          "value": "आपको सभी कार्ड याद थे!"
-      },
-      {
-        "key": "card-demo-front",
-        "value": "नमस्ते :voice[नमस्ते]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/namaste.mp3'} "
-      },
-      {
-          "key": "card-demo-back",
-          "value": "Hello :voice[hello]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/hello.mp3'}"
-      },
-      {
-          "key": "card-name-front",
-          "value": "नाम :voice[नाम]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/naam.mp3'} "
-      },
-      {
-          "key": "card-name-back",
-          "value": "My name :voice[my name]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/my-name.mp3'}"
-      },
-      {
-          "key": "card-my-name-front",
-          "value": "मेरा नाम :voice[मेरा नाम]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/mera-naam.mp3'} "
-      },
-      {
-          "key": "card-my-name-back",
-          "value": "My name :voice[my name]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/morning.mp3'}"
-      },
-      {
-          "key": "card-my-name-is-ram-front",
-          "value": "मेरा नाम राम है :voice[मेरा नाम राम है]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/mera-naam-raam-hai.mp3'} "
-      },
-      {
-          "key": "card-my-name-is-ram-back",
-          "value": "My name is Ram :voice[My name is Ram]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/my-name-is-ram.mp3'}"
-      },
-      {
-          "key": "card-i-am-ram-front",
-          "value": "मैं राम हूँ :voice[मैं राम हूँ]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/shaam.mp3'} "
-      },
-      {
-          "key": "card-i-am-ram-back",
-          "value": "I am Ram :voice[evening]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/i-am-ram.mp3'}"
-      },
-      {
-          "key": "card-i-am-from-swiggy-front",
-          "value": "मैं स्विग्गी से आया हूं  :voice[मैं स्विग्गी से आया हूं]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/main-sviggee-se-aaya-hoon.mp3'} "
-      },
-      {
-          "key": "card-i-am-from-swiggy-back",
-          "value": "I am from Swiggy :voice[i am from swiggy]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/i-am-from-swiggy.mp3'}"
-      },
-      {
-          "key": "card-order-front",
-          "value": "आर्डर  :voice[आर्डर]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/aardar.mp3'} "
-      },
-      {
-          "key": "card-order-back",
-          "value": "Order :voice[order]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/order.mp3'}"
-      },
-      {
-          "key": "card-your-order-front",
-          "value": "आपका आर्डर :voice[आपका आर्डर]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/aapaka-aardar.mp3'} "
-      },
-      {
-          "key": "card-your-order-back",
-          "value": "Your order :voice[your order]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/your-order.mp3'}"
-      },
-      {
-          "key": "card-i-have-your-order-front",
-          "value": "मेरे पास आपका ऑर्डर है। :voice[मेरे पास आपका ऑर्डर है।]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/mere-paas-aapaka-ordar-hai.mp3'} "
-      },
-      {
-          "key": "card-i-have-your-order-back",
-          "value": "I have your order :voice[i have your order]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/i-have-your-order.mp3'}"
-      },
-      {
-          "key": "card-thank-you-front",
-          "value": "धन्यवाद :voice[धन्यवाद]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/dhanyavaad.mp3'} "
-      },
-      {
-          "key": "card-thank-you-back",
-          "value": "Thank you :voice[thank you]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/thank-you.mp3'}"
-      },
-      {
-          "key": "card-you-are-welcome-front",
-          "value": "कोई बात नहीं :voice[कोई बात नहीं]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/koee-baat-nahin.mp3'} "
-      },
-      {
-          "key": "card-you-are-welcome-back",
-          "value": "You are welcome :voice[you are welcome]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/you-are-welcome.mp3'}"
-      },
-      {
-        "key": "card-hello-good-morning-front",
-          "value": "नमस्ते, सुप्रभात  :voice[नमस्ते सुप्रभात]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/namaste-suprabhaat.mp3'} "
-      },
-      {
-          "key": "card-hello-good-morning-back",
-          "value": "Hello, good morning :voice[hello good morning]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/hello-good-morning.mp3'}\n\nHi, \ngood morning :voice[hi good morning]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/hi-good-morning.mp3'}"
-      },
-      {
-        "key": "card-hello-good-night-front",
-        "value": "नमस्ते, शुभ रात्रि  :voice[नमस्ते, शुभ रात्रि]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/namaste-shubh-raatri.mp3'} "
-    },
-    {
-        "key": "card-hello-good-night-back",
-        "value": "Hello, good night :voice[hello good night]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/hello-good-night.mp3'}\n\nHi, good night :voice[hi good night]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/hi-good-night.mp3'}"
-    },
-      {
-          "key": "card-thank-you-bye-front",
-          "value": "शुक्रिया अलविदा :voice[शुक्रिया अलविदा]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/shukriya-alavida.mp3'} "
-      },
-      {
-          "key": "card-thank-you-bye-back",
-          "value": "Thank you, \ngoodbye :voice[thank you, goodbye]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/thank-you-goodbye.mp3'} \n\nThank you, bye :voice[thank you, bye]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/thank-you-bye.mp3'}"
-      },
-      {
-          "key": "card-thank-you-good-night-front",
-          "value": "धन्यवाद, शुभ रात्रि :voice[धन्यवाद, शुभ रात्रि]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/dhanyavaad-shubh-raatri.mp3'} "
-      },
-      {
-          "key": "card-thank-you-good-night-back",
-          "value": "Thank you,\n good night :voice[Thank you good night]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/thank-you-good-night.mp3'}"
-      },
-      {
-          "key": "card-you-are-welcome-good-night-front",
-          "value": "कोई बात नहीं, शुभ रात्रि :voice[कोई बात नहीं, शुभ रात्रि]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/koee-baat-nahin-shubh-raatri.mp3'} "
-      },
-      {
-          "key": "card-you-are-welcome-good-night-back",
-          "value": "You are welcome, \ngood night :voice[You are welcome, good night]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/you-are-welcome-good-night.mp3'}"
-      }
-  ]
+        {
+            "key": "card-thank-you-bye-front",
+            "value": "शुक्रिया अलविदा :voice[शुक्रिया अलविदा]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/shukriya-alavida.mp3'} "
+        },
+        {
+            "key": "card-thank-you-bye-back",
+            "value": "Thank you, \ngoodbye :voice[thank you, goodbye]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/thank-you-goodbye.mp3'} \n\nThank you, bye :voice[thank you, bye]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/thank-you-bye.mp3'}"
+        },
+        {
+            "key": "card-thank-you-good-night-front",
+            "value": "धन्यवाद, शुभ रात्रि :voice[धन्यवाद, शुभ रात्रि]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/dhanyavaad-shubh-raatri.mp3'} "
+        },
+        {
+            "key": "card-thank-you-good-night-back",
+            "value": "Thank you,\n good night :voice[Thank you good night]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/thank-you-good-night.mp3'}"
+        },
+        {
+            "key": "card-you-are-welcome-good-night-front",
+            "value": "कोई बात नहीं, शुभ रात्रि :voice[कोई बात नहीं, शुभ रात्रि]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/koee-baat-nahin-shubh-raatri.mp3'} "
+        },
+        {
+            "key": "card-you-are-welcome-good-night-back",
+            "value": "You are welcome, \ngood night :voice[You are welcome, good night]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/you-are-welcome-good-night.mp3'}"
+        }
+    ]
 }
