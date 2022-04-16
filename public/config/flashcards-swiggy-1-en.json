@@ -23,7 +23,9 @@
       ],
       "instructions": [{
         "componentPath": "swiggy/Instruction"
-      }]
+      }],
+      "completeOptions": ["reset", "exit"],
+      "skipIntroCard": true
     },
     "levelsCompleted":[],
     "translations": [

@@ -16,6 +16,7 @@ import { Howl } from 'howler';
 import PlayerBridge from 'playerBridge';
 import Instructions from './Instructions/Instructions';
 import './styles/app.scss';
+import ButtonBarComplete from './ButtonBar/ButtonBarComplete';
 
 enum GameState {
   loading = 0,
@@ -40,6 +41,10 @@ const App = () => {
   const latestCard = useRef<NormalCardRef>(null);
   const introCard = useRef<IntroCardRef>(null);
 
+  const randomizeCards = useCallback(() => {
+    setCards(data?.content?.cards.sort(() => Math.random() - 0.5));
+  }, [data?.content?.cards])
+
   const start = useCallback(() => {
     if (data?.content.skipIntroCard) {
       setState(GameState.normal)
@@ -56,9 +61,11 @@ const App = () => {
     // if `skipIntroCard` is not present, treat as false
     data.content.skipIntroCard = !!data.content?.skipIntroCard
 
+    // if `completeOptions` is not present, treat as 'reset'
+    data.content.completeOptions = data.content?.completeOptions ?? ['reset']
+
     setData(data);
-    const cards = data?.content.cards;
-    setCards(cards.sort(() => Math.random() - 0.5));
+    randomizeCards()
 
     if (data.content?.instructions?.length) {
       setState(GameState.instructions)
@@ -86,8 +93,8 @@ const App = () => {
       // fetch(`${process.env.PUBLIC_URL}/config/flashcards-adr-with-translations-nl.json`)
       // fetch(`${process.env.PUBLIC_URL}/config/flashcards-handlingpackaging-with-translations-hi.json`)
       // fetch(`${process.env.PUBLIC_URL}/config/flashcards-voiceover-test.json`)
-      // fetch(`${process.env.PUBLIC_URL}/config/flashcards-swiggy-1-hi.json`)
-      fetch(`${process.env.PUBLIC_URL}/config/flashcards-swiggy-2-hi.json`)
+      fetch(`${process.env.PUBLIC_URL}/config/flashcards-swiggy-1-hi.json`)
+      // fetch(`${process.env.PUBLIC_URL}/config/flashcards-swiggy-2-hi.json`)
       // fetch(`${process.env.PUBLIC_URL}/config/flashcards-handlingpackaging-with-translations-en.json`)
       // fetch(`${process.env.PUBLIC_URL}/config/flashcards-handlingpackaging-with-translations-nl.json`)
       // fetch(`${process.env.PUBLIC_URL}/config/flashcards-handlingpackaging-with-translations-ms.json`)
@@ -205,7 +212,7 @@ const App = () => {
     start();
     setProgress(0);
     setMistakes(0);
-    setCards(data?.content?.cards.sort(() => Math.random() - 0.5));
+    randomizeCards();
   }
 
   return (
@@ -263,8 +270,8 @@ const App = () => {
           />
           )}
           {state === GameState.complete && (
-            <ButtonBarIntro
-              /** might as well use the intro component here ¯\_(ツ)_/¯ */
+            <ButtonBarComplete
+              completeOptions={data?.content.completeOptions ?? ['reset']}
               onPlay={handleReset}
             />
            )}

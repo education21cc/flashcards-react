@@ -29,6 +29,7 @@ const Instructions = (props: Props) => {
     <div className="instructions">
       {instructions.map((instruction, i) => (
         <InstructionPage
+          key={`${instruction.body}${instruction.componentPath}`}
           active={i === currentPage}
           hasPrevious={i > 0}
           instruction={instruction}
