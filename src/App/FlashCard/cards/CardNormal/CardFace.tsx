@@ -13,7 +13,7 @@ type Props = {
 
 
 const CardFace = (props: Props) => {
-  const { card, side, ...rest } = props;
+  const { card, side, children, ...rest } = props;
   const className = "card " + (side ?? "");
   const translations = useTranslationStore();
 
@@ -30,6 +30,15 @@ const CardFace = (props: Props) => {
       </div>
     )
   }
+
+  if (children) {
+    return (
+      <div {...rest} className={className}>
+        {children}
+      </div>
+    )
+  }
+
   // fallback (old configs)
   return (
     <div {...rest} className={className}>

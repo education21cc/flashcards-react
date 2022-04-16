@@ -22,7 +22,8 @@
         { "id": "bye-good-night" }
       ],
       "instructions": [{
-        "componentPath": "swiggy/Instruction"
+        "componentPath": "swiggy/Instruction",
+        "hideNavigation": true
       }],
       "completeOptions": ["reset", "exit"],
       "skipIntroCard": true
@@ -56,6 +57,10 @@
       {
           "key": "instructions-text6",
           "value": "क्या आप अपनी याददाश्त को परखने के लिए तैयार हैं?"
+      },
+      {
+          "key": "instructions-skip",
+          "value": "परिचय छोड़ें"
       },
       {
           "key": "intro-description",

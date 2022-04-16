@@ -2,11 +2,12 @@ import CardFace from "App/FlashCard/cards/CardNormal/CardFace"
 import { CardType } from "data/Card"
 import { createPopper, Placement } from '@popperjs/core';
 import { useEffect, useMemo, useRef, useState } from "react";
-import './styles/instruction.scss';
-import { ButtonBarNormal } from "App/ButtonBar";
+import { ButtonBarIntro, ButtonBarNormal } from "App/ButtonBar";
 import ReactCardFlip from "react-card-flip";
 import { useTranslationStore } from "stores/translations";
 import ReactMarkdown from "react-markdown";
+import { ReactComponent as NextIcon } from './../../images/icons/forward-24px.svg';
+import './styles/instruction.scss';
 
 
 
@@ -15,8 +16,14 @@ const card = {
   id: 'demo'
 }
 
+type Props = {
+  onNextPage: () => void
+  onPreviousPage: () => void
+}
+
 // Instructions componment for the swiggy project
-const Instruction = () => {
+const Instruction = (props: Props) => {
+  const { onNextPage } = props;
   const containerRef = useRef<HTMLDivElement>(null)
   const tooltipRef = useRef<HTMLDivElement>(null)
   const [step, setStep] = useState(0)
@@ -110,11 +117,28 @@ const Instruction = () => {
         </>
       )}
       { step === 5 && (
-        <div>
-           <ReactMarkdown>
-            {translations.getTextRaw("instructions-text6")}
-           </ReactMarkdown>
-        </div>
+        <>
+          <div className="card-container">
+            <div className="flash-card-wrapper">
+              <CardFace side="front" card={{ type: CardType.Normal }}>
+                <ReactMarkdown>
+                  {translations.getTextRaw("instructions-text6")}
+                </ReactMarkdown>
+              </CardFace>
+            </div>
+          </div>
+          <ButtonBarIntro
+            onPlay={onNextPage}
+          />
+        </>
+      )}
+      { step !== 5 && (
+        <button onClick={onNextPage} className="button-text button-next" >
+          <span>
+            {translations.getText("instructions-skip")}
+          </span>
+          <NextIcon />
+        </button>
       )}
       <div className="tooltip" ref={tooltipRef} role="tooltip">
         <div className="content"></div>

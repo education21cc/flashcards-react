@@ -2,18 +2,20 @@ import './styles/instructionPage.scss'
 import { lazy, Suspense } from "react";
 interface Props {
   componentPath: string
+  onNextPage?: () => void
+  onPreviousPage?: () => void
 }
 
 // Lazy loads a react component
 const InstructionPageComponent = (props: Props) => {
-  const { componentPath } = props
+  const { componentPath, ...otherProps } = props
 
-  const OtherComponent = lazy(() => import(`instructionPages/${componentPath}`));
+  const PageComponent = lazy(() => import(`instructionPages/${componentPath}`));
 
   return (
     <>
     <Suspense fallback={'...Loading'}>
-        <OtherComponent />
+        <PageComponent { ...otherProps } />
       </Suspense>
     </>
   )

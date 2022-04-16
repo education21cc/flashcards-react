@@ -41,10 +41,6 @@ const App = () => {
   const latestCard = useRef<NormalCardRef>(null);
   const introCard = useRef<IntroCardRef>(null);
 
-  const randomizeCards = useCallback(() => {
-    setCards(data?.content?.cards.sort(() => Math.random() - 0.5));
-  }, [data?.content?.cards])
-
   const start = useCallback(() => {
     if (data?.content.skipIntroCard) {
       setState(GameState.normal)
@@ -65,7 +61,8 @@ const App = () => {
     data.content.completeOptions = data.content?.completeOptions ?? ['reset']
 
     setData(data);
-    randomizeCards()
+    const cards = data?.content.cards;
+    setCards(cards.sort(() => Math.random() - 0.5));
 
     if (data.content?.instructions?.length) {
       setState(GameState.instructions)
@@ -212,7 +209,7 @@ const App = () => {
     start();
     setProgress(0);
     setMistakes(0);
-    randomizeCards();
+    setCards(data?.content?.cards.sort(() => Math.random() - 0.5));
   }
 
   return (
