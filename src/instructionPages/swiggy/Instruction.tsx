@@ -7,9 +7,12 @@ import ReactCardFlip from "react-card-flip";
 import { useTranslationStore } from "stores/translations";
 import ReactMarkdown from "react-markdown";
 import { ReactComponent as NextIcon } from './../../images/icons/forward-24px.svg';
+import { Howl } from "howler";
 import './styles/instruction.scss';
 
-
+const music = new Howl({
+  src: ['sound/music-elevator.ogg']
+});
 
 const card = {
   type: CardType.Normal,
@@ -84,6 +87,11 @@ const Instruction = (props: Props) => {
     }
   }, [instructions, step])
 
+  // useEffect(() => {
+  //   music.play();
+  //   music.loop(true);
+  // }, [])
+
   const cardOnBack = step > 1
 
   const handleClick = () => {
@@ -91,6 +99,13 @@ const Instruction = (props: Props) => {
       setStep(step + 1)
     }
   }
+
+  const handleSkip = (e: React.MouseEvent<HTMLButtonElement>) => {
+    setStep(instructions.length);
+    e.preventDefault();
+    e.stopPropagation();
+  }
+
   return (
     <div ref={containerRef} onClick={handleClick}>
       { step < 5 && (
@@ -133,8 +148,8 @@ const Instruction = (props: Props) => {
         </>
       )}
       { step !== 5 && (
-        <button onClick={onNextPage} className="button-text button-next" >
-          <span>
+        <button onClick={handleSkip} className="button-text button-next" >
+          <span>sfs
             {translations.getText("instructions-skip")}
           </span>
           <NextIcon />

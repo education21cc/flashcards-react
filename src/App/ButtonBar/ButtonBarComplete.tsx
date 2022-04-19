@@ -1,6 +1,6 @@
 import { CompleteOption } from 'data/Content';
 import { send } from 'playerBridge';
-import { ReactComponent as PlayIcon } from './../../images/icons/play-24px.svg';
+import { ReactComponent as RewindIcon } from './../../images/icons/rewind-24px.svg';
 import { ReactComponent as ExitIcon } from './../../images/icons/exit-24px.svg';
 import './styles/buttonBar.scss';
 
@@ -20,7 +20,7 @@ const ButtonBarComplete = (props: Props) => {
     <div className="button-bar">
       { hasReset && (
         <button className="button-circle" onClick={onPlay}>
-          <PlayIcon />
+          <RewindIcon />
         </button>
       )}
       { hasExit && (
