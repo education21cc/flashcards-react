@@ -15,8 +15,8 @@ import CardOutro from './FlashCard/cards/CardOutro';
 import { Howl } from 'howler';
 import PlayerBridge from 'playerBridge';
 import Instructions from './Instructions/Instructions';
-import './styles/app.scss';
 import ButtonBarComplete from './ButtonBar/ButtonBarComplete';
+import './styles/app.scss';
 
 enum GameState {
   loading = 0,
