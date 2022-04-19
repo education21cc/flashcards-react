@@ -21,7 +21,8 @@
         { "id": "you-are-welcome-good-night" }
       ],
       "instructions": [{
-        "componentPath": "swiggy/Instruction"
+        "componentPath": "swiggy/Instruction",
+        "hideNavigation": true
       }],
       "completeOptions": ["reset", "exit"],
       "skipIntroCard": true
@@ -86,7 +87,7 @@
         },
         {
             "key": "card-name-back",
-            "value": "My name :voice[my name]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/my-name.mp3'}"
+            "value": "Name :voice[name]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/name.mp3'}"
         },
         {
             "key": "card-my-name-front",
