@@ -16,17 +16,16 @@ const ButtonBarComplete = (props: Props) => {
   } = props;
   const hasReset = completeOptions.indexOf('reset') > -1;
   const hasExit = completeOptions.indexOf('exit') > -1;
-console.log(hasReset, hasExit);
   return (
     <div className="button-bar">
-      { hasExit && (
-        <button className="button-circle" onClick={exit}>
-          <ExitIcon />
-        </button>
-      )}
       { hasReset && (
         <button className="button-circle" onClick={onPlay}>
           <PlayIcon />
+        </button>
+      )}
+      { hasExit && (
+        <button className="button-circle" onClick={exit}>
+          <ExitIcon />
         </button>
       )}
     </div>
