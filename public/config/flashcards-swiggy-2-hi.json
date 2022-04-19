@@ -15,7 +15,7 @@
         { "id": "thank-you" },
         { "id": "you-are-welcome" },
         { "id": "hello-good-morning" },
-        { "id": "hello-good-night" },
+        { "id": "bye-good-night" },
         { "id": "thank-you-bye" },
         { "id": "thank-you-good-night" },
         { "id": "you-are-welcome-good-night" }
@@ -170,13 +170,13 @@
             "value": "Hello, good morning :voice[hello good morning]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/hello-good-morning.mp3'}\n\nHi, \ngood morning :voice[hi good morning]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/hi-good-morning.mp3'}"
         },
         {
-          "key": "card-hello-good-night-front",
-          "value": "नमस्ते, शुभ रात्रि  :voice[नमस्ते, शुभ रात्रि]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/namaste-shubh-raatri.mp3'} "
+          "key": "card-bye-good-night-front",
+          "value": "अलविदा, शुभ रात्रि  :voice[अलविदा, शुभ रात्रि]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/alavida-shubh-raatri.mp3'} "
       },
-      {
-          "key": "card-hello-good-night-back",
-          "value": "Hello, good night :voice[hello good night]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/hello-good-night.mp3'}\n\nHi, good night :voice[hi good night]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/hi-good-night.mp3'}"
-      },
+        {
+            "key": "card-bye-good-night-back",
+            "value": "Bye, good night :voice[bye good night]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/bye-good-night.mp3'}"
+        },
         {
             "key": "card-thank-you-bye-front",
             "value": "शुक्रिया अलविदा :voice[शुक्रिया अलविदा]{lang='hi-IN' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/hi-IN/shukriya-alavida.mp3'} "
