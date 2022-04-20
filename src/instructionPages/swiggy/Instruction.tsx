@@ -14,6 +14,10 @@ const music = new Howl({
   src: ['sound/music-elevator.ogg']
 });
 
+const plopSound = new Howl({
+  src: ['sound/plop.ogg']
+});
+
 const card = {
   type: CardType.Normal,
   id: 'demo'
@@ -99,6 +103,10 @@ const Instruction = (props: Props) => {
       setStep(step + 1)
     }
   }
+
+  useEffect(() => {
+    plopSound.play();
+  }, [step])
 
   const handleSkip = (e: React.MouseEvent<HTMLButtonElement>) => {
     setStep(instructions.length);
