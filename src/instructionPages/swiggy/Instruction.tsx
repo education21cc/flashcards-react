@@ -105,7 +105,9 @@ const Instruction = (props: Props) => {
   }
 
   useEffect(() => {
-    plopSound.play();
+    if (step > 0) {
+      plopSound.play();
+    }
   }, [step])
 
   const handleSkip = (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -157,7 +159,7 @@ const Instruction = (props: Props) => {
       )}
       { step !== 5 && (
         <button onClick={handleSkip} className="button-text button-next" >
-          <span>sfs
+          <span>
             {translations.getText("instructions-skip")}
           </span>
           <NextIcon />
