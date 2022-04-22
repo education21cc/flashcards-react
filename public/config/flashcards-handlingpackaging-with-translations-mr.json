@@ -3,37 +3,40 @@
     "settings":{
       "muted": false
     },
-    "content": [{
-      "id": "fragile"
-    }, {
-      "id": "handle-with-care"
-    }, {
-      "id": "flammable"
-    }, {
-      "id": "this-way-up"
-    }, {
-      "id": "do-not-stack"
-    }, {
-      "id": "maximum-stack-weight"
-    }, {
-      "id": "maximum-stack-height"
-    }, {
-      "id": "protect-from-sunlight"
-    }, {
-      "id": "temperature-limitations"
-    }, {
-      "id": "keep-dry"
-    }, {
-      "id": "do-not-lift"
-    }, {
-      "id": "two-person-lift"
-    }, {
-      "id": "only-use-trolley"
-    }, {
-      "id": "do-not-use-hand-truck"
-    }, {
-      "id": "do-not-use-forklift"
-    }],
+    "content": {
+      "cards": [{
+        "id": "fragile"
+      }, {
+        "id": "handle-with-care"
+      }, {
+        "id": "flammable"
+      }, {
+        "id": "this-way-up"
+      }, {
+        "id": "do-not-stack"
+      }, {
+        "id": "maximum-stack-weight"
+      }, {
+        "id": "maximum-stack-height"
+      }, {
+        "id": "protect-from-sunlight"
+      }, {
+        "id": "temperature-limitations"
+      }, {
+        "id": "keep-dry"
+      }, {
+        "id": "do-not-lift"
+      }, {
+        "id": "two-person-lift"
+      }, {
+        "id": "only-use-trolley"
+      }, {
+        "id": "do-not-use-hand-truck"
+      }, {
+        "id": "do-not-use-forklift"
+      }],
+      "completeOptions": ["reset", "exit"]
+    },
     "levelsCompleted":[],
     "translations": [
       {
