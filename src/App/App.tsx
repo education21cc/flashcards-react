@@ -196,14 +196,15 @@ const App = () => {
       window.setGameData({
         levelsCompleted: [{
           level: 1,
-          score: 3
+          score: data?.levelsCompleted[0]?.maxScore ?? 3,
+          maxScore: data?.levelsCompleted[0]?.maxScore ?? 3
         }]
       })
       confetti();
       setTimeout(confetti, 750);
       setTimeout(confetti, 1500);
     }
-  }, [state]);
+  }, [data?.levelsCompleted, state]);
 
   const handleReset = () => {
     start();
