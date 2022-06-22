@@ -26,7 +26,8 @@
         "hideNavigation": true
       }],
       "completeOptions": ["reset", "exit"],
-      "skipIntroCard": true
+      "skipIntroCard": true,
+      "maxScore": 10,
     },
     "levelsCompleted":[],
       "translations": [
