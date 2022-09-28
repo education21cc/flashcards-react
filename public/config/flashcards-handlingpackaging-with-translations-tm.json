@@ -1,0 +1,188 @@
+{
+    "userId":2,
+    "settings":{
+      "muted": false
+    },
+    "content": [{
+      "id": "fragile"
+    }, {
+      "id": "handle-with-care"
+    }, {
+      "id": "flammable"
+    }, {
+      "id": "this-way-up"
+    }, {
+      "id": "do-not-stack"
+    }, {
+      "id": "maximum-stack-weight"
+    }, {
+      "id": "maximum-stack-height"
+    }, {
+      "id": "protect-from-sunlight"
+    }, {
+      "id": "temperature-limitations"
+    }, {
+      "id": "keep-dry"
+    }, {
+      "id": "do-not-lift"
+    }, {
+      "id": "two-person-lift"
+    }, {
+      "id": "only-use-trolley"
+    }, {
+      "id": "do-not-use-hand-truck"
+    }, {
+      "id": "do-not-use-forklift"
+    }],
+    "levelsCompleted":[],
+    "translations": [
+      {
+          "key": "intro-header",
+          "value": "அறிமுகம்"
+      },
+      {
+          "key": "intro-description",
+          "value": "கையாளுதல் மற்றும் பேக்கேஜிங் சின்னங்கள் உங்களுக்குத் தெரியுமா? கார்டுகளின் அர்த்தத்தை வெளிப்படுத்த அவற்றைத் திருப்பி, நீங்கள் சொல்வது சரியா என்று பாருங்கள்!"
+      },
+      {
+          "key": "intro-description-correct",
+          "value": "உங்களுக்கு பதில் தெரியுமா?\r\nவலதுபுறமாக ஸ்வைப் செய்யவும்!"
+      },
+      {
+          "key": "intro-description-wrong",
+          "value": "பதில் நினைவில் இல்லையா? இடதுபுறமாக ஸ்வைப் செய்யவும்!"
+      },
+      {
+          "key": "outro-header",
+          "value": "முடிந்தது!\r\n"
+      },
+      {
+          "key": "outro-description",
+          "value": "உங்களுக்கு {0} கார்டுகள் நினைவில் இல்லை."
+      },
+      {
+          "key": "outro-description-flawless",
+          "value": "நீங்கள் எல்லா கார்டுகளையும் நினைவில் வைத்திருக்கிறீர்கள்\n"
+      },
+      {
+          "key": "card-fragile-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/fragile.png)"
+      },
+      {
+          "key": "card-fragile-back",
+          "value": "உடையக்கூடியது\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/fragile.png)"
+      },
+      {
+          "key": "card-handle-with-care-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/handle-with-care.png)"
+      },
+      {
+          "key": "card-handle-with-care-back",
+          "value": "கவனமாக கையாளவும்\n\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/handle-with-care.png)"
+      },
+      {
+          "key": "card-flammable-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/flammable.png)"
+      },
+      {
+          "key": "card-flammable-back",
+          "value": "எரியக்கூடியது\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/flammable.png)"
+      },
+      {
+          "key": "card-this-way-up-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/this-way-up.png)"
+      },
+      {
+          "key": "card-this-way-up-back",
+          "value": "இப்பக்கம் மேலே  \n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/this-way-up.png)"
+      },
+      {
+          "key": "card-do-not-stack-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-stack.png)"
+      },
+      {
+          "key": "card-do-not-stack-back",
+          "value": "ஒன்றன் மேல் ஒன்று அடுக்க வேண்டாம்\n\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-stack.png)"
+      },
+      {
+          "key": "card-maximum-stack-weight-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/maximum-stack-weight.png)"
+      },
+      {
+          "key": "card-maximum-stack-weight-back",
+          "value": "அதிகபட்ச அடுக்கு எடை\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/maximum-stack-weight.png)"
+      },
+      {
+          "key": "card-maximum-stack-height-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/maximum-stack-height.png)"
+      },
+      {
+          "key": "card-maximum-stack-height-back",
+          "value": "அதிகபட்ச அடுக்கு உயரம்\n\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/maximum-stack-height.png)"
+      },
+      {
+          "key": "card-protect-from-sunlight-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/protect-from-sunlight.png)"
+      },
+      {
+          "key": "card-protect-from-sunlight-back",
+          "value": "சூரிய ஒளியில் இருந்து பாதுகாக்கவும்\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/protect-from-sunlight.png)"
+      },
+      {
+          "key": "card-temperature-limitations-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/temperature-limitations.png)"
+      },
+      {
+          "key": "card-temperature-limitations-back",
+          "value": "வெப்பநிலை வரம்புகள்\n\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/temperature-limitations.png)"
+      },
+      {
+          "key": "card-keep-dry-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/keep-dry.png)"
+      },
+      {
+          "key": "card-keep-dry-back",
+          "value": "உலர்வாக வைக்கவும்\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/keep-dry.png)"
+      },
+      {
+          "key": "card-do-not-lift-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-lift.png)"
+      },
+      {
+          "key": "card-do-not-lift-back",
+          "value": "தூக்க வேண்டாம்\n\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-lift.png)"
+      },
+      {
+          "key": "card-two-person-lift-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/two-person-lift.png)"
+      },
+      {
+          "key": "card-two-person-lift-back",
+          "value": "இரண்டு நபர் தூக்கவும்\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/two-person-lift.png)"
+      },
+      {
+          "key": "card-only-use-trolley-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/only-use-trolley.png)"
+      },
+      {
+          "key": "card-only-use-trolley-back",
+          "value": "ட்ராலியை மட்டும் பயன்படுத்தவும்\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/only-use-trolley.png)"
+      },
+      {
+          "key": "card-do-not-use-hand-truck-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-use-hand-truck.png)"
+      },
+      {
+          "key": "card-do-not-use-hand-truck-back",
+          "value": "கை டிரக்கை பயன்படுத்த வேண்டாம்\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-use-hand-truck.png)"
+      },
+      {
+          "key": "card-do-not-use-forklift-front",
+          "value": "![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-use-forklift.png)"
+      },
+      {
+          "key": "card-do-not-use-forklift-back",
+          "value": "ஃபோர்க்லிஃப்ட் பயன்படுத்த வேண்டாம்\n\n![](https://21cccdn.blob.core.windows.net/21cc/games/images/flashcards/shippinghandling/do-not-use-forklift.png)"
+      }
+  ]
+}

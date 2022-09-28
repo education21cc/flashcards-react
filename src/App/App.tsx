@@ -91,10 +91,11 @@ const App = () => {
       // fetch(`${process.env.PUBLIC_URL}/config/flashcards-handlingpackaging-with-translations-hi.json`)
       // fetch(`${process.env.PUBLIC_URL}/config/flashcards-voiceover-test.json`)
       // fetch(`${process.env.PUBLIC_URL}/config/flashcards-swiggy-1-hi.json`)
-      fetch(`${process.env.PUBLIC_URL}/config/flashcards-swiggy-2-hi.json`)
+      // fetch(`${process.env.PUBLIC_URL}/config/flashcards-swiggy-2-hi.json`)
       // fetch(`${process.env.PUBLIC_URL}/config/flashcards-handlingpackaging-with-translations-en.json`)
       // fetch(`${process.env.PUBLIC_URL}/config/flashcards-handlingpackaging-with-translations-nl.json`)
       // fetch(`${process.env.PUBLIC_URL}/config/flashcards-handlingpackaging-with-translations-ms.json`)
+      fetch(`${process.env.PUBLIC_URL}/config/flashcards-handlingpackaging-with-translations-tm.json`)
       // fetch(`${process.env.PUBLIC_URL}/config/flashcards_vcaborden-with-translation-nl.json`)
       .then((response) => {
         response.json().then((data) => {
