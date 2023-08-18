@@ -1,0 +1,207 @@
+{
+    "userId":2,
+    "settings":{
+      "muted": false
+    },
+    "content": {
+      "cards": [
+        { "id": "name" },
+        { "id": "my-name" },
+        { "id": "my-name-is-ram" },
+        { "id": "i-am-ram" },
+        { "id": "i-live-in-india" },
+        { "id": "age" },
+        { "id": "my-age-is-30" },
+        { "id": "i-am-30-years-old" },
+        { "id": "thank-you" },
+        { "id": "you-are-welcome" },
+        { "id": "hello-good-morning" },
+        { "id": "bye-good-night" },
+        { "id": "thank-you-bye" },
+        { "id": "thank-you-good-night" },
+        { "id": "you-are-welcome-good-night" }
+      ],
+      "instructions": [{
+        "componentPath": "swiggy/Instruction",
+        "hideNavigation": true
+      }],
+      "completeOptions": ["reset", "exit"],
+      "skipIntroCard": true,
+      "maxScore": 10
+    },
+    "levelsCompleted":[],
+    "translations": [
+      {
+          "key": "intro-header",
+          "value": "ভূমিকা"
+      },
+      {
+          "key": "instructions-text1",
+          "value": "এই গেমের প্রতিটি কার্ডে হিন্দিতে একটি বা একটির বেশী শব্দগুচ্ছ দেওয়া হয়েছে।"
+      },
+      {
+          "key": "instructions-text2",
+          "value": "ইংরেজিতে সেই শব্দগুলি কীভাবে বলতে হয় তা মনে আছে কিনা দেখে নিন। তারপর এই বোতামে ট্যাপ করে কার্ডটি ফ্লিপ করুন।"
+      },
+      {
+          "key": "instructions-text3",
+          "value": "হিন্দি বা ইংরেজি শব্দগুলি শুনতে সাউন্ড বোতামে ট্যাপ করুন।"
+      },
+      {
+          "key": "instructions-text4",
+          "value": "আপনি যদি সঠিক অনুবাদটি মনে রাখেন, তাহলে সবুজ থাম্বস আপ বোতামে ট্যাপ বা ডানদিকে সোয়াইপ করুন।"
+      },
+      {
+          "key": "instructions-text5",
+          "value": "আপনার সঠিক অনুবাদটি মনে না থাকলে, নীল থাম্বস ডাউন বোতামে ট্যাপ বা বাম দিকে সোয়াইপ করুন।"
+      },
+      {
+          "key": "instructions-text6",
+          "value": "আপনি কি আপনার স্মৃতি পরীক্ষা করার জন্য প্রস্তুত?"
+      },
+      {
+          "key": "instructions-skip",
+          "value": "ভূমিকার স্কিপ করে এগিয়ে যান"
+      },
+      {
+          "key": "outro-header",
+          "value": "সমাপ্ত!"
+      },
+      {
+          "key": "outro-description",
+          "value": "আপনার {0}টি কার্ড মনে ছিল ন।"
+      },
+      {
+          "key": "outro-description-flawless",
+          "value": "আপনার সব কার্ড মনে আছে!"
+      },
+      {
+          "key": "card-demo-front",
+          "value": "নমস্কার :voice[নমস্কার]{lang='bn' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/bn/namaskara.mp3'} "
+      },
+      {
+          "key": "card-demo-back",
+          "value": "Hello :voice[hello]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/hello.mp3'}"
+      },
+      {
+          "key": "card-name-front",
+          "value": "নাম :voice[নাম]{lang='bn' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/bn/nama.mp3'}"
+      },
+      {
+          "key": "card-name-back",
+          "value": "Name :voice[name]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/my-name.mp3'}"
+      },
+      {
+          "key": "card-my-name-front",
+          "value": "আমার নাম :voice[আমার নাম]{lang='bn' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/bn/amara-nama.mp3'}"
+      },
+      {
+          "key": "card-my-name-back",
+          "value": "My name :voice[my name]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/my-name.mp3'}"
+      },
+      {
+          "key": "card-my-name-is-ram-front",
+          "value": "আমার নাম রাম :voice[আমার নাম রাম ]{lang='bn' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/bn/amara-nama-rama.mp3'}"
+      },
+      {
+          "key": "card-my-name-is-ram-back",
+          "value": "My name is Ram :voice[My name is Ram]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/my-name-is-ram.mp3'}"
+      },
+      {
+          "key": "card-i-am-ram-front",
+          "value": "আমি রাম :voice[আমি রাম]{lang='bn' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/bn/ami-rama.mp3'}"
+      },
+      {
+          "key": "card-i-am-ram-back",
+          "value": "I am Ram :voice[i am raam]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/i-am-ram.mp3'}"
+      },
+      {
+          "key": "card-i-live-in-india-front",
+          "value": "আমি ভারতে থাকি  :voice[আমি ভারতে থাকি]{lang='bn' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/bn/ami-bharate-thaki.mp3'}"
+      },
+      {
+          "key": "card-i-live-in-india-back",
+          "value": "I live in India :voice[i live in india]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/i-live-in-india.mp3'}"
+      },
+      {
+          "key": "card-age-front",
+          "value": "বয়স :voice[বয়স]{lang='bn' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/bn/bayasa.mp3'}"
+      },
+      {
+          "key": "card-age-back",
+          "value": "Age :voice[age]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/age.mp3'}"
+      },
+      {
+          "key": "card-my-age-is-30-front",
+          "value": "আমার বয়স 30 বছর :voice[আমার বয়স 30 বছর ]{lang='bn' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/bn/amara-bayasa-30-bachara.mp3'}"
+      },
+      {
+          "key": "card-my-age-is-30-back",
+          "value": "My age is 30 :voice[my age is 30]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/my-age-is-30.mp3'}"
+      },
+      {
+          "key": "card-i-am-30-years-old-front",
+          "value": "আমার বয়স 30 বছর :voice[আমার বয়স 30 বছর ]{lang='bn' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/bn/amara-bayasa-30-bachara.mp3'}"
+      },
+      {
+          "key": "card-i-am-30-years-old-back",
+          "value": "I am 30 years old :voice[i am 30 years old]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/i-am-30-years-old.mp3'}"
+      },
+      {
+          "key": "card-thank-you-front",
+          "value": "ধন্যবাদ :voice[ধন্যবাদ]{lang='bn' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/bn/dhan-yabada.mp3'}"
+      },
+      {
+          "key": "card-thank-you-back",
+          "value": "Thank you :voice[thank you]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/thank-you.mp3'}"
+      },
+      {
+          "key": "card-you-are-welcome-front",
+          "value": "আপনাকে স্বাগতম :voice[আপনাকে স্বাগতম ]{lang='bn' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/bn/apanake-sbagatama.mp3'}"
+      },
+      {
+          "key": "card-you-are-welcome-back",
+          "value": "You are welcome :voice[you are welcome]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/you-are-welcome.mp3'}"
+      },
+      {
+          "key": "card-hello-good-morning-front",
+          "value": "ওহে শুভ সকাল  :voice[ওহে শুভ সকাল ]{lang='bn' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/bn/ohe-subha-sakala.mp3'}"
+      },
+      {
+          "key": "card-hello-good-morning-back",
+          "value": "Hello, good morning :voice[hello good morning]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/hello-good-morning.mp3'}\n\nHi, good morning :voice[hi good morning]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/hi-good-morning.mp3'}"
+      },
+      {
+          "key": "card-bye-good-night-front",
+          "value": "বিদায়, শুভরাত্রি :voice[বিদায়, শুভরাত্রি]{lang='bn' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/bn/bidaya-subharatri.mp3'}"
+      },
+      {
+          "key": "card-bye-good-night-back",
+          "value": "Bye, good night :voice[bye good night]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/bye-good-night.mp3'}"
+      },
+      {
+          "key": "card-thank-you-bye-front",
+          "value": "বিদায় আপনাকে ধন্যবাদ :voice[বিদায় আপনাকে ধন্যবাদ]{lang='bn' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/bn/bidaya-apanake-dhan-yabada.mp3'}"
+      },
+      {
+          "key": "card-thank-you-bye-back",
+          "value": "Thank you, \ngoodbye :voice[thank you, goodbye]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/thank-you-goodbye.mp3'} \\n\\nThank you, bye :voice[thank you, bye]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/thank-you-bye.mp3'}"
+      },
+      {
+          "key": "card-thank-you-good-night-front",
+          "value": "শুভরাত্রি আপনাকে ধন্যবাদ :voice[শুভরাত্রি আপনাকে ধন্যবাদ]{lang='bn' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/bn/subharatri-apanake-dhan-yabada.mp3'}"
+      },
+      {
+          "key": "card-thank-you-good-night-back",
+          "value": "Thank you, \ngood night :voice[Thank you good night]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/thank-you-good-night.mp3'}"
+      },
+      {
+          "key": "card-you-are-welcome-good-night-front",
+          "value": "আপনাকে স্বাগতম, শুভরাত্রি :voice[আপনাকে স্বাগতম, শুভরাত্রি]{lang='bn' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/bn/apanake-sbagatama-subharatri.mp3'}"
+      },
+      {
+          "key": "card-you-are-welcome-good-night-back",
+          "value": "You are welcome, \ngood night :voice[You are welcome, good night]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/you-are-welcome-good-night.mp3'}"
+      }
+  ]
+}
