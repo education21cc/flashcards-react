@@ -145,7 +145,7 @@
         },
         {
             "key": "card-i-am-30-years-old-back",
-            "value": "I have your age :voice[i have your age]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/i-am-30-years-old.mp3'}"
+            "value": "I am 30 years old :voice[i am 30 years old]{lang='en-GB' fallback='https://21cccdn.blob.core.windows.net/21cc/games/audio/flashcards/swiggy/en-GB/i-am-30-years-old.mp3'}"
         },
         {
             "key": "card-thank-you-front",
